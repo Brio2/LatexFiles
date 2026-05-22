@@ -1,0 +1,136 @@
+\section{State of The Art}
+\label{sec:State_Of_The_Art}
+The main techniques for making an active balun are based on three different configurations: a single CE, a combination of CB and CE,  a differential pair.
+\begin{comment}
+
+It could also be possible to categorize active baluns through the presence of closed[] or open loop circuits but this work is entirely done by looking only at open loop active baluns because they are simpler and more manageable at mm-wave frequencies.
+\end{comment}
+
+\begin{figure}[htbp]
+\centering
+
+% Forza ogni subfigure a occupare 0.32\textwidth: insieme stanno in una riga.
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  % ridimensiono l'intero circuitikz alla larghezza desiderata
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+       \draw (0,0) node[npn, xscale=1, anchor=B] (Q1){};
+       \draw (Q1.B) to [short,-o] ++(-0.5,0) node[left]{$V_{in}$};
+       \draw (Q1.E)--++(0,-0.25) to [R]++(0,-1.5)node[tlground]{};
+       \draw (Q1.E) to [short,*-o]++(0.75,0) node[right]{\textbf{-}};
+       \draw (Q1.C) --++ (0,0.25) to [R]++(0,1.5) 
+             to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+       \draw (Q1.C) to [short,*-o]++(0.75,0) node[right]{\textbf{+}};
+    \end{circuitikz}
+  }
+  \caption{Common-Emitter}
+  \label{fig:CommonEmitter}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+    \draw (0,1) node[npn, xscale=1, anchor=B] (Q2){};
+    \draw (Q2.E)--++(0,-1.5) coordinate (e2);
+    \draw (e2)--++(0,-0.25)
+    node[npn, xscale=-1, anchor=C] (Qx){};
+    \draw (Q2.B) to [short] ++(-0.5,0) to [C]++(0,-1.25)node[tlground]{};
+    \draw (e2) to[short,*-o]++(-0.5,0)node[left]{$V_{in}$};
+    \draw (e2) --++(1.5,0) node[npn, xscale=1, anchor=B] (Q3){};
+    \draw (Q2.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q2.C) to [short,*-o]++(0.75,0) node[right]{\textbf{-}};
+    \draw (Q3.C)to [short] ++(0,2.2725) to [R]++(0,1.5) 
+          to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q3.C) to [short,*-o]++(0.75,0) node[right]{\textbf{+}};
+
+    \draw (Q3.E) to [R]++(0,-1) node[ground]{};
+
+    \draw (Qx.B) to [short,-*]++(0,0.775+0.25);
+    \draw(Qx.E)node[ground]{};
+    \end{circuitikz}
+  }
+  \caption{CB + CE}
+  \label{fig:CBCE}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+    \draw (0,0.5) node[npn, xscale=1, anchor=B] (Q4){};
+    \draw (Q4.B) to [short,-o] ++(-0.5,0) node[left]{$V_{in}$};
+    \draw (Q4.E)--++(0,-0.35)--++(1,0) coordinate(e4);
+    \draw(e4)--++(1,0) --++(0,+0.35) node[npn, xscale=-1, anchor=E] (Q5){};
+    \draw (Q5.B) to [short] ++(+0.5,0) to [C]++(0,-1.25)node[tlground]{};
+    \draw (e4) to [I,*-]++(0,-2) node[tlground]{};
+    \draw (Q4.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q4.C) to [short,*-o]++(0.65,0) node[above]{\textbf{+}};
+    \draw (Q5.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q5.C) to [short,*-o]++(-0.65,0) node[above]{\textbf{-}};
+    \end{circuitikz}
+  }
+  \caption{Differential pair}
+  \label{fig:DifferentialPair}
+\end{subfigure}
+
+\caption{Comparison of the three most commonly used balun configurations}
+\end{figure}
+
+In the single transistor configuration, Figure \ref{fig:CommonEmitter}, the input signal is applied at the base and an attenuated portion of it appears at the emitter, meanwhile at the collector the signal is amplified and inverted, effectively creating two different signals with ideal 180° phase degree and amplitude balance adjustable through the collector and emitter resistances.
+This solution is simple and straightforward, however, as introduced in \cite{Active BALUN with 40 GHz bandwidth at 257 GHz}\cite{Three Compact Active Baluns with High Phase/Amplitude Balance and Low Power in 65-nm CMOS}\cite{Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe}, a single CE can't realistically achieve a good phase and amplitude balance over the frequencies due to the presence of asymmetric base-collector and base-emitter capacitances. This leads to the use of compensation techniques such as delay lines for high frequency applications, or a shunt capacitor \cite{A_compact_capacitor_compensated} applied at one node for low frequency applications.
+
+The second configuration, Figure \ref{fig:CBCE}, displays the input signal connected to a parallel between a CB and a CE transistor. Each one amplifies of the same module ($g_mR$) but with opposite sign, effectively creating differential outputs.
+The characteristics of CB + CE configuration are introduced in \cite{Three Compact Active Baluns with High Phase/Amplitude Balance and Low Power in 65-nm CMOS} and \cite{Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe} meanwhile an actual application can be found in \cite{Transformer_matched_gilbert_mixer}. In this latter one, the authors describe how the feedback resistor of the CE configuration was used as a variable for optimization purposes because the shunt capacitor at base of the CB was more tedious to modify due to its purpose to set the AC ground.
+
+The last configuration is the differential amplifier shown in Figure \ref{fig:DifferentialPair}. 
+In high frequency applications, the differential pairs are most likely presented with several techniques to compensate the intrinsic capacitors and improve the performances and the bandwidth. The most noticeables are, for instance, the capacitive neutralization technique in \cite{Active BALUN with 40 GHz bandwidth at 257 GHz} and the cascode configuration, this one used to compensate for the Miller capacitance and enhance the bandwidth \cite{Active BALUN with 40 GHz bandwidth at 257 GHz} \cite{Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe}.\\
+An important low frequency advantage of the differential amplifier is its capability to suppress common mode by implementing a current source. \cite{Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe}.
+However, this characteristic begins to fade as the frequency increases.
+\begin{comment}
+    due to the presence of intrinsic parasitics that degrade the topological characteristics in terms of balance and stability. 
+\end{comment}
+Furthermore, paper \cite{Active BALUN with 40 GHz bandwidth at 257 GHz} gives a general frequency threshold, briefly explaining why the current mirror applied to differential amplifiers as a current tail is not a viable solution above 200 GHz.\\
+Since the proposed design will operate in the D-band, and because of the performances showcased in paper \cite{Ultra Broadband Low-Power 70 GHz Active Balun in 130-nm SiGe BiCMOS}, in which is used the same technology of this work, it was believed that the downsides would still be manageable.
+
+This work focuses on the balun in a differential configuration with multiple stages, featuring the implementation of a cascode current mirror to further improve common-mode suppression, while operating from a single-ended supply. 
+
+An overview of the recent active baluns close to the D band is given in Table \ref{tab:comparison}.
+\begin{comment}
+    The proposed circuit shows the results shows good amplitude and phase respect the voltage supply. furthermore it is low power
+\end{comment}
+\mbox{}\\
+\mbox{}\\
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.4} % Increase row height
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Reference & \cite{Active BALUN with 40 GHz bandwidth at 257 GHz} & \cite{Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe} & \cite{Ultra Broadband Low-Power 70 GHz Active Balun in 130-nm SiGe BiCMOS} & This work \\ 
+\hline
+Type & \multicolumn{4}{c|}{Active} \\ 
+\hline
+Technology & SiGe & SiGe & SiGe & SiGe \\ 
+\hline
+Supply (V) & 3 & 4 & 3.3 & 1.8 \\ 
+\hline
+Frequency (GHz) & 237--277 & DC--(>70) & DC--70 & 110--170 \\ 
+\hline
+Amplitude imbalance (dB) & 0.5 & 0.2 & 0.65 & 0.15 \\ 
+\hline
+Phase imbalance (deg) & 5 & 5 & 3.2 &  $\pm$ 1.5 \\ 
+\hline
+DC Power (mW) & 59.7 & 144 & 37 & 53 \\ 
+\hline
+Area (mm$^2$) & 0.0168$^{a}$ & 0.42 & 0.42$^{b}$ & 0.347$^{c}$ \\ 
+\hline
+\end{tabular}
+\par\vspace{0.1cm}
+$^{a}$ Active core area, 
+$^{b}$ Pads included, 
+$^{c}$ Pads excluded
+\caption{State of The Art}
+\label{tab:comparison}
+\end{table}

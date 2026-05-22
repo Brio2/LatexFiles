@@ -1,0 +1,42 @@
+\section{Introduction}
+\label{sec:Introduction}
+In recent years, wireless communication systems at radio frequencies have grown rapidly thanks to the progress in mm-wave integrated circuits. In these circuits, it is important to design balanced, efficient and low-loss elements used in applications such as amplifiers, mixers and oscillators in the D-band.
+Within this context, the D band frequency represents a promising solution due to the availability of band space, if compared to the E and W-band, despite increasing difficulties and challenges of design of integrated circuits in terms of losses, stability, and signal mismatch.
+One of the key elements in RF front-ends is the balun, whose purpose is to convert a differential signal into a single-ended one or vice versa, while maintaining proper amplitude and phase balance.\\
+Traditional baluns are based on passive structures such as transformers or transmission lines and, by and large, guarantee good linearity performances, but they are not free from drawbacks.
+The physical size of inductive components does not favor on-chip integration.
+Transmission-line-based solutions are more compact; however, their size is still excessive compared to that of the surrounding blocks.
+Furthermore, compact passive baluns usually offer limited operating bandwidth, together with significant insertion loss and limited
+flexibility in fine-tuning the design.\\
+In general, these factors are particularly detrimental. At intermediate or relatively low frequencies, the physical size of the components increases, while transformer efficiency decreases.
+At higher frequencies, parasitic capacitances and inductive coupling between adjacent lines become
+increasingly significant, leading to phase and amplitude imbalances at the differential ports.
+In addition, the physical layout becomes critical, since small variations in geometry or coupling can
+strongly affect both the balance and the impedance matching. As a result, passive baluns become less predictable and harder to optimize at and beyond mm-wave frequencies. Nevertheless, several passive balun topologies have been proposed. For example, \cite{Ali2019} presents a passive balun based on three asymmetric coupled lines. The balun shows an insertion loss, including RF pads, lower than \SI{1.5}{\decibel}, a phase imbalance below \SI{7}{\degree}, and an amplitude imbalance below \SI{1}{\decibel} over the \SIrange{94}{177}{\giga\hertz} range. Similarly, \cite{Li2023} discusses a power amplifier operating in the \SIrange{135}{155}{\giga\hertz} band with an integrated compact three-conductor balun, showing a transmission loss lower than \SI{1}{\decibel} in the \SIrange{130}{170}{\giga\hertz} range. Finally, \cite{Sakai2021} presents techniques for balun design at frequencies higher than the D-band.
+
+To overcome the problems of passive topologies, active baluns have been studied in recent years. They can provide gain, compensate for losses, and improve isolation between the two signal paths.
+
+In this context, the present work was carried out during an internship at IHP Microelectronics and aims to design an integrated active balun for the D-band, with good amplitude and phase balance while keeping power consumption low. The work focuses on improving the circuit topology through simulations.
+
+After an initial overview of the state of the art of existing balun architectures, the theory, the design, the circuit simulations, and the obtained results are presented in the following structure:
+
+\begin{itemize}
+    \item Section \ref{sec:Technology} describes the technology and illustrates its characteristics;
+    \item Section \ref{sec:Theoretical_Background} illustrates the theory behind the design process;
+    \item Section \ref{sec:Schematic_Design} presents the design of the active balun from both the ideal and layout points of view, describing their implementation and comparing the main parameters;
+    \item Section \ref{sec:Simulations_And_Discutions} presents the simulation results of the final design;
+   % \item Section \ref{sec:Design Alternative} introduces a different topology;
+    \item Section \ref{sec:Conclusion} concludes the thesis by summarizing the achieved goals;
+    \item Appendix \ref{sec:Appendix} provides additional simulations and schematic figures of topics discussed in this work.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
