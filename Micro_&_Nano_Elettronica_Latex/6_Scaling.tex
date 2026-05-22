@@ -1,0 +1,1008 @@
+\section{Scaling del transistor}pg 295 VLSI\\
+%
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{Immagini/imm20.11.2023/constant field scaling.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}\\
+%
+I MOSFET sono ampiamente impiegati in circuiti digitali e applicazioni ad alta velocità di commutazione, grazie alla loro notevole integrabilità ed altre caratteristiche. Tuttavia, nuovi prodotti sempre più piccoli hanno spintto verso lo sviluppo di nuovi tipi di MOS ancora più piccoli con lo scopo di aumentarne l'inegrabilità, la velocità ed il consumo di potenza.
+Lo scaling consiste nel ridurre le dimensioni del mosfet e si divide in 3 tipologie, due vecchie ed una più recente.
+\begin{enumerate}
+    \item Scaling del primo tipo, detto scaling a campo elettrico costante;
+    \item Scaling del secondo tipomdetto scaling generalizzato;
+\end{enumerate}
+E' da tenere a mente che esistono parametri non scalabili che provocano alcuni problemi nello scaling.
+Tali parametri sono $\dfrac{k_BT}{q}$ ed $E_g$ di conseguenza, anche le caratteristiche legate a questi parametri non vengono scalati: $\Phi_P,W_D,V_{th}$.
+\begin{ricevimento}
+    rileggere sopra, sicuro che $W_D$ non scala? sotto dice di si
+\end{ricevimento}
+%
+\cleardoublepage
+\subsection{Scaling a campo elettrico costante}
+L'idea dello scaling del primo tipo è di ridurre le dimensioni del MOSFET mantenendo il campo elettrico costante.\\
+Per raggiungere tale obiettivo si parte riducendo le dimensioni fisiche del MOS (quali spessore dell'isolante di gate, profondità della giunzione, lunghezza del canale $L_G$, ecc.) di un fattore "$k > 1$" e poi si comincia a studiare come devono scalare anche altri parametri al fine di mantenere valida l'ipotesi di campo costante in modulo.
+%
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{Immagini/imm20.11.2023/tabella constant field scaling.png}
+    \caption{Tabella dello scaling a campo elettrico costante}
+    \label{fig:Tabella dello scaling a campo elettrico costante}
+\end{figure}
+%
+\paragraph{scaling dei parametri principale}\mbox{}\\
+I primi di questi parametri sono le tensioni $V_{DD}$ e $V_G$:
+%
+\begin{ripasso}
+    Ricordo che il potenziale si ottiene come $V=\int_{0}^{L} \mathcal{E}dx$. Il campo elettrico creato da $V_{DS}$ è chiamato \textbf{campo elettrico longitudinale} mentre quello creato da $V_G$ è chiamato \textbf{ campo elettrico trasversale} ma per certi motivi (che capirò dopo) quando parlerò di campo elettrico, farò riferimento a quello generato da $V_{DS}$.\\
+    in questo caso il potenziale fra Drain e Source è $V_{DS}=V_{DD}-V_S=V_{DD}$, quindi:
+    %
+    \begin{equation*}
+        V_{DD}=-\int_{0}^{L_G} \mathcal{E}dx
+    \end{equation*}
+    %
+    Per vedere cosa si deve fare con la $V_G$, considero $V_G=\Phi_P+\Phi_{ox}$, dove:
+    %
+    \begin{equation*}
+        \Phi_P=-\int_{0}^{t_{ox}} \mathcal{E}_{ox}\ dx
+    \end{equation*}
+    %
+    \begin{equation*}
+        \Phi_{sc}=-\int_{t_{ox}}^{\infty} \mathcal{E}_{sc}\ dx=
+        -\int_{t_{ox}}^{d} \mathcal{E}_{sc}\ dx
+    \end{equation*}
+    %
+    (il trasversale è trascurabile entro certe condizioni. Lo capirò dopo)
+\end{ripasso}
+%
+\cleardoublepage
+Se il campo elettrico è supposto costante e non considerando il segno meno, dovrà valere la relazione:
+%
+\begin{equation}
+    V_{DD} = \mathcal{E} \cdot L_G \longleftrightarrow \mathcal{E}=\dfrac{V_{DD}}{L_G} =cost
+\end{equation}
+%
+Ma se $L_{G}$ decresce con andamento $1/k$ allora affinchè sia mantenuta la condizione di campo elettrico costante è necessario che anche $V_{DD}$ decresca come $1/k$. Il ragionamento è medesimo per la $V_G$.\\
+
+Altri parametri fondamentali sono le concentrazioni di doping $N_A,N_D$ che devono crescere in funzione di k per far in modo anche anche la regione di svuotamento $W_D$ descresca in funzione di k.
+\begin{equation}
+    W_D=\sqrt{\dfrac{2q\varepsilon_S (V_{bi}-V_{A})}{qN_A}}\ \alpha \ \sqrt{\dfrac{1}{k^2}}=\dfrac{1}{k}
+\end{equation}
+Ipotizzando che $V_A=V_D>>V_{bi}$, per riuscire ad applicare uno scaling dello svuotamento è necessario che la concentrazione $N_{A}$ aumenti proporzionalmente di un fattore k.
+Questo non avviene in prossimità del source perchè La tensione $V_A=V_S$ è molto spesso molto bassa, se non direttamente collegata a massa.\\
+In realtà il ragionamento si può estendere considerando la tensione di bulk.\\
+
+Una diretta conseguenza per questo è la relazione di poisson descritta sotto.\\
+%
+\begin{citbox}
+    Il ragionamento riguardo lo spessore dello svuotamento lo ha detto il professore però qualcosa non mi torna. Secondo il mio ragionamento, mantenere valida l'equazione di poisson dovrebbe essere la priorità su tutto il resto. E' da poisson che capisco il perchè il drogaggio deve aumentare e da lì capisco perchè $W_d$ diminuisce.
+\end{citbox}
+%
+
+\begin{ripasso}[]
+    l'equazione di Poisson generale è:
+    \begin{equation*}
+        \nabla \cdot \varepsilon \mathcal{ E} = \rho
+    \end{equation*}
+    l'equazione di poisson monodimensionale (lungo x) è:
+    %
+    \begin{equation*}
+    \dfrac{d}{dx}\mathcal{E} = \dfrac{\rho}{\varepsilon}dx
+    \end{equation*}
+    %
+    Da cui:
+    %
+    \begin{equation*}
+    \mathcal{E}=\int \dfrac{\rho}{\varepsilon}dx
+    \end{equation*}
+    %
+    a seguito dello scaling di $L_G$ e $t_{ox}$ (qui considero solo una lunghezza generale "L") di un fattore k, devo fare in modo che $\mathcal{E}$ rimani costante, altrimenti l'ipotesi non è più vera:
+    %
+    \begin{equation*}
+        \mathcal{E}=\dfrac{\rho}{\varepsilon} \ L \ \text{ con }\ (L \ \alpha \ \frac{1}{k})
+    \end{equation*}
+    %
+    Scelto il materile che costituisce il MOSFET (e quindi $\varepsilon$ fissato ) posso agire variando la densità di carica $\rho$, aumentandola di un fattore "k". Ma $\rho=q(N_D-N_A)$, quindi l'aumento di $\rho$ di un fattore k comporterà il medesimo aumento nella concentrazione di atomi donori ed accettori.
+
+    \begin{ricevimento}
+        controllare che ha senso. poisson di riferisce al canale, quindi solo $L_G$ e non tox?
+    \end{ricevimento}
+\end{ripasso}
+%
+\cleardoublepage
+\paragraph{conseguenze dello scaling sui parametri di dispositivo} \mbox{}\\
+Ora osservo le implicazioni a livello di dispositivo e circuitale dello scaling:
+
+%
+Per completezza spiego i parametri principali e quelli può complicati:
+\begin{itemize}
+    \item Densità di corrente $Q_i \rightarrow 1$ :
+    \begin{ricevimento}
+        nella tabella è chiamata densità. ma non era rho? se si, non scala con k?
+    \end{ricevimento}
+        La carica di inversione rimane costante ($\dfrac{Q_i}{W_L}=cost(k)$) poichè esso stesso dipende dal campo elettrico il quale è costante per definizione.
+        \begin{ricevimento}
+            no, se W fosse costante, allora Q/W cresce di k visto che W scala come k. DOVREBBE ESSERE Q=RHO*w =COST??
+        \end{ricevimento}
+    \item la velocità di trascinamento $v_{drift} \rightarrow 1$ \\
+        perchè $v_{drift}=\mu_n \mathcal{E}=cost$;
+
+    \item dimensione della regione di svuotamento $W_d \rightarrow 1/k$. già spiegato
+    
+    \item siccome la densità rimane costante, vedrò delle conseguenze dal punto di vista delle correnti in regione lineare e di saturazione:
+        \begin{itemize}[label=$\ast$]
+            \item $I_{DS}^{drift}= J_{DS}^{drift} \cdot W \rightarrow 1/k$, poichè la densità è costante:
+                %
+                \begin{equation}
+                    J_{DS}^{drift}=\dfrac{I_{DS}^{drift}}{W}=\dfrac{W\ Q_i\ \mu_n \mathcal{E}}{W} = cost
+                \end{equation}
+                %
+            \item $I_{DS}^{diff}= J_{DS}^{diff} \cdot W \rightarrow 1$, poichè la densità cresce con k:
+                %
+                \begin{equation}
+                    J_{DS}^{diff}=\dfrac{I_{DS}^{diff}}{W}=\dfrac{W\ D_n\ \dfrac{dQ_i}{dx}}{W}=\dfrac{dQ_i}{dx} \rightarrow k;
+                \end{equation}
+                Poichè il termine infinitesimo lungo x ($dx$) decresce con 1/k.
+                %
+        \end{itemize}
+
+    \item Capacità -> 1/k, da spiegare
+
+    \item Rcanaòe -> 1, da spiegare
+
+    \item Tempo di commutazione tau->1/k
+    Grazie al fatto che il campo elettrico è mantenuto costante, la velocità di drift degli elettroni rimane invariata mentre il tempo di transito necessario agli elettroni per attraversare il Source ed andare verso il Drain diminuisce comportando un minore tempo di commutazione, permettendo l'uso del dispositivo frequenze maggiori;
+    
+        
+\end{itemize}
+%
+\begin{exbox}[all'esame chiede tutti i parametri ed i risultati finali]
+    \begin{enumerate}
+        \item Corrente del mos ridotta di un fattore k;
+        \item capacità ridotta di un fattore k;
+        \item deltay time ridotto di un fattore k;
+        \item potenza dissipata di un fattore $k^3$. importantissimo;
+        \item densità di potenza rimasta invariata.
+    \end{enumerate}
+    i difetti:
+    \begin{enumerate}
+        \item la riduzione della tensione comporta anche la riduzione del dynamic range;
+        \item c'è da considerare che la parte inferiore dell range dinamico nonpu essere troppo basso per colpa dei rumori termici sempre più preponderanti. Quindi il dynamic range si riduce ancora di più (il range inferiore diminuisce)
+        \item problemi causati dal effetto canale corto
+    \end{enumerate}
+\end{exbox}
+%
+Riducendo le dimensioni del mosfet si va in contro diverse problematiche tra cui:
+
+\begin{enumerate}
+    \item i campi elettrici lungo x ed y cominciano a cambiare forma perchè i componenti trasversali che prima erano trascurabili, ora cominciano ad avere un notevole peso sul comportamento del campo totale e quindi del mosfet.
+    \item lo spessore dell'ossido $t_{ox}$ può essere scalato di un fattore k fino ad un limite fisico e realizzativo. Da ricordare che se lo spessore dell'ossido diventa troppo sittile, i portatori di carica (elettroni) possono penetrare l'ossido per effetto tunnel, vanificando l'effetto MOS.
+    \item la tensione di soglia non scala come desidero
+    \begin{equation}
+        V_T=2\phi_p + \dfrac{\sqrt{1q\varepsilon_{SC}N_A}(2\phi_p-V_B)}{C_{OX}}
+    \end{equation}
+    La $V_T$ aumenta con fattore $\sqrt{k^3}$. Per correggere questo si può pensare di agire sulla sulla tensione di bulk in modo da abbassare la soglia ma è una soluzione non preferita perchè normalmente Source e Bulk sono collegate insieme. oltre al fatto che servirebbe una costante VB e quindi maggior dissipazione (mia ipotesi).
+\end{enumerate}
+%
+\cleardoublepage
+\subsection{Scaling generalizzato}
+All'aumentare del parametro di scaling "k" le dimensioni del MOSFET si riducono sempre di più fino al raggiungimento di un limite caratterizzato dalla comparsa di componenti di campo elettrico trasversali (da gate verso substrato) non più trascurabili.\\
+Quindi, se il MOSFET diventa troppo piccolo il campo elettrico lungo il canale non può essere considerato longitudinale (da Drain a Source) e con modulo costante.\\
+\begin{exbox}
+    Le figure sono più avanti
+\end{exbox}
+
+Per trattare lo scaling generalizzato si introducono due parametridi scaling geometrico. Il primo, già visto, è il fattore $k>1$ mentre il secondo è il fattore $\alpha >1$ usato per scalare il campo elettrico.\\
+
+L'equazione di Poisson generale è:
+%
+\begin{equation}
+    \nabla\cdot\mathcal{E}=\dfrac{\rho}{\varepsilon}
+\end{equation}
+Siccome adesso il campo elettrico  è funzione di (x,y), l'equazione di Poisson si scriverà nelle due coordinate:
+%
+\begin{equation}
+    \dfrac{\partial\mathcal{E}}{\partial x} + \dfrac{\partial\mathcal{E}}{\partial y} = \dfrac{q N_A}{\varepsilon}
+\end{equation}
+%
+Applicando i fattori di scala e il fatto che il campo elettrico è la tensione del potenziale si ha:
+%
+\begin{equation}
+    \dfrac{\partial^2 (\alpha \phi/k)}{\partial (x/k)^2} + \dfrac{\partial^2 (\alpha \phi/k)}{\partial (y/k)^2}=\dfrac{qN_A'}{\varepsilon}
+\end{equation}
+%
+Dove $N_A'$ è la nuova concentrazione di atomi accettori scalata in modo opportuno a seguito dello scaling del campo elettrico e del dispositivo ($N_A'=\alpha k N_A$).\\
+Se si assume che il campo elettrico rimanga con forma costante durante la scalatura, allora si avrà che per mantenere valida l'equazione di Poisson si deve aumentare il drogaggio di un fattore $\alpha k$.\\
+
+%
+Prima di continuare devo introdurre due nuovi concetti:\\
+Nello scaling generalizzato si possono individuare due tipi di relazioni tra tensione e campo elettrico, a seconda delle dimensioni del canale con conseguenze sulla velocità di deriva. \\
+\begin{itemize}
+\item Se L è grande, il MOSFET è nella condizione di canale lungo. Qui vale la condizione $\mathcal{E}\ll \mathcal{E}_{crit}$, $v_d=\mu_n\mathcal{E}$ e si può approssimare $\mathcal{E} \approx \dfrac{V_{DD}}{L}$.\\
+In questa situazione la barriera di potenziale tra source ed il canale è principalmente controllata dalla sola $V_G$. Aumentando $V_G$, l'altezza della barriera si riduce, permettendo l'iniezione di elettroni dalla sorgente al canale. Quando la tensione del $V_G$ raggiunge la tensione di soglia, la barriera si è ridotta sufficientemente da consentire una significativa iniezione di elettroni e il conseguente flusso di corrente. 
+\item Se L è piccolo, il MOSFET è nella condizione di canale corto, dove $\mathcal{E} \gg \mathcal{E}_{crit}$ e $v_d=v_{sat}$.
+In questa situazione la giunzione Drain è molto vicina alla giunzione Source. Di conseguenza, il potenziale nella regione Source-canale è determinato non solo dalla tensione del gate, ma anche dalla tensione di Drain ($V_D$). La tensione di Drain và a ridurre ulteriormente la barriera all'estremità della Source del canale, causando il flusso di corrente a una tensione di gate più bassa. Questo fenomeno è chiamato Drain-Induced Barrier Lowering (dopo c'è una sezione che lo spiega).
+\end{itemize}
+
+\textbf{E' meglio ripetere la distinzione tra cosa succede nel canale corto e cosa nel canale lungo}:
+\begin{itemize}
+    \item Nel canale corto si ha velocità saturata;
+    \item Nel canale lungo il campo è contenuto e proporzionale alla sola $V_{DS}$ tramite la legge $\mathcal{E}=V_{DS}/L$.
+\end{itemize}
+graficamente:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.25\textwidth, angle=90]{Immagini/imm20.11.2023/velocità_saturazione.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\paragraph{l'effetto dello scaling generalizzato sulle caratteristiche elettriche}
+Le scalature che assumono le grandezze nei due casi sono nella tabella sotto.
+%
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Immagini/imm20.11.2023/scaling generalizzato.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+%
+La velocità di drift scala con il campo elettrico nel caso di canale lungo, mentre è costante(saturata) nel caso di canale corto.
+\begin{exbox}[se l'elettrone fosse una persona]
+    intuitivamente si può pensare alla saturazione come la massima velcità che una persona può raggiungere in una strada ampia, libera e senza ostacoli. la persona correrà fino ad una certa velocità massima e la manterrà (idealmente).\
+\end{exbox}
+%
+La corrente di drift è $I_{drift}=Q_i v_{drift} W$ da cui deriva quello che è in tabella.\\
+
+
+Lo scaling generalizzato tiene conto del fatto che la tensione non può scalare senza controllo grazie al coefficiente $\alpha$ di scalatura che agisce sul campo elettrico.\\
+inoltre tiene conto che il campo elettrico scalerà con $\alpha$ e nascerà una componente lungo x. Tutto questo provoca un aumento della densità di potenza del circuito che non si aveva nel caso di campo costante e che rappresenta il primo limite alla riduzione delle dimensioni.
+
+
+Si noti dalla tabella che la densità di potenza in regione lineare ($\alpha^3$) è diversa da quella in saturazione ($\alpha^2$).
+NOTA: ciò non significa che la densità di potenza sia maggiore in regione lineare rispetto alla saturazione, bensì il contrario. Infatti, i campo elettrici sono molto diversi $\alpha_{lin}^3 < \alpha_{sat}^2$.
+%
+\begin{ricevimento}
+    spiegare sopra
+\end{ricevimento}
+%
+Ora voglio fare delle osservazioni sul short-channel:
+\section{20.11.2023}
+\subsection{Non idealità del mosfet a canale corto}
+Più che non idealità, preferisco riferirmi agli effetti del short channel come fossero caratteristiche del dispositivo dovuto che entrano in gioco perchè l'ordine di grandezza è completamentre stravolto.
+
+\subsubsection{Effetti dello scaling - short channel effects}
+effetti e considerazioni:
+\begin{enumerate}
+    \item Short channel effect:\\
+    Lo scaling eccessivo crea un campo elettrico non più costante ed uniforme. In particolare si creerà un $\mathcal{E}$ che varia sia longitudinalmente che trasversalmente indicato come $\mathcal{E}(x,y)$ (ma può cmq essere considerato ancora lineare se k è contenuto al di sotto del gate). Considero però che le componenti lungo x ed y varino allo stesso modo. devono quindi avere lo stesso fattore di forma (???)\\
+\begin{ricevimento}
+    stessa forma?
+\end{ricevimento}
+\begin{exbox}
+    Nel caso di MOS a canale lungo si aveva un campo elettrico con un andamento del genere:
+\begin{center}
+    \includegraphics[width=0.25\textwidth,angle=90]{Immagini/imm20.11.2023/Campo_long_channel.jpg}
+\end{center}
+%
+Se noi rappresentassimo il potenziale in funzione di (x,y), quello che avrei sarebbe l'andamento in arancione. vedo che le linee di campo in prossimità del canale hanno un andamento longitudinale.\\
+Se però il canale diventasse troppo corto vedo che le linee in prossimità del canale hanno anche componente trasversale
+\begin{center}
+    \includegraphics[width=0.25\textwidth,angle=90]{Immagini/imm20.11.2023/Campo_short_channel.jpg}
+\end{center}
+\end{exbox}
+    \item Devo mantenere un ossido sottile in modo da non introdurre degli effetti di bordo
+    \begin{ricevimento}
+        cioè?
+    \end{ricevimento}
+
+    \item Variazione della tensione di soglia $V_{th}$ a causa del Drain-induced barrier lowering.
+    Tale variazione causa l'accensione del MOSFET anche per bassi valori di $V_G$ perchè si riduce la distanza tra Drain e Source, provocando l'innesco di corrente non controllato dal Gate.
+    \begin{ripasso}
+        Vt dipendente dalla distanza S e D, formula?
+    \end{ripasso}
+    \item Aumentano le perdite sotto forma di resistenze parassite perchè cominciano a diventare significative, La diretta conseguenza è la degradazione di $gm \downarrow$ , $ft\downarrow$ e noise factor (NF);
+    \item quantizzazione della carica $Q_n$ tra SC e ossido che determina una riduzione della $C_{ox}$ (perchè si ha minore carica) e con conseguente riduzione della transconduttanza $gm$.
+    \item i contatti metallici di gate vengono sostituiti in favore del polisilicio n+.
+    Applicando una $V_G>0$
+\end{enumerate}
+%
+\subsubsection{La dimensione dell'ossido e fenomeni di bordo}
+Normalmente vorremmo che la capacità di ossido scali con k, tuttavia devo prestare attenzione quando faccio questo.
+So che $C_{ox}=A\ t_{ox}/\varepsilon_{ox}$
+ Fare gate corti (short channel) implica ridurre la $t_{ox}$ per avere i meccanismo di controllo di carica, ma cio può scatenare i fenomeni detti in precedenza.\\
+ figura\\
+ La riduzione della $t_{ox}$ implica...
+ Scalando il mosfet si ha che $C_{ox}$ diminuisce inevitabilmente con il conseguente eccessivo aumento della tensione di soglia, perciò si cerca di bilanciare riducendo $t_{ox}$.
+ Si deve ridurre anche gli effetti di bordo, altrimenti porterebbero il gate ad andare totalmente fuori controllo.
+
+ grafico
+
+ tutto ciò porta alla necessità di cambiare il materiale dell'ossido in modo tale da avere $\varepsilon_i \gg \varepsilon_{ox}$.\\
+ esempi:\\
+ Se $\varepsilon_i$ è elevato allora posso mantenere costante il rapporto $\varepsilon_i/t_i$ e quindi compensare la diminuzione di t necessaria ad evitare gli effetti di bordo e le correnti di leakage del gate.
+ grafico
+
+\subsubsection{Drain-induced barrier lowering}
+Ha effetto sulla tensione di soglia e si verifica nel caso di canale corto.\\
+\begin{exbox}[in parole povere]
+    Accade quando si applica un elevata tensione di drain ad un mosfet a canale corto .il risultato a lungo termine sarà l'abbassamento della barriera potenziale tra S e D, comportando una umento degli elettroni che la attraversano per andare nel drain in modo indipendente dalla tensione $V_G$.
+\end{exbox}
+
+L'effetto si vede molto bene quando viene comparato al comportamento nel canale lungo.\\
+Prendo due semiconduttori nMOSFET, uno corto a sinistra ed uno a canale lungo a destra. suppongo inizialmente che tutti i terminali siano posti a massa.in questo caso le bande di energia saranno nella situazione di equilibrio:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{Immagini/imm20.11.2023/DIBL1 equilibrio.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+Quando però applico una $V_D>V_S$ il livello di fermi del drain si abbassa di un valore $qV_D$ con conseguente abbassamento delle bande.
+e, siccome vd positivo si creerà una regione di svuotamento maggiore lungo p (sotto al drain) che si traduce in una pendenza più lenta nel diagramma a bande.
+nel caso canale corto. quando Vd aumenta, la banda di energia drain si abbassa e la regione di svuotamento aumenta. ma l'effetto è maggiore siccome la dimensione del canale è piccola
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{Immagini/imm20.11.2023/DIBL2.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+Se prendo il canale corto e aumento Vd ancora di più succede il fenomeno di DIBL:l'altezza della banda si è ridotta !
+
+Abbiamo visto che normalmente è la tensione $V_G$ che controlla la formazione del canale tra source e drain. di conseguenza quando applico una differenza di potenziale tra source e drain in assenza di $V_G$, non ci sarà corrente che scorre.
+Nel caso a canale corto invece, il canale viene controllato anche da V drain perchè il canale è veramente corto. La riduzione dell'altezza della banda tra S-G permetterà l'aumento di elettroni da S verso G ed aumenta la corrente che è chiamata di leakage. adesso iil gate non può più spegnere completamente il MOS corto.\\
+%
+\paragraph{Cosa ho visto a lezione:}\mbox{}\\
+Per comparare i diagrammi a banda di mosfet con lunghezze di canale diverse (a canale corto e canale lungo) contemporaneamente, devo normalizzare la direzione "y" rispetto alla lunghezza del canale "$L_G$". Il risultato finale, come spiegato poco sopra è il seguente:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[angle=90,origin=c,width=0.5\textwidth]{Immagini/imm20.11.2023/DIBL_filippo.jpeg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}\\
+%
+Capisco bene che se la lunghezza del canale sotto al gate diminuisce ($L_G \downarrow$), automaticamente il numero di elettroni che passa tra S e G aumenterà dato che gli elettroni passano più facilmente attraverso lo "scivolo energetico" che si verrà a creare.
+
+L'accorciamento della lunghezza del canale provoca una tensione di soglia più bassa a causa del campo elettrico non più di sola entità longitudinale .
+\begin{ricevimento}
+    è un riscritto degli appunti, rivedere se combaciano con quanto detto sopra
+\end{ricevimento}
+Servirà minore $V_G$ per avere conduzione. 
+La barriera di potenziale ha più difficoltà a formarsi perchè al diminuire di L si riduce la barriera tra Drain e Source come mostrato in figura:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{Immagini/imm20.11.2023/draininducedbarrierlowering.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+Questo ha due effetti:
+ \begin{itemize}
+     \item Riduzione della tensione di soglia
+     \item Incremento della corrente $I_D$ sotto soglia. 
+ \end{itemize}
+ %
+ Il limite per cui questi fenomeni cominciano a manifestarsi, indicato con $L^{limite}$ è circa $W+3t_{ox}$ Questi fenomeni potrebbero aiutare la riduzione della soglia ma sono del tutto fuori controllo.\\
+%
+ \begin{equation}
+     V_{th}=\dfrac{\sqrt{q\varepsilon qN_A2\phi_p}}{C_{ox}}\left[ 1-\dfrac{W_j}{L_G}\sqrt{1+\dfrac{2x_{dm}}{W_j}}\right]+2 \Phi_p
+ \end{equation}
+ %
+ il termine dentro la quadrà è l'effetto dovuto alal riduzione della lunghezza del canale.
+ Da questa espressione vedo che se la lunghezza $L_G$ è più piccola o comparabile allo spessore della regione di svuotamento in drain $W_j$, la soglia $V_{th}$ si riduce.\\
+
+ in generale posso dire che la riduzione della soglia non è un problema, si riuscirà ad accendere il dispositivo più facilmente. Il grosso e grave difetto è lo spegnimento. La torsione del potenziale complica l'interdizione del dispositivo (Id aumenta se Vth diminuisce , si può compensare con Vbulk)\\ 
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.15\textwidth,angle=90]{Immagini/imm20.11.2023/L_limit.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+%
+\cleardoublepage
+
+ \subsubsection{Meccanismo della quantizzazione della carica}
+ %
+ \begin{exbox}
+     L'argomento è molto simile a quello spiegato negli HEMT. vedere anche li se quì non torna.
+ \end{exbox}
+\begin{tikzpicture}
+\draw[dashed](0,0) node[]{$E_{Fv}^{Me}$}--(1,0);
+    %disegno ossido
+    \draw[dashed](1,6)--(1,-4.5-2.5);
+    \draw[dashed](2.5,6)--(2.5,-4.5-2.5);
+    %disegno energia ossido
+    \draw[very thick](1,4)--(2.5,5.5);
+    \draw[very thick](1,-4-2.5)--(2.5,-2.5-2.5);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %disegno bande SC
+    %Ec. Efi, Efp ed Ev
+    \draw[](2.5,1) to [out=80, in=180](5,4)--++ (5,0);
+    \draw[](2.5,-1.5) to [out=80, in=180](5,1.5)--++ (5,0);
+    \draw[](2.5,0.5)--++ (7,0);
+    \draw[](2.5,-4) to [out=80, in=180](5,-1)--++ (5,0);
+\end{tikzpicture}
+%
+ \begin{exbox}
+     Lo spessore dell'ossido è importante in quanto definisce Cox.
+ \end{exbox}
+%
+ Nella rappresentazione classica si considera che gli elettroni liberi nel canale siano per lo più concentrati all'interfaccia tra ossido e semiconduttore ottenendo una densità di carica massima sulla superfice che poi decresce nella direzione del bulk.\\
+ In realtà il vero andamento della densità di carica non è questo poichè bisogna considerare tutte le osservazioni fatte riguardo alla teoria quantistica e alle funzioni d'onda.
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        %distribuzione
+         \draw[-latex] (8,-7.5) --++ (7,0);
+         \draw[latex-] (8,-3.5) --++ (0,-4);
+         %disegno concentrazione
+         \draw(8,-7.5).. controls (8.25,-7.75) and (8.7,-4)..(8.7,-4);
+         \draw(8.7,-4).. controls (9,-2) and (9.1,-7.0)..(10.1,-7.2)..controls (10.1,-7.2) and (11,-7.45).. (12.5,-7.4);
+    \end{tikzpicture}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+%
+ La flessione delle bande energetiche nei pressi dell' interfaccia produce un qualcosa che assomiglia molto alla barriera. All'interno si avranno livelli energetici ed avranno una probabilità di essere occupati dagli elettroni e questo dipende dalla distanza dal livello di fermi. ogni livello conterrà degli elettroni liberi del canale.
+ La vera distribuzione di cariche dipende quindi dalla probabilità della posizione degli elettroni, definita come:
+ %
+ \begin{equation}
+     P(a \leq x \leq b) = \int_{a}^{b} |\psi(x)|^2 \,dx
+ \end{equation}
+ %
+ Questa probabilità assume la forma mostrata nella prima figura e questo implica che la concentrazione di carica massima si ha in una posizione traslata di una quantità $\nabla t_{ox}$ verso destra. visivamente posso dire che sarà all'incirca nel mezzo della curvatura.\\
+ In sostanza quello a cui voglio arrivare è che la massima concentrazione di carica non è più nel punto $t_{ox}$ ma nel punto $t_{ox}+\nabla t_{ox}$.
+ %
+ \begin{equation}
+     C_{ox}= A \dfrac{\varepsilon_{ox}}{t_{ox}+\nabla t_{ox}}
+ \end{equation}
+ %
+ dove $\nabla t_{ox}$ è calcolata da una formula empirica:
+ %
+ \begin{equation}
+     \nabla t_{ox}=6,2\cdot 10^{-5} \cdot \left( \dfrac{V_{GS}+V_T}{t_{ox}}\right)^{-0,4}
+ \end{equation}
+ %
+ Dove $t_{ox}$ è dell'ordine dei nm.\\
+ Questo implica che la capacità $C_{ox}$ in realtà è più piccola di quello che credevo comportando una catena di altre implicazioni:
+ %
+ \begin{enumerate}
+     \item La carica nel canale $Q_n$ è minore;
+     \item La corrente $I_{DS}$ è minore;
+     \item la transconduttanza $gm$ è minore;
+     \item la frequenza $f_t$ è minore
+     \item il tempo di commutazione è maggiore
+ \end{enumerate}
+ %
+ E' mio interesse fare in modo che $C_{ox}$ sia sufficentemente grande per risolvere tutta la lista di problemi visti sopra. Tuttavia lo scaling provoca una naturale diminuzione della $C_{ox}$, cosa che a me non piace. La soluzione quindi è diminuire ulteriormente $t_{ox}$
+ %
+  \begin{equation}
+     C_{ox} = \underbrace{L_G\downarrow \cdot W \downarrow }_{area} \cdot \dfrac{\varepsilon_{ox}}{t_{ox}\downarrow}
+ \end{equation}
+ %
+ In questo modo ottengo:
+ %
+ \begin{itemize}
+     \item \textbf{Corrente $I_{DS}$ maggiore};
+     \item \textbf{Tempo di commutazione è minore}
+     \item \textbf{Soglia $V_{th}$ sufficentemente elevata (si evita l'Induced Barrier Lowering)}
+     \begin{exbox}
+         questo diminuisce perdite dovute al fatto che $V_G$ non riesce più a controllare correttamente l'accensione del mosfet a canale corto, inserire meglio
+     \end{exbox}
+ \end{itemize}
+ %
+\paragraph{osservazioni su Cox e tox}\mbox{}\\
+ Scalare il mosfet significa diminuire le dimensioni fisiche, comportando la costruzione di gate corti. Fare gate corti implica dover utilizzare ossidi con spessore $t_{ox}$ sempre più piccoli in modo da mantenere il meccanismo di controllo di carica,
+ %
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[rotate around y=0] %-15
+    \draw[dashed]--(1,0);
+    %disegno ossido
+    \draw[very thick](1,4)--(1,-4-2.5);
+    \draw[dashed](2.5,5.5)--(2.5,-2.5-2.5);
+    %disegno energia ossido
+    \draw[very thick](1,4)--(2.5,5.5);
+    \draw[very thick](1,-4-2.5)--(2.5,-2.5-2.5);
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %disegno bande SC
+    %Ec. Efi, Efp ed Ev
+    \draw[very thick](2.5-0.5,1) to [out=70, in=180](7,4)--++ (3,0);
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %disegno frecce
+    \draw[red,-latex,thick](3,3.25) to [out=110, in=90,distance=3cm] (0,2.5);
+    \draw[red,-latex,thick](2.25,2.05) --++ (-2,0);
+    %per bellezza
+    \draw[very thick](1,4)--(1,-4-2.5);
+    %disegno cariche e label
+\end{tikzpicture}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+ Ma utilizzare un ossido con pessore $t_{ox}$ piccolo (e campo elettrico elevato) comporta diverse problematiche:
+ %
+ \begin{itemize}
+     \item corrente di perdita $I_{leakage}$ dovuta ad effetto tunnel (fenomeni di bordo?);
+     \begin{ricevimento}
+         ha un impatto minoritario su Vt?? 
+     \end{ricevimento}
+     \item field emission (fenomeno di bordo?);
+     \item degradazione del dispositivo a lungo termine, specialmente ad alte temperature.
+ \end{itemize}
+
+ La corrente di perdita, definita come $I_{leakage}$, è quel contributo causato quando l'ossido è talmente sottile ed il campo è talmente alto da provocare il breakdown per effetto tunnel (gli elettroni saltano sopra la banda).
+ \begin{ricevimento}
+     controllare se giusto 
+ \end{ricevimento}
+
+ Il secondo caso tratta del caso in cui il campo sia così intenso da permettere agli elettroni di attraversare/ perforare direttamente l'ossido.
+
+ \begin{figure}[hbt!]
+     \centering
+     \includegraphics[width=0.25\textwidth, angle=90]{Immagini/imm20.11.2023/logJgsuVa.jpg}
+     \caption{Caption}
+     \label{fig:enter-label}
+ \end{figure}
+
+ La soluzione immediata è banale: aumentare la dimensione dell'ossido $t_{ox}$ ed arrendersi all'idea di avere un $C_{ox}$ minore con conseguenze sugli altri parametri.\\
+ Un'idea molto più favorita è quella di cambiare il materiale. Infatti, per mantenere lo stesso Cox e non avere un $t_{ox}$ troppo piccolo si può pensare di usare alcune soluzione alternaive al SiO2 come lo HfO2 oppure lo ZrO2 poichè hanno permittività elettrica molto maggiore dell'ossido di silicio $\varepsilon_{ox}^{Q} \gg \varepsilon_{ox}^{SiO2}$..
+ %
+ \begin{equation}
+     \dfrac{\varepsilon_{ox}^{SiO2}}{t_{ox}^{SiO2}}=\dfrac{\varepsilon_{ox}^{Q}}{t_{ox}^{Q}}
+ \end{equation}
+ %
+ Se $\varepsilon_i$ è elevato allora posso mantenere costante il rapporto $\varepsilon_i/t_i$ e quindi compensare la diminuzione dello spessore necessaria ad evitare gli effetti di bordo e le correnti di leakage del gate.
+ grafico
+
+\subsection{Diversi lavori di estrazione: dal metallo al polisilicio n+:}
+%
+nel caso di mosfet ideale ho visto come metallo e Sc avevano lavori di estrazione uguali creando la condizione di flat band in assenza di polarizzazione. in questa condizione la soglia vale:
+\begin{equation}
+    V_{th}= 2 \phi_p + \dfrac{1}{C_{oc}}\cdot \sqrt{2q\varepsilon_s N_A(2\phi_p -V_B)}
+\end{equation}
+ siccome il lavoro di estrazione del metallo e SC non sono uguali, i livelli di fermi sono diversi. Allora metallo e SC cercheranno di rendere uguali i livelli di fermi. facendo questo il SC si incurva verso il basso (non c'è passaggio di carica perchè nel mezzo c'è l'ossido). In sostanza non ho più la condizione di flat band.\\
+ Il risultato finale è che alla fine dovrò prima applicare una tensione sufficente a ristabilire la condizione di flat band e poi dovrò fornire ulteriore tensione per superare la soglia. è come se la tensione di soglia si sommasse alla tensione di flat band:
+ \begin{equation}
+     V_G > V_{th}'=V_{th}+V_{fb}
+ \end{equation}
+ Così facendo compenso la disuguaglianza dei lavori di estrazione.\\
+ un'altra soluzione è sfruttare al tensione di bulk $V_B$ per modulare la tensione di soglia. Empiricamente si ha:
+ \begin{equation}
+     \phi_{ps}=\underbrace{\dfrac{E_G}{2q}-\phi_p}_{|V_{fb}|<0} \approx -0.57 + 2\phi_p
+ \end{equation}
+ \begin{ricevimento}
+     come si è ottenuto? questa è la formula in presenza di polisilicio??
+ \end{ricevimento}
+ Dove $\phi_p$ dipende dal drogaggio del polisilicio n+ ($\phi_p=V_T\ln{(N_A/n_i)}$)
+%
+\cleardoublepage
+ \subsubsection{caso polisilicio}
+ Nella realtà bisogna tenere in considerazione che il gate non è costituito da metallo ma da polisilicio n+ per via della sua facilità di implementazione, conduzione migliore ed alta resistenza in temperatura (è praticamente un contatto ohmico).\\
+ Il ragionamento è esattamente uguale al caso del metallo anche se in realtà ci sarà qualcosa di più complesso. Essendoci un semiconduttore drogato n, si avrà che il lavoro di estrazione da un SCn ad un SCp non sarà più possibile ci sarà una regione di svuotamento (e quindi una capacità) che non posso trascurare perchè influirà molto sulla capacità totale del sistema.\\
+
+ Nel caso in cui vi dovesse essere della carica accumulata nell'ossido e/o livelli di fermi differenti e necessario applicare una tensione $V_G>V_{th}'=V_{th}+V_{fb}$ in modo da compensare $E_{W}^ps \neq E_{W}^{SC}$.
+ Un altro modo per risolvere il problema è applicare una tensione di bulk per modulare la tensione di soglia. \\
+ Empiricamente si ha:
+ \begin{equation}
+     \phi_{ps}=\underbrace{\dfrac{E_G}{2q}-\phi_p}_{|V_{fb}|<0} \approx -0.57 + 2\phi_p
+ \end{equation}
+
+ Dove $\phi_p$ dipende dal drogaggio del polisilicio n+ ($\phi_p=V_T\ln{(N_A/n_i)}$).
+ alterando il drogaggio del bulk o del poly posso aggiungere un termine negativo alla Vt per riportare la condizione di flatband. Quindi posso negare la Vt con un valore negativo che posso usare per regolare il mio caso di scaling.
+ 
+ \paragraph{Capacità di polisilicio}\mbox{}\\
+ \begin{figure}[hbt!]
+     \centering
+     \includegraphics[width=0.25\textwidth, angle=90]{Immagini/imm20.11.2023/Polisilicio, non flat band.jpg}
+     \caption{Caption}
+     \label{fig:enter-label}
+ \end{figure}
+ il polisilicio n+ è a tutti gli effetti un semiconduttore e come tale mostrerà comportamenti capacitivi nella fase di inversione di popolazione. Oltre alla capacità di ossido e di semiconduttore, ora si avrà anche una capacità del polisilicio posta in serie, comportando una generale diminuzione della capacità di ossido effettiva:
+\begin{equation}
+    \dfrac{1}{C_{eff}^{ox}}=\dfrac{1}{C^{ox}}+\dfrac{1}{C^{poly}}+\dfrac{1}{C^{depletion}}
+\end{equation}
+Dal punto di vista dello scaling, avere una capacità $C_{eff}^{ox}<C^{ox}$ è un problema per ragioni precedentemente spiegate.\\
+Durante lo scaling vorrei una tensione di drain sufficientemente bassa in modo da lavorare con campi elettrici costanti e quindi avere una soglia $V_{th}$ bassa facilitando l'attivazione del dispositivo.
+In realtà però devo stare attento a non avere una $v_{th}$ troppo piccola perchè si avrà difficoltà a mandare il transistor in interdizione.\\
+
+
+
+
+\cleardoublepage
+\subsubsection{Corrente di un MOSFET a canale corto}
+Più il MOSFET diventa piccolo, maggiore è il campo elettrico. Infatti, sebbene le tensioni si riducono di un fattore proporzionale a k per mantenere il campo elettrico entro un range di valori, succede che al diminuire della lunghezza di canale ed all'assottigliamento dell'ossido, il valore di $\mathcal{E}(x,y)$ aumenta comunque notevolmente.
+
+Superato un certo valore di campo elettrico critico la velocità di trascinamento (drift) in un semiconduttore non aumenta linearmente in funzione di $\mathcal{E}$ ma comincia a diventare più costante fino a raggiungere il livello di saturazione $v_{sat}$.\\
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.15\textwidth,angle=90]{Immagini/imm20.11.2023/VelocitàSaturazione.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}\\
+%
+Nella figura seguente è mostrata una comparazione tra le caratteristiche del transistor nel caso di basso campo elettrico (figura sinistra) ed alto campo elettrico (figura destra). In quest'ultimo caso quando la velocità di deriva delle cariche satura, la $I_{DS}$ rimane costante rispetto alla tensione.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.55\textwidth]{Immagini/imm20.11.2023/Gatedimensioni.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+%
+Se il campo elettrico è debole allora si ha una situazione diversa. per quanto riguarda la saturazione per una base SHORT lo $V_{DS}^{sat}$ per la quale si ha saturazione circa costante  e vds(L) ma non vgs,(??)\\
+viceversa se Vgs aumenta si sposta la vdsat = vgs-vth\\
+\begin{ricevimento}
+    spiegare sopra
+\end{ricevimento}
+%
+Esistono diversi modelli che legano la velocità al campo elettrico ma quella più diffusa è nella forma:
+\begin{equation}
+    v_d=\dfrac{\mu_0 \mathcal{E}}{\left[1+\left( \dfrac{\mathcal{E}}{\mathcal{E}_C}\right)^n \right]^{\frac{1}{n}}}
+\end{equation}
+Dove:
+\begin{itemize}
+    \item $\mu_0$ è la mobilità degli elettroni in caso di campo elettrico basso.
+    \item $\mathcal{E}_C=\frac{v_{sat}}{\mu_0}$ è il campo elettrico critico oltre il quale la velocità dei portatori è quella di saturazione. 
+    \item $\mathcal{E}$ è il campo elettrico che si avrebbe in direzione y? quello de canale normale longitudinale?
+\end{itemize}
+Dalla precedente equazione si può notare che se  $\mathcal{E} \ll \mathcal{E}_C$, allora $v=\mu_0 \mathcal{E}$ mentre se $\mathcal{E} \gg \mathcal{E}_C$, allora $v=v_{sat}=\mu_0 \mathcal{E}_C$.\\
+Si può usare questa formula ponendo n=1 per calcolare la corrente $I_{DS}$ di un mosfet con semplicità, supponendo anche l'ipotesi di corrente indipendente dalla posizione nel canale:
+\begin{equation}
+    I_{DS}=W\cdot Q\cdot v_d=W\cdot Q\cdot \mu_n(\mathcal{E})\mathcal{E}
+\end{equation}
+In cui sia Q, sia $\mu_n$ dipendono dalla posizione y lungo il canale. sostituendo $\mu_n$ con la formula superiore e $\mathcal{E}=-\frac{dV_{ch}}{dy}$:
+\begin{equation}
+    I_{DS}=W\cdot Q\cdot \dfrac{\mu_0 \cdot \left(-\dfrac{dV_{ch}}{dy}\right)}{1+\left( -\dfrac{dV_{ch}}{dy}\dfrac{1}{\mathcal{E}_C}\right)}
+\end{equation}
+Normalizzando si trova che:
+\begin{equation}
+    I_D=\dfrac{dV_{ch}}{dy}\left( -\dfrac{I_D}{\mathcal{E}}-\mu_0 WQ\right)
+\end{equation}
+Con $Q=-C_{ox}(V_G-V_{th}-V_{ch}(y))$.\\
+Integrando y da 0 al L e $V_{ch}$ da 0 a $V_D$ si avrà:
+\begin{equation}
+    I_D=\dfrac{\mu_0 C_{ox} W}{L\left( 1+\dfrac{V_D}{\mathcal{E}_C L}\right)} \left[ (V_G-V_{th})V_D-\dfrac{V_D^2}{2}\right]
+\end{equation}
+Si ha un termine denominatore che scompare se L è grande.\\
+
+Nel modello semplificato precedente si arrivava in saturazione, ovvero si aveva il massimo $I_D(\frac{dI_D}{dV_D}=0)$ quando $V_D=V_G-V_{th}$, mentre in questo modello si ha in:
+\begin{equation}
+    V_D^{sat}=\mathcal{E}_C L\left[\sqrt{1+\dfrac{2(V_G-V_{th})}{\mathcal{E}_C L}}-1\right]
+\end{equation}
+Si considera il caso in cui $L \rightarrow 0$, ovvero canale corto. si ha:
+\begin{equation}
+    I_D=\dfrac{\mu_0 C_{ox} W \mathcal{E}_C}{V_D} \left[ (V_G-V_{th})V_D-\dfrac{V_D^2}{2}\right]
+\end{equation}
+Se si considera la saturazione si ha:
+\begin{equation}
+    I_D^{sat}=\dfrac{\mu_0 C_{ox} W \mathcal{E}_C}{V_D^{sat}} \left[ (V_G-V_{th})V_D^{sat}-\dfrac{{V_D^{sat}}^2}{2}\right]=\mu_0 C_{ox} W \mathcal{E}_C\left[ (V_G-V_{th})-\dfrac{1}{2}V_D^{sat}\right]
+\end{equation}
+La $V_D^{sat}$ per $L \rightarrow 0$ diventa:
+\begin{equation}
+  V_D^{sat}=\sqrt{2(V_G-V_{th})\mathcal{E}_C L}
+\end{equation}
+Allora:
+\begin{equation}
+    I_D^{sat}=\mu_0 C_{ox} W \mathcal{E}_C \left[ (V_G-V_{th})-\dfrac{\sqrt{2(V_G-V_{th})\mathcal{E}_C L}}{2}\right]
+\end{equation}
+Se $L \rightarrow 0$, allora il secondo termine tra parentesi si può considerare trascurabile:
+\begin{equation}
+    I_D^{sat} \approx \mu_0 C_{ox} W \mathcal{E}_C (V_G-V_{th})
+\end{equation}
+è la corrente per canale corto in saturazione.\\
+Per il canale lungo la corrente in saturazione valeva:
+\begin{equation}
+    I_D^{sat} = \dfrac{\mu_0 C_{ox} W }{2L} (V_G-V_{th})^2
+\end{equation}
+è la corrente per canale lungo in saturazione.\\
+Nei transistor corti si ha una riduzione della corrente a parità di $V_G$. Si ha quindi una compressione delle caratteristiche V-I verso il basso. L'approssimazione fatta nello scaling generalizzato secondo cui $I_{drift}$ aumenta con $\alpha$ non è quindi tanto verificata se si va a fare un analisi approffondita. Inoltre il quale non va mai in pinch-off, ma le cariche vanno  tutte a $v_{sat}$.
+%
+\cleardoublepage
+%
+\subsection{FinFET}
+%
+
+
+
+ %
+ %
+ %
+ \section*{23.11.2023}
+\subsection{CMOS}
+Un CMOS è realizzato come in figura.
+mancano le conenssioni a generatori.
+struttura di un CMOS\\
+\noindent\begin{minipage}{0.35\textwidth}
+    \begin{circuitikz}
+\draw
+% Draw MOSFETs:
+(0,0) node [pigfete,yscale=-1,anchor=S] (M1) {}
+(M1.D) node[nigfete,anchor=D] (M2) {}
+(M1.G)--(M2.G) % The line connecting the gates of the MOSFETs.
+;
+% Draw the power rails:
+\draw($(M1.S)-(2.0,0)$) -- (M1.S) -- ($(M1.S)+(1.2,0)$);
+\draw($(M2.S)-(2.0,0)$) -- (M2.S) -- ($(M2.S)+(1.2,0)$);
+% Input and output nodes:
+%\node (I) at ($0.5*(M2.G)+0.5*(M1.G)$) {}; % The mid-point between the gates.
+\coordinate (I) at ($0.5*(M2.G)+0.5*(M1.G)$); % The mid-point between the gates.
+%\node[outer sep=0pt,inner sep=0pt] (O) at (M1.D) {}; % The point at which the drains of the MOSFETs are conneted.
+\coordinate (O) at (M1.D); % The point at which the drains of the MOSFETs are conneted.
+% The Input and output lines.
+\draw(I) -- ++ (-0.8,0);
+\draw(O) -- ++ (0.8,0);
+\end{circuitikz}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+    \begin{center}
+    \begin{circuitikz}[scale=0.5]
+        %disegno substrato p
+        \draw(-7,4)--(8,4);
+        \draw(-7,0)--(8,0);
+        % disegno NMOS:
+        % bulck NMOS
+        \draw(-7,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-6.5,4) to [short,-*]++ (0,0.5) node[right]{B};
+        % source NMOS
+        \draw(-5,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-4.5,4) to [short,-*]++ (0,0.5) node[left]{S};
+        % gate nMOS
+        \draw(-4,4.5)--++ (2,0)--++ (0,+0.5)--++ (-2,0) -- cycle{};
+        \draw(-3,5) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain NMOS
+        \draw(-2,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-1.5,4) to [short,-*]++ (0,0.5) node[right]{D};
+        
+        % disegno substrato n
+        \draw(0.5,4) --++ (7,0) {[rounded corners=18] --++ (0,-2.5) --++ (-7,0)}-- cycle{};
+        % source PMOS
+        \draw(1,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(1.5,4) to [short,-*]++ (0,0.5) node[left]{P};
+        % gate PMOS
+        \draw(2,4.5)--++ (2,0)--++ (0,+0.5)--++ (-2,0) -- cycle{};
+        \draw(3,5) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain PMOS
+        \draw(4,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(4.5,4) to [short,-*]++ (0,0.5) node[right]{D};
+        % bulck PMOS
+        \draw(6,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(6.5,4) to [short,-*]++ (0,0.5) node[right]{B};
+    \end{circuitikz}
+\end{center}
+\end{minipage}
+
+\subsubsection{Non idealità del CMOS}
+la presenza di diversi strati di semiconduttore necessari per creare il CMOS diventano una lama a doppio taglio perchè interagiscono internamente creando componenti parassiti mostrati in figura:
+
+\begin{figure}[h]
+    \centering
+    \begin{circuitikz}[scale=0.75,transform shape]
+        %disegno substrato p
+        \draw(-7,4)--(8,4);
+        \draw(-7,0)--(8,0);
+        % disegno NMOS:
+        % bulck NMOS
+        \draw(-7,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-6.5,4) to [short,-*]++ (0,0.5) node[right]{B};
+        % source NMOS
+        \draw(-5,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-4.5,4) to [short,-*]++ (0,0.5) node[left]{S};
+        % gate nMOS
+        \draw(-4,4.5)--++ (2,0)--++ (0,+0.5)--++ (-2,0) -- cycle{};
+        \draw(-3,5) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain NMOS
+        \draw(-2,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(-1.5,4) to [short,-*]++ (0,0.5) node[right]{D};
+        
+        % disegno substrato n
+        \draw(0.5,4) --++ (7,0) {[rounded corners=18] --++ (0,-2.5) --++ (-7,0)}-- cycle{};
+        % source PMOS
+        \draw(1,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(1.5,4) to [short,-*]++ (0,0.5) node[left]{P};
+        % gate PMOS
+        \draw(2,4.5)--++ (2,0)--++ (0,+0.5)--++ (-2,0) -- cycle{};
+        \draw(3,5) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain PMOS
+        \draw(4,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(4.5,4) to [short,-*]++ (0,0.5) node[right]{D};
+        % bulck PMOS
+        \draw(6,4) --++ (1,0) {[rounded corners=6] --++ (0,-0.5) --++ (-1,0)}-- cycle{};
+        \draw(6.5,4) to [short,-*]++ (0,0.5) node[right]{B};
+        
+        %disegno circuito parassita
+        \draw(-6.5,3.5) 
+        to [R]++ (0,-2.75)
+        to [short,-*]++ (3.5,0) coordinate (b2)
+        to [short]++ (7.5,0) coordinate (c1);
+
+        %disegno i due BJT
+        \draw(b2) --++ (0,0.95) node[npn,anchor=B,rotate=+90,yscale=-1, /tikz/circuitikz/bipoles/length=1.5cm](npn){\ctikzflipy{\rotatebox[]{-90}{T2}}};
+        \draw(c1) --++ (0,1) node[pnp , anchor=C , /tikz/circuitikz/bipoles/length=1.5cm](pnp){T1};
+
+        %unisco i collegamenti
+        \draw(npn.E)--(-4.5,2.60)--(-4.5,3.5);
+        \draw(npn.C)--(pnp.B);
+        \draw(6.5,3.5) to [short](6.5,2.60)
+        to [R]++ (-1,0) to [short,-*](pnp.B);
+        
+    \end{circuitikz}
+    \caption{effetto latch-up di un CMOS}
+    \label{fig:effetto latch-up di un CMOS}
+\end{figure}
+Nelle celle MOS è importante il collegamento di Bulk.( perchè?)\\
+i parassiti meno gravi sono le resistenze ma un grosso problema di queste celle è la creazione di un circuito di latch che mette in corto l'alimentazione quando si verificano le condizioni minime per l'autosostentamento dei BJT parassiti (si crea un feedback positivo).\\
+Questi sono i motivi per cui un CMOS deve essere ben studiato in fase di progettazione. \\
+il substrato è la causa di questi parassiti, quindi una soluzione diretta del problema si ottiene eliminando il substrato. tale metodo viene fatto costruendo i mosfet separatamente e poi conettendoli tra loro. Detta così sembra una soluzione banale perchè potrei pensare di avere un CMOS costruito su breadboard, buttando via il vantaggio delle dimensioni ridotte dei MOS. Però noi cerchiamo sempre di costruire tutto su un unico pezzo di waffer in modo da aumentare l'integrabilità del circuito.
+le soluzioni sono molteplici:
+\begin{enumerate}
+    \item costruire l'nMOS ed il pMOS indipendenti l'uno dall'altro ma sempre connessi sopra un substrato di ossido di silicio (Sio2) chiamato "Buried Oxide";
+    \item Dual gate MOS;
+\end{enumerate}è 
+
+\subsubsection{Buried oxide}
+la presenza dei parassiti si risolve con la tecnica del semicondutor on insulator (SOI) in cui una cella è realizzata come in figura.
+\begin{figure}[hbt!]
+    \centering
+    \begin{circuitikz}[scale=0.75, transform shape]
+        %disegno substrato p
+        \draw(-4.5,2) rectangle(5,0) node[pos=.5]{\large{BURIED OXIDE ($S_iO_2$)}};
+        
+        % disegno NMOS:
+        % source NMOS
+        \draw(-3,2) rectangle ++ (0.5,0.5) node[pos=.5]{\footnotesize{$n^+$}};
+        \draw(-2.75,2.5) to [short,-*]++ (0,0.5) node[left]{S};
+        % gate nMOS
+        \draw(-2.5,2.75) rectangle ++ (1.5,0.25);
+        \draw(-1.75,3) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain NMOS
+        \draw(-1,2) rectangle ++ (0.5,0.5) node[pos=.5]{\footnotesize{$n^+$}};
+        \draw(-0.75,2.5) to [short,-*]++ (0,0.5) node[right]{D};
+        % strato p 
+        \draw(-2.5,2) rectangle ++ (1.5,0.5) node[pos=.5]{\footnotesize{$p$}};
+        
+        % disegno PMOS:
+        % source PMOS
+        \draw(3,2) rectangle ++ (0.5,0.5) node[pos=.5]{\footnotesize{$p^+$}};
+        \draw(3.25,2.5) to [short,-*]++ (0,0.5) node[right]{S};
+        % gate PMOS
+        \draw(1.5,2.75) rectangle ++ (1.5,0.25);
+        \draw(2.25,3) to [short,-*]++ (0,0.5) node[right]{G};
+        % drain PMOS
+        \draw(1,2) rectangle ++ (0.5,0.5) node[pos=.5]{\footnotesize{$p^+$}};
+        \draw(1.25,2.5) to [short,-*]++ (0,0.5) node[left]{D};
+        % strato n 
+        \draw(1.5,2) rectangle ++ (1.5,0.5) node[pos=.5]{\footnotesize{$n$}};
+        
+    \end{circuitikz}
+    \caption{struttura CMOS SOI}
+    \label{fig:struttura CMOS SOI}
+\end{figure}
+\\%
+in questas struttura :
+\begin{enumerate}
+    \item Si elimina latch parassita;
+    \item Si elimina il DTI;
+    \item Si eliminano le capacità parassite;
+    \item migliora la velocità di commutazione. Questo è il motivo perchè i SOI sono molto usati sistemi veloci se non RF.
+    
+\end{enumerate}
+
+bulk, il problema del latch e si riducono le componenti parassite. Si può realizzare anche un'altra struttura in cui si sostituisce al silicio uno strato di ossido detto buried oxide sotto cui si può relizzare un altro contatto di gate.
+Questo secondo contatto di gate è utile per mosfet con L piccola in quanto aiuta a ridurre il fringing delle linee di campo aiutandolo quindi ad essere più uniforme.\\
+Questo risolve anche il rpoblema del drain-induced barrier lowering.questi transistor prendono in nome di FINFET o DUAL GATE MOS e il gate può anche avvolgere completamente il silicio del substrato su tutti i lati\\
+%
+-----------------------------------------------\\
+E' un'altra versione di transistor utile a limitare la $I_{sub}$.\\
+tutto il mosfet viene fatto aderire sopra un materiale isolante.\\
+figura\\
+Questa è la forma tipica di una cella CMOS in tecnologia SOI.\\
+al posto dell'isolante possono essere utilizzati altri materiali, come ossidi SC-intrinseci o eterogiunzioni alternate a elevato Delta energy gap tra i Sc costituenti (realizzando un super reticolo).\\
+in un dg mosfet grazie alla presenza dei 2 gate è possibile realizzare un controllo di carica estremamente fine (anche perchè i contatti sono simmetrici) nonostante i canali siano stretti.
+\subsection{Induzione delel cariche in un DG-MOSFET}
+figura:\\
+\\
+..\\
+..\\
+La carica che si accumula può essere calcolata attraverso Gauss(risulta essere la carica di inversione).
+\begin{equation}
+    Q_i=
+\end{equation}
+\begin{equation}
+    I_{DS}=..
+\end{equation}
+\begin{equation}
+    I_{DS}=..
+\end{equation}
+Espressione lineare della corrente di drain\\
+figura\\
+\\
+con la precedente struttura
+figura\\
+
+\subsubsection{DUAL GATE MOS}
+\begin{figure}[hbt!]
+    \centering
+    \begin{circuitikz}[scale=0.75, transform shape]
+        %disegno substrato S
+        \draw(-0.5,2.5) rectangle++ (1.5,-2) node[pos=.5]{\large{$Source$}};
+        %disegno substrato p
+        \draw(1,2) rectangle++ (3.5,-1) node[pos=.5]{\large{silicon channel}};
+        %disegno substrato D
+        \draw(4.5,2.5) rectangle++ (1.5,-2) node[pos=.5]{\large{$Drain$}};
+        
+       % strato ossido 
+        \draw(1,2) rectangle ++ (3.5,0.5) node[pos=.5]
+        {\footnotesize{$top oxide$}};
+        \draw(1,1) rectangle ++ (3.5,-0.5) node[pos=.5]
+        {\footnotesize{$bottom oxide$}};
+        
+        % top gate nMOS
+        \draw(-2.5+4.5,2.5) rectangle ++ (1.5,0.25);
+        \draw(-1.75+4.5,2.75) to [short,-*]++ (0,0.5) node[right]{$G_1$};
+        % tbottom gate nMOS
+        \draw(-2.5+4.5,0.5) rectangle ++ (1.5,-0.25);
+        \draw(-1.75+4.5,0.25) to [short,-*]++ (0,-0.5) node[right]{$G_2$};
+    \end{circuitikz}
+    \caption{struttura D2}
+    \label{fig:struttura D2}
+\end{figure}
+riprendiamo il disegno e giriamolo di 90 gradi, inoltre esagererò con le proporzioni
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics{}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+Il diagramma a bande per $V_{GS}>0$ èriportato a destra. quando si applica una differenza di potenziale $V_{GS}>0$ si avrà uno spostamento verso il basso dei lati esterni.\\
+La presenza di un potenziale $\phi(x,y)$ che varia lungo x a causa della vgs e lungo Y a causa del potenziale di canale Vch è legato alla presenza di una carica stoto l'ossido.\\
+L'andamento della corrente nelel due zone è:
+\begin{enumerate}
+    \item Zona lineare:
+        \begin{equation}
+            I_{DS}=\mu \dfrac{\varepsilon_i}{t_i}\dfrac{W}{L}[(V_{GS}-V_{th}-V_{DS}/2)V_{DS}]
+        \end{equation}
+        \begin{equation}
+            V_{th}=\dfrac{2k_BT}{q}\ln{\left[ \dfrac{8 \varepsilon_{si} k_BT}{q^2 n_i}\right]}+ \Delta \phi
+        \end{equation}
+    \item Zona di saturazione.
+        \begin{equation}
+            I_{DS}=
+        \end{equation}
+        in saturazione si ha che una parte di corrente dipende da $V_{DS}$, per ci non sono buoni amplificatori ma come interruttori vanno bene.
+    \item Corrente di sub-treshold($V_{GS}V_{TH}$)
+        \begin{equation}
+            I_{DS}=
+        \end{equation}
+        Questa è importante da conoscere nel caso in cui si usi il mosfer come interruttore. la struttura reali di questi mosfet e riporta a destra
+\end{enumerate}
+
+
+...
+\section{High Electron Mobility Transistor (HEMT)}
+gli HEMT sono l'equivalente MOSFET dell' HBT.\\
+\noindent\begin{minipage}{0.6\textwidth}
+    l' HENT impiega eterogiunzioni allo scopo di aumentare la mobilità degli elettroni nel semiconduttore e di conseguenza al corrente nel canale.\\
+    Innanzitutto ricordo che la mobilità, in generale, un profilo descrescente rispetto alla temperatura., inoltre dipende inversamente dal drogaggio (con $n \alpha N_D$).
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedleft
+   \centering \includegraphics[width=0.7\textwidth]{ImmaginiMOS/mobilità.PNG}
+\end{minipage}
+La mobilità dei portatori non è dipendente solo da T[K] ma anche dal drogaggio: la mobilità aumenta al diminuire del drogaggio e quindi un aumento di quest'ultimo non porta ad un incremento netto della corrente di deriva, infatti ricordo che:
+\begin{equation}
+    J= q \cdot n \cdot \mu_n \cdot \mathcal{E}
+\end{equation}
+Se accade che la concentrazione $n \uparrow$ allora $\mu_n \downarrow$ e quindi la corrente rimane pressochè invariata. tale effetto è valido soprattutto per drogaggi elevati.\\
+Se voglio aumentare la corrente in questa situazione dovrei fare in modo che $\mathcal{E} \uparrow$ ma questo potrebbe portare ad un campo troppo elevato rischiando l'effetto valanga, poichè l'aumento del drogaggio aumenta il numero di livelli in banda proibita che porta ad alcuni problemi come la riduzione del campo elettrico critico da cui dipende l'effetto valanga.\\
+In sostanza io sto cercando una soluzione per avere un drogaggio basso mantenendo $\mu$ sufficientemente elevata. La soluzione è fornita dalle eterogiunzioni.\\
+Questo problema si può risolvere utilizzando il band-gap engeneering gia visto per l'HBT, permettendo di realizzare una struttura (HEMT) che consenta di avere tanti elettroni con poco drogaggio e con una mobilita elevata.
+
+
+Si realizza una struttura come quella in figura.\\
+min 1.27.00 \\
+a fronte di diversi passi reticolari abbiamo diverse
+alcuni lavorano bene con bande dell'infrarosso altri hanno Eg acnora più grande 4eV tipici per applicazioni di potenza. si usa diamante elaborato
+
+

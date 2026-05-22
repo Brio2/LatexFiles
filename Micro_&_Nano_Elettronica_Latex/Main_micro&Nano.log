@@ -1,0 +1,4500 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.20)  22 MAY 2026 18:31
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/vervi/Documents/GitHub/LatexFiles/Micro_&_Nano_Elettronica_Latex/Main_micro&Nano.tex
+(c:/Users/vervi/Documents/GitHub/LatexFiles/Micro_&_Nano_Elettronica_Latex/Main_micro&Nano.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen142
+\pgfutil@tempdimb=\dimen143
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box52
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen146
+\pgf@y=\dimen147
+\pgf@xa=\dimen148
+\pgf@ya=\dimen149
+\pgf@xb=\dimen150
+\pgf@yb=\dimen151
+\pgf@xc=\dimen152
+\pgf@yc=\dimen153
+\pgf@xd=\dimen154
+\pgf@yd=\dimen155
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count270
+\c@pgf@countb=\count271
+\c@pgf@countc=\count272
+\c@pgf@countd=\count273
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count274
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count275
+\pgfsyssoftpath@bigbuffer@items=\count276
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen156
+\pgfmath@count=\count277
+\pgfmath@box=\box53
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count278
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen157
+\pgf@picmaxx=\dimen158
+\pgf@picminy=\dimen159
+\pgf@picmaxy=\dimen160
+\pgf@pathminx=\dimen161
+\pgf@pathmaxx=\dimen162
+\pgf@pathminy=\dimen163
+\pgf@pathmaxy=\dimen164
+\pgf@xx=\dimen165
+\pgf@xy=\dimen166
+\pgf@yx=\dimen167
+\pgf@yy=\dimen168
+\pgf@zx=\dimen169
+\pgf@zy=\dimen170
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen171
+\pgf@path@lasty=\dimen172
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen173
+\pgf@shorten@start@additional=\dimen174
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count279
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen175
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen176
+\pgf@pt@y=\dimen177
+\pgf@pt@temp=\dimen178
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen179
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen180
+\pgf@sys@shading@range@num=\count280
+\pgf@shadingcount=\count281
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box57
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box58
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen181
+\pgf@nodesepend=\dimen182
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen183
+\pgffor@skip=\dimen184
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count282
+\pgfplotmarksize=\dimen185
+)
+\tikz@lastx=\dimen186
+\tikz@lasty=\dimen187
+\tikz@lastxsaved=\dimen188
+\tikz@lastysaved=\dimen189
+\tikz@lastmovetox=\dimen190
+\tikz@lastmovetoy=\dimen191
+\tikzleveldistance=\dimen192
+\tikzsiblingdistance=\dimen193
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count283
+\tikznumberofchildren=\count284
+\tikznumberofcurrentchild=\count285
+\tikz@fig@count=\count286
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count287
+\pgfmatrixcurrentcolumn=\count288
+\pgf@matrix@numberofcolumns=\count289
+)
+\tikz@expandcount=\count290
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tikzmark\tikzlibrarytikzmark.code.tex
+File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking positions in a document
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-11-02 L3 programming layer (loader) 
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count291
+\l__pdf_internal_box=\box63
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+\l__sn_x_dim=\dimen194
+\l__sn_y_dim=\dimen195
+\l__sn_xa_dim=\dimen196
+\l__sn_ya_dim=\dimen197
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box64
+\pgfnodeparttwobox=\box65
+\pgfnodepartthreebox=\box66
+\pgfnodepartfourbox=\box67
+\pgfnodeparttwentybox=\box68
+\pgfnodepartnineteenbox=\box69
+\pgfnodeparteighteenbox=\box70
+\pgfnodepartseventeenbox=\box71
+\pgfnodepartsixteenbox=\box72
+\pgfnodepartfifteenbox=\box73
+\pgfnodepartfourteenbox=\box74
+\pgfnodepartthirteenbox=\box75
+\pgfnodeparttwelvebox=\box76
+\pgfnodepartelevenbox=\box77
+\pgfnodeparttenbox=\box78
+\pgfnodepartninebox=\box79
+\pgfnodeparteightbox=\box80
+\pgfnodepartsevenbox=\box81
+\pgfnodepartsixbox=\box82
+\pgfnodepartfivebox=\box83
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen198
+\pgfdecoratedremainingdistance=\dimen199
+\pgfdecoratedinputsegmentcompleteddistance=\dimen256
+\pgfdecoratedinputsegmentremainingdistance=\dimen257
+\pgf@decorate@distancetomove=\dimen258
+\pgf@decorate@repeatstate=\count292
+\pgfdecorationsegmentamplitude=\dimen259
+\pgfdecorationsegmentlength=\dimen260
+)
+\tikz@lib@dec@box=\box84
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen261
+\pgfarrowlength=\dimen262
+\pgfarrowwidth=\dimen263
+\pgfarrowlinewidth=\dimen264
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count293
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box85
+)
+\tc@llx=\dimen265
+\tc@lly=\dimen266
+\tc@urx=\dimen267
+\tc@ury=\dimen268
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen269
+\adjbox@Height=\dimen270
+\adjbox@Depth=\dimen271
+\adjbox@Totalheight=\dimen272
+\adjbox@pwidth=\dimen273
+\adjbox@pheight=\dimen274
+\adjbox@pdepth=\dimen275
+\adjbox@ptotalheight=\dimen276
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count294
+)
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box86
+\sift@deathcycles=\count295
+\@vwid@loff=\dimen277
+\@vwid@roff=\dimen278
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen279
+\captionmargin=\dimen280
+\caption@leftmargin=\dimen281
+\caption@rightmargin=\dimen282
+\caption@width=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count298
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count299
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/bigints\bigints.sty
+Package: bigints 2010/02/15 Writing big integrals
+Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen287
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen288
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box87
+\strutbox@=\box88
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen289
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count305
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip17
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks33
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks34
+\eqnshift@=\dimen290
+\alignsep@=\dimen291
+\tagshift@=\dimen292
+\tagwidth@=\dimen293
+\totwidth@=\dimen294
+\lineht@=\dimen295
+\@envbody=\toks35
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen296
+\WF@size=\dimen297
+\c@WF@wrappedlines=\count312
+\WF@box=\box89
+\WF@everypar=\toks37
+Package: wrapfig 2003/01/31  v 3.6
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.sty
+Package: circuitikz 2024/08/03{} The CircuiTikz circuit drawing package version 1.7.0
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen298
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen299
+\pgf@curvilinear@length@a=\dimen300
+\pgf@curvilinear@length@b=\dimen301
+\pgf@curvilinear@length@c=\dimen302
+\pgf@curvilinear@length@d=\dimen303
+)
+\pgf@arrows@the@rigidity=\dimen304
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.defines.tex
+\pgf@circ@count@a=\count313
+\pgf@circ@count@b=\count314
+\pgf@circ@count@c=\count315
+\pgf@circ@res@up=\dimen305
+\pgf@circ@res@down=\dimen306
+\pgf@circ@res@zero=\dimen307
+\pgf@circ@res@left=\dimen308
+\pgf@circ@res@right=\dimen309
+\pgf@circ@res@other=\dimen310
+\pgf@circ@res@step=\dimen311
+\pgf@circ@res@temp=\dimen312
+\pgf@circ@Rlen=\dimen313
+\pgf@circ@scaled@Rlen=\dimen314
+\pgfstartlinewidth=\dimen315
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircutils.tex
+\ctikz@scratchbox=\box90
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircpath.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircshapes.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmonopoles.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircbipoles.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctripoles.tex
+\pgf@circ@res@count=\count316
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen316
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count317
+\calc@Bcount=\count318
+\calc@Adimen=\dimen317
+\calc@Bdimen=\dimen318
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count319
+\calc@Cskip=\skip56
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count320
+\l_MT_multwidth_dim=\dimen319
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen320
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen321
+\l_MT_above_intertext_sep=\dimen322
+\l_MT_below_intertext_sep=\dimen323
+\l_MT_above_shortintertext_sep=\dimen324
+\l_MT_below_shortintertext_sep=\dimen325
+\xmathstrut@box=\box91
+\xmathstrut@dim=\dimen326
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen327
+\ar@mcellbox=\box92
+\extrarowheight=\dimen328
+\NC@list=\toks38
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box93
+)
+\TX@col@width=\dimen329
+\TX@old@table=\dimen330
+\TX@old@col=\dimen331
+\TX@target=\dimen332
+\TX@delta=\dimen333
+\TX@cols=\count321
+\TX@ftn=\toks39
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen334
+\enit@toks=\toks40
+\enit@inbox=\box94
+\enit@count@id=\count322
+\enitdp@description=\count323
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalfa.sty) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/mathalpha\mathalpha.sty
+Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
+ `mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe)
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 543.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  U/BOONDOX-cal/m/n --> U/BOONDOX-cal/b/n on input line 545.
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\empheq.sty
+Package: empheq 2024/08/09 v2.17 Emphasizing equations
+\l_EQ_equationtype_int=\count324
+\l_EQ_alignmentmode_int=\count325
+\l_EQ_totalwidth_dim=\dimen335
+\l_EQ_displaywidth_dim=\dimen336
+\l_EQ_temp_linewidth_dim=\dimen337
+\l_EQ_linewidth_dim=\dimen338
+\EmphEqdelimitershortfall=\dimen339
+\EmphEqdelimiterfactor=\count326
+\g_EQ_toptag_height_dim=\dimen340
+\g_EQ_bottomtag_depth_dim=\dimen341
+\g_EQ_toprow_height_dim=\dimen342
+\g_EQ_bottomrow_depth_dim=\dimen343
+\g_EQ_widesttag_dim=\dimen344
+\EQ_mathdisplay_box=\box95
+\EQ_tag_box=\box96
+\g_EQ_temprow_int=\count327
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks41
+\t@pgfplots@tokb=\toks42
+\t@pgfplots@tokc=\toks43
+\pgfplots@tmpa=\dimen345
+\c@pgfplots@coordindex=\count328
+\c@pgfplots@scanlineindex=\count329
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count330
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count331
+\t@pgfplotstable@a=\toks47
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count332
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count333
+\pgfplots@xmin@reg=\dimen346
+\pgfplots@xmax@reg=\dimen347
+\pgfplots@ymin@reg=\dimen348
+\pgfplots@ymax@reg=\dimen349
+\pgfplots@zmin@reg=\dimen350
+\pgfplots@zmax@reg=\dimen351
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/modiagram\modiagram.sty (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/chemgreek\chemgreek.sty
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count334
+\g__chemgreek_tmpa_int=\count335
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen352
+))
+Package: modiagram 2020/11/08 v0.3a easy creation of molecular orbital diagrams
+\l__modiagram_tmpa_dim=\dimen353
+\l__modiagram_AO_width_dim=\dimen354
+\l__modiagram_left_atom_position_dim=\dimen355
+\l__modiagram_inter_atom_distance_dim=\dimen356
+\l__modiagram_molecule_position_dim=\dimen357
+\g__modiagram_min_energy_dim=\dimen358
+\g__modiagram_max_energy_dim=\dimen359
+\l__modiagram_energy_gain_dim=\dimen360
+\l__modiagram_energy_loss_dim=\dimen361
+\l__modiagram_atom_xshift_dim=\dimen362
+\l__modiagram_atom_one_s_dim=\dimen363
+\l__modiagram_atom_left_one_s_dim=\dimen364
+\l__modiagram_atom_right_one_s_dim=\dimen365
+\l__modiagram_atom_two_s_dim=\dimen366
+\l__modiagram_atom_left_two_s_dim=\dimen367
+\l__modiagram_atom_right_two_s_dim=\dimen368
+\l__modiagram_atom_two_p_dim=\dimen369
+\l__modiagram_atom_left_two_p_dim=\dimen370
+\l__modiagram_atom_right_two_p_dim=\dimen371
+\l__modiagram_atom_px_shift_dim=\dimen372
+\l__modiagram_atom_py_shift_dim=\dimen373
+\l__modiagram_atom_pz_shift_dim=\dimen374
+\l__modiagram_molecule_one_sigma_dim=\dimen375
+\l__modiagram_molecule_one_sigmas_dim=\dimen376
+\l__modiagram_molecule_two_sigma_dim=\dimen377
+\l__modiagram_molecule_two_sigmas_dim=\dimen378
+\l__modiagram_molecule_two_psigma_dim=\dimen379
+\l__modiagram_molecule_two_psigmas_dim=\dimen380
+\l__modiagram_molecule_two_ppi_dim=\dimen381
+\l__modiagram_molecule_two_ppis_dim=\dimen382
+\l__modiagram_AO_dim=\dimen383
+\l__modiagram_AO_position_dim=\dimen384
+\l__modiagram_AO_px_shift_dim=\dimen385
+\l__modiagram_AO_py_shift_dim=\dimen386
+\l__modiagram_AO_pz_shift_dim=\dimen387
+\g__modiagram_AO_name_int=\count336
+\l_energy_axis_dim=\dimen388
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks48
+\verbatim@line=\toks49
+\verbatim@in@stream=\read3
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count337
+)
+\tcb@titlebox=\box97
+\tcb@upperbox=\box98
+\tcb@lowerbox=\box99
+\tcb@phantombox=\box100
+\c@tcbbreakpart=\count338
+\c@tcblayer=\count339
+\c@tcolorbox@number=\count340
+\l__tcobox_tmpa_box=\box101
+\l__tcobox_tmpa_dim=\dimen389
+\tcb@temp=\box102
+\tcb@temp=\box103
+\tcb@temp=\box104
+\tcb@temp=\box105
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
+\c@tcbrastercolumn=\count341
+\c@tcbrasterrow=\count342
+\c@tcbrasternum=\count343
+\c@tcbraster=\count344
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box106
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box107
+\tcb@totalupperbox=\box108
+\tcb@totallowerbox=\box109
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
+\tcbfitdim=\dimen390
+\tcb@lowerfitdim=\dimen391
+\tcb@upperfitdim=\dimen392
+\tcb@cur@hbadness=\count345
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count346
+\lst@gtempboxa=\box110
+\lst@token=\toks50
+\lst@length=\count347
+\lst@currlwidth=\dimen393
+\lst@column=\count348
+\lst@pos=\count349
+\lst@lostspace=\dimen394
+\lst@width=\dimen395
+\lst@newlines=\count350
+\lst@lineno=\count351
+\lst@maxwidth=\dimen396
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count352
+\lst@skipnumbers=\count353
+\lst@framebox=\box111
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
+)
+\c@tcblisting=\count354
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.4.1'
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.4.1'
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count355
+\Gm@cntv=\count356
+\c@Gm@tempcnt=\count357
+\Gm@bindingoffset=\dimen397
+\Gm@wd@mp=\dimen398
+\Gm@odd@mp=\dimen399
+\Gm@even@mp=\dimen400
+\Gm@layoutwidth=\dimen401
+\Gm@layoutheight=\dimen402
+\Gm@layouthoffset=\dimen403
+\Gm@layoutvoffset=\dimen404
+\Gm@dimlist=\toks51
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+) (Main_micro&Nano.aux (1_Ripasso.aux) (2_Fisica_dei_semiconduttori.aux
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter_label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter_label' multiply defined.
+
+) (3_Transistor_BJT.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:sezione BJT' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+) (4_Transistor_MOS.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+) (5_Eterogiunzioni.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+) (6_Scaling.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+) (7_Alte_iniezioni.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:enter-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+))
+\openout1 = `Main_micro&Nano.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count358
+\scratchdimen=\dimen405
+\scratchbox=\box112
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen406
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks53
+) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\Hy@linkcounter=\count364
+LaTeX Info: Redefining \[ on input line 151.
+LaTeX Info: Redefining \] on input line 151.
+
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
+
+
+Package chemgreek Info: Activating mapping `default' on line 151.
+
+\c@lstlisting=\count365
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks54
+\inpenc@posthook=\toks55
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(42.67912pt, 681.15898pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=681.15898pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-66.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 153.
+(C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 153.
+ (C:\Users\vervi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+No file Main_micro&Nano.toc.
+\tf@toc=\write4
+\openout4 = `Main_micro&Nano.toc'.
+
+
+
+[1
+
+{C:/Users/vervi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+\openout2 = `1_Ripasso.aux'.
+
+ (1_Ripasso.tex
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 10.0pt on input line 13.
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 7.0pt on input line 13.
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 5.0pt on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+
+ []
+
+
+
+[2
+
+]
+
+[3]
+<Immagini_Micro&Nano/Imm_1_Ripasso/spin.png, id=60, 768.37062pt x 555.57562pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/spin.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/spin.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/spin.png  used on input line 114.
+(pdftex.def)             Requested size: 236.01561pt x 170.64986pt.
+
+
+[4
+
+ <./Immagini_Micro&Nano/Imm_1_Ripasso/spin.png>]
+
+[5])
+\openout2 = `2_Fisica_dei_semiconduttori.aux'.
+
+ (2_Fisica_dei_semiconduttori.tex
+
+LaTeX Warning: File `Immagini_Micro&Nano/Imm_1_Ripasso/Andamento dell'energia potenziale in un atomo.png' not found on input line 85.
+
+
+2_Fisica_dei_semiconduttori.tex:85: Package pdftex.def Error: File `Immagini_Micro&Nano/Imm_1_Ripasso/Andamento dell'energia potenziale in un atomo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 ...o dell'energia potenziale in un atomo.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[6
+
+
+
+
+]
+<Immagini_Micro&Nano/Imm_1_Ripasso/Buca di potenziale di altezza infinita.png, id=74, 149.05687pt x 129.98563pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/Buca di potenziale di altezza infinita.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/Buca di potenziale di altezza infinita.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/Buca di potenziale di altezza infinita.png  used on input line 105.
+(pdftex.def)             Requested size: 110.18332pt x 96.08669pt.
+
+
+[7 <./Immagini_Micro&Nano/Imm_1_Ripasso/Buca di potenziale di altezza infinita.png>]
+<Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 3D.png, id=82, 217.31187pt x 143.03438pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 3D.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 3D.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 3D.png  used on input line 152.
+(pdftex.def)             Requested size: 217.31133pt x 143.03401pt.
+
+
+LaTeX Warning: File `Immagini_Micro&Nano/Imm_1_Ripasso/Andamento dell'energia potenziale in un solido.png' not found on input line 163.
+
+
+2_Fisica_dei_semiconduttori.tex:163: Package pdftex.def Error: File `Immagini_Micro&Nano/Imm_1_Ripasso/Andamento dell'energia potenziale in un solido.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 ...dell'energia potenziale in un solido.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 2D.png, id=83, 230.8625pt x 75.78313pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 2D.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 2D.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 2D.png  used on input line 174.
+(pdftex.def)             Requested size: 230.86192pt x 75.78293pt.
+
+
+[8 <./Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 3D.png>]
+<Immagini_Micro&Nano/Imm_1_Ripasso/Bande di energie nel caso isolato VS solido.png, id=88, 342.27875pt x 163.10938pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/Bande di energie nel caso isolato VS solido.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/Bande di energie nel caso isolato VS solido.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/Bande di energie nel caso isolato VS solido.png  used on input line 210.
+(pdftex.def)             Requested size: 342.2779pt x 163.10896pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--217
+
+ []
+
+
+
+[9 <./Immagini_Micro&Nano/Imm_1_Ripasso/Potenziale periodico 2D.png>]
+<Immagini_Micro&Nano/Imm_1_Ripasso/bande di energia.png, id=93, 313.17pt x 170.13562pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/bande di energia.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/bande di energia.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/bande di energia.png  used on input line 243.
+(pdftex.def)             Requested size: 313.16922pt x 170.1352pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+
+
+[10 <./Immagini_Micro&Nano/Imm_1_Ripasso/Bande di energie nel caso isolato VS solido.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
+
+ []
+
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 9.0pt on input line 280.
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 6.0pt on input line 280.
+
+
+[11 <./Immagini_Micro&Nano/Imm_1_Ripasso/bande di energia.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 333--528
+
+ []
+
+
+
+[12]
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
+
+ []
+
+<Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione di onda piana.png, id=112, 486.31688pt x 360.34625pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione di onda piana.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione di onda piana.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione di onda piana.png  used on input line 548.
+(pdftex.def)             Requested size: 183.56879pt x 136.01476pt.
+<Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione 3D onda piana.png, id=113, 376.90813pt x 372.39125pt>
+File: Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione 3D onda piana.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione 3D onda piana.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione 3D onda piana.png  used on input line 555.
+(pdftex.def)             Requested size: 140.3738pt x 138.69176pt.
+
+
+[14
+
+ <./Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione di onda piana.png> <./Immagini_Micro&Nano/Imm_1_Ripasso/rappresentazione 3D onda piana.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 591--621
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--621
+
+ []
+
+
+
+[15]
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 749--755
+
+ []
+
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/densit√† di stati.PNG, id=126, 149.05687pt x 182.6825pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/densit√† di stati.PNG Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/densit√† di stati.PNG>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/densit√† di stati.PNG  used on input line 761.
+(pdftex.def)             Requested size: 149.0565pt x 182.68204pt.
+
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 801--813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--824
+
+ []
+
+
+
+[18 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/densit√† di stati.PNG>]
+Overfull \hbox (4.15007pt too wide) in paragraph at lines 838--842
+\OT1/cmr/m/n/10 Tuttavia posso fare l'approssimazione di $\OML/cmm/m/it/10 k$ \OT1/cmr/m/n/10 suf-fi-cien-te-mente pic-colo ($\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10 ^^Y \OT1/cmr/m/n/10 0$) in modo da sem-pli-fi-care l'andamento
+ []
+
+
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 876--877
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--885
+
+ []
+
+
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 968--1005
+
+ []
+
+
+
+[21]
+
+[22]
+
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1122
+
+ []
+
+
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1149--1157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1167
+
+ []
+
+Missing character: There is no ; in font nullfont!
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/fermi dirac.png, id=155, 208.27812pt x 166.12062pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/fermi dirac.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/fermi dirac.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/fermi dirac.png  used on input line 1199.
+(pdftex.def)             Requested size: 208.2776pt x 166.12021pt.
+
+
+[25]
+
+[26 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/fermi dirac.png>]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/stati, distribuzione, energia.png, id=166, 262.48062pt x 196.23312pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/stati, distribuzione, energia.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/stati, distribuzione, energia.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/stati, distribuzione, energia.png  used on input line 1206.
+(pdftex.def)             Requested size: 262.47998pt x 196.23262pt.
+
+
+[27 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/stati, distribuzione, energia.png>]
+
+[28
+
+
+]
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1365
+
+ []
+
+
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1506--1512
+
+ []
+
+
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1535
+
+ []
+
+
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1566--1571
+
+ []
+
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/2.png, id=190, 265.74281pt x 175.40532pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/2.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/2.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/2.png  used on input line 1572.
+(pdftex.def)             Requested size: 199.30661pt x 131.55365pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1591
+
+ []
+
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/3.png, id=191, 422.32782pt x 301.8778pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/3.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/3.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/3.png  used on input line 1601.
+(pdftex.def)             Requested size: 232.281pt x 166.0333pt.
+
+
+[33 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/2.png>]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/5.png, id=196, 375.65344pt x 304.88907pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/5.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/5.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/5.png  used on input line 1607.
+(pdftex.def)             Requested size: 206.61002pt x 167.6895pt.
+
+
+[34 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/3.png> <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/5.png>]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/grafico relazione di einstein.png, id=202, 221.82875pt x 175.15437pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/grafico relazione di einstein.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/grafico relazione di einstein.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/grafico relazione di einstein.png  used on input line 1652.
+(pdftex.def)             Requested size: 221.82819pt x 175.15395pt.
+
+
+[35 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/grafico relazione di einstein.png>]
+
+[36
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1779--1780
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1781--1783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1783--1785
+
+ []
+
+
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1819--1820
+
+ []
+
+
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1854--1855
+
+ []
+
+
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1923--1978
+
+ []
+
+
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 2042--2052
+
+ []
+
+
+
+[41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2054--2055
+
+ []
+
+
+
+[42]
+Overfull \hbox (26.2037pt too wide) in paragraph at lines 2069--2069
+[]\OT1/cmr/m/n/5 lib.Ghione.pg: 
+ []
+
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 2064--2072
+$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2074--2116
+
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 2119--2126
+\OT1/cmr/m/n/10 seguenze; ri-cordo che le due zone sono elet-tri-ca-mente
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 2119--2126
+\OT1/cmr/m/n/10 neu-tre, cio^^Re per ogni elet-trone (la-cuna) nella zona N
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2119--2126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2174--2175
+
+ []
+
+
+
+[43
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2220--2223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2229--2231
+
+ []
+
+
+
+[44]
+
+[45]
+
+[46
+
+]
+
+[47
+
+]
+
+[48
+
+]
+
+[49]
+
+[50]
+
+[51]
+Overfull \hbox (22.87183pt too wide) in paragraph at lines 2734--2735
+ [] 
+ []
+
+
+
+[52
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2799--2801
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2802--2805
+
+ []
+
+
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 2812--2813
+
+ []
+
+
+
+[54]
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 2908--2909
+
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+
+[55
+
+]
+Missing character: There is no [ in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 3063--3070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3094--3096
+
+ []
+
+\absvshift=\dimen407
+\absvshift=\dimen408
+\absvshift=\dimen409
+
+Underfull \hbox (badness 10000) in paragraph at lines 3134--3186
+
+ []
+
+
+
+[57]
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 3187--3189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3195--3197
+
+ []
+
+
+
+[59
+
+]
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ; in font nullfont!
+\absvshift=\dimen410
+\absvshift=\dimen411
+\absvshift=\dimen412
+
+
+[60]
+
+[61]
+
+[62
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3428--3429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3430--3432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3490--3491
+
+ []
+
+
+
+[63
+
+]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/Effetto valanga.png, id=298, 327.2225pt x 249.93375pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/Effetto valanga.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/Effetto valanga.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/Effetto valanga.png  used on input line 3531.
+(pdftex.def)             Requested size: 236.01561pt x 180.26869pt.
+
+
+[64]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/condizioni al contorno per generazione a valanga.png, id=302, 242.40562pt x 145.04187pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/condizioni al contorno per generazione a valanga.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/condizioni al contorno per generazione a valanga.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/condizioni al contorno per generazione a valanga.png  used on input line 3561.
+(pdftex.def)             Requested size: 242.40501pt x 145.0415pt.
+
+
+[65 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/Effetto valanga.png> <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/condizioni al contorno per generazione a valanga.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3572--3575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3606--3608
+
+ []
+
+
+
+[66]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3653.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3653.
+
+Missing character: There is no ∞ in font cmr7!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3658.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3658.
+
+Missing character: There is no ∞ in font cmr7!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3677.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3677.
+
+Missing character: There is no ∞ in font cmr7!
+
+Overfull \hbox (2.25874pt too wide) in paragraph at lines 3681--3682
+[][] 
+ []
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3693.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 3693.
+
+Missing character: There is no ∞ in font cmr10!
+
+
+[67
+
+]
+
+[68
+
+]
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 3783--3785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3792--3798
+
+ []
+
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione MeSC.PNG, id=321, 204.765pt x 207.77625pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione MeSC.PNG Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione MeSC.PNG>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione MeSC.PNG  used on input line 3803.
+(pdftex.def)             Requested size: 141.61081pt x 143.70181pt.
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzioneMeSCn.PNG, id=322, 245.41687pt x 80.55093pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzioneMeSCn.PNG Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzioneMeSCn.PNG>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzioneMeSCn.PNG  used on input line 3812.
+(pdftex.def)             Requested size: 245.41626pt x 80.55074pt.
+
+
+[70
+
+ <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione MeSC.PNG> <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzioneMeSCn.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 3868--3871
+
+ []
+
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 4010--4011
+
+ []
+
+
+
+[71]
+
+[72]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va negativa sul metallo.png, id=334, 204.01219pt x 88.07906pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va negativa sul metallo.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va negativa sul metallo.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va negativa sul metallo.png  used on input line 4078.
+(pdftex.def)             Requested size: 204.01169pt x 88.07883pt.
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va positiva sul metallo.png, id=335, 201.75375pt x 109.91063pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va positiva sul metallo.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va positiva sul metallo.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va positiva sul metallo.png  used on input line 4083.
+(pdftex.def)             Requested size: 201.75325pt x 109.91034pt.
+
+
+[73
+
+ <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va negativa sul metallo.png> <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione ohmica SCn-Me con Va positiva sul metallo.png>]
+<Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione radrizzante MeSCp.png, id=342, 243.15843pt x 210.03468pt>
+File: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione radrizzante MeSCp.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione radrizzante MeSCp.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione radrizzante MeSCp.png  used on input line 4102.
+(pdftex.def)             Requested size: 243.15784pt x 210.03416pt.
+
+
+[74 <./Immagini_Micro&Nano/Imm_2_Fisica_dei_semiconduttori/giunzione radrizzante MeSCp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 4110--4148
+
+ []
+
+
+
+[75
+
+]
+
+[76]
+
+2_Fisica_dei_semiconduttori.tex:4257: Package empheq Error: You cannot use \intertext inside the `empheq'
+(empheq)                environment, as `empheq' creates an unbreakable box.
+
+See the empheq package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4257 \end{align}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+2_Fisica_dei_semiconduttori.tex:4257: Package empheq Error: You cannot use \intertext inside the `empheq'
+(empheq)                environment, as `empheq' creates an unbreakable box.
+
+See the empheq package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4257 \end{align}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ; in font nullfont!
+
+
+[77
+
+])
+\openout2 = `3_Transistor_BJT.aux'.
+
+ (3_Transistor_BJT.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Overfull \hbox (23.3037pt too wide) in paragraph at lines 54--55
+[][] 
+ []
+
+
+Overfull \hbox (23.30371pt too wide) in paragraph at lines 83--84
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
+
+ []
+
+
+
+[78
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+
+[79]
+Overfull \hbox (7.30092pt too wide) in paragraph at lines 225--226
+\OT1/cmr/m/n/10 giun-zione base emet-ti-tore. \OT1/cmr/bx/n/10 ^^Re una com-po-nente in-desider-ata\OT1/cmr/m/n/10 /parassita perch^^Rencontribuisce all'aumento
+ []
+
+
+
+[80
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
+
+ []
+
+
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 345--347
+
+ []
+
+
+
+[82]
+<Immagini_Micro&Nano/Imm_3_Transistor_BJT/BJTNPN.png, id=372, 198.7425pt x 293.59688pt>
+File: Immagini_Micro&Nano/Imm_3_Transistor_BJT/BJTNPN.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_3_Transistor_BJT/BJTNPN.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_3_Transistor_BJT/BJTNPN.png  used on input line 399.
+(pdftex.def)             Requested size: 198.742pt x 293.59615pt.
+
+
+[83
+
+]
+
+[84 <./Immagini_Micro&Nano/Imm_3_Transistor_BJT/BJTNPN.png>]
+<Immagini_Micro&Nano/Imm_3_Transistor_BJT/polarizzazBJTRAD.png, id=380, 1066.98625pt x 2766.335pt>
+File: Immagini_Micro&Nano/Imm_3_Transistor_BJT/polarizzazBJTRAD.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_3_Transistor_BJT/polarizzazBJTRAD.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_3_Transistor_BJT/polarizzazBJTRAD.png  used on input line 414.
+(pdftex.def)             Requested size: 110.18332pt x 285.64061pt.
+<Immagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png, id=381, 1691.31876pt x 4095.3pt>
+File: Immagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png  used on input line 416.
+(pdftex.def)             Requested size: 110.18332pt x 266.76625pt.
+
+
+[85
+
+ <./Immagini_Micro&Nano/Imm_3_Transistor_BJT/polarizzazBJTRAD.png> <./Immagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 513--517
+
+ []
+
+
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 524--527
+
+ []
+
+
+
+[87]
+
+[88]
+
+LaTeX Warning: Command \textemdash invalid in math mode on input line 727.
+
+
+
+[89]
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 805--807
+
+ []
+
+
+
+[91
+
+]
+<Immagini_Micro&Nano/Imm_3_Transistor_BJT/npn monodimensionale.png, id=405, 310.761pt x 197.538pt>
+File: Immagini_Micro&Nano/Imm_3_Transistor_BJT/npn monodimensionale.png Graphic file (type png)
+<use Immagini_Micro&Nano/Imm_3_Transistor_BJT/npn monodimensionale.png>
+Package pdftex.def Info: Immagini_Micro&Nano/Imm_3_Transistor_BJT/npn monodimensionale.png  used on input line 811.
+(pdftex.def)             Requested size: 236.01561pt x 150.02794pt.
+
+
+[92 <./Immagini_Micro&Nano/Imm_3_Transistor_BJT/npn monodimensionale.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 841--843
+
+ []
+
+
+LaTeX Warning: File `ImmaginiImmagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png' not found on input line 873.
+
+
+3_Transistor_BJT.tex:873: Package pdftex.def Error: File `ImmaginiImmagini_Micro&Nano/Imm_3_Transistor_BJT/caratteristicaBJTRAD.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.873 ..._Transistor_BJT/caratteristicaBJTRAD.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 886--888
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm23.10.2023/effetto Early.png' not found on input line 939.
+
+
+3_Transistor_BJT.tex:939: Package pdftex.def Error: File `Immagini/imm23.10.2023/effetto Early.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.939 ...Immagini/imm23.10.2023/effetto Early.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[94]
+Overfull \hbox (3.7105pt too wide) in paragraph at lines 943--944
+\OT1/cmr/m/n/10 dei por-ta-tori ini-et-tati dall'emettitore con por-ta-tori mag-gior-i-tari nella base. In al-tri ter-mini, all'aumentare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+
+
+[95]
+Underfull \hbox (badness 4353) in paragraph at lines 950--951
+[]\OT1/cmr/m/n/10 Parto dalla figura dei por-ta-tori mi-nori-tari
+ []
+
+
+Overfull \hbox (27.4711pt too wide) in paragraph at lines 1036--1037
+[][] 
+ []
+
+
+LaTeX Warning: File `Immagini/imm23.10.2023/circuitoEarly.jpg' not found on input line 1044.
+
+
+3_Transistor_BJT.tex:1044: Package pdftex.def Error: File `Immagini/imm23.10.2023/circuitoEarly.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1044 ...mmagini/imm23.10.2023/circuitoEarly.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm23.10.2023/gummel ideale.png' not found on input line 1055.
+
+
+3_Transistor_BJT.tex:1055: Package pdftex.def Error: File `Immagini/imm23.10.2023/gummel ideale.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1055 ...mmagini/imm23.10.2023/gummel ideale.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1061
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm23.10.2023/andamento di beta.png' not found on input line 1065.
+
+
+3_Transistor_BJT.tex:1065: Package pdftex.def Error: File `Immagini/imm23.10.2023/andamento di beta.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1065 ...ini/imm23.10.2023/andamento di beta.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm23.10.2023/diagramma di gummel.png' not found on input line 1072.
+
+
+3_Transistor_BJT.tex:1072: Package pdftex.def Error: File `Immagini/imm23.10.2023/diagramma di gummel.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1072 ...i/imm23.10.2023/diagramma di gummel.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[96
+
+]
+Overfull \hbox (8.46921pt too wide) in paragraph at lines 1080--1081
+[]\OT1/cmr/m/n/10 Per alta $\OML/cmm/m/it/10 V[]$ \OT1/cmr/m/n/10 pu^^Ro di-venire sig-ni-fica-tivo l'effetto della re-sistenza paras-sita di base, posta in se-rie all'elettrodo
+ []
+
+
+
+[97]
+
+[98]
+
+[99]
+Overfull \hbox (10.12457pt too wide) in paragraph at lines 1108--1111
+[]$\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[]$ \OT1/cmr/m/n/10 perch^^Re si con-sid-era l'approssimazione di dro-gag-gio del col-let-tore di-verso da quello dell'emettitore.
+ []
+
+
+LaTeX Warning: File `Immagini/imm26.10.2023/drogaggioBJT.png' not found on input line 1112.
+
+
+3_Transistor_BJT.tex:1112: Package pdftex.def Error: File `Immagini/imm26.10.2023/drogaggioBJT.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1112 ...Immagini/imm26.10.2023/drogaggioBJT.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[100
+
+]
+Missing character: There is no ; in font nullfont!
+
+
+[101]
+Missing character: There is no ; in font nullfont!
+
+LaTeX Warning: File `Immagini/imm26.10.2023/circuiti equivalenti ebers moll in tutte le config.png' not found on input line 1305.
+
+
+3_Transistor_BJT.tex:1305: Package pdftex.def Error: File `Immagini/imm26.10.2023/circuiti equivalenti ebers moll in tutte le config.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1305 ...lenti ebers moll in tutte le config.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1347
+
+ []
+
+
+
+[102
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1358
+
+ []
+
+
+
+[103]
+
+[104
+
+]
+
+LaTeX Warning: Command \textemdash invalid in math mode on input line 1464.
+
+
+
+[105]
+
+[106]
+
+[107]
+
+[108
+
+]
+
+[109]
+
+[110
+
+]
+
+[111]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/transitorio ON-OFF.png' not found on input line 1900.
+
+
+3_Transistor_BJT.tex:1900: Package pdftex.def Error: File `Immagini/imm30.10.2023/transitorio ON-OFF.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1900 ...ni/imm30.10.2023/transitorio ON-OFF.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[112]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/transitorio ON-OFF.png' not found on input line 1930.
+
+
+3_Transistor_BJT.tex:1930: Package pdftex.def Error: File `Immagini/imm30.10.2023/transitorio ON-OFF.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1930 ...ni/imm30.10.2023/transitorio ON-OFF.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[113]
+Underfull \hbox (badness 10000) in paragraph at lines 1986--1989
+
+ []
+
+
+
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 2049--2094
+
+ []
+
+
+
+[115]
+
+[116]
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2221--2222
+
+ []
+
+
+
+[117]
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2262--2270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2279--2281
+
+ []
+
+
+
+[118]
+
+[119
+
+]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/30_10_BJT_GummelPoolModel.png' not found on input line 2373.
+
+
+3_Transistor_BJT.tex:2373: Package pdftex.def Error: File `Immagini/imm30.10.2023/30_10_BJT_GummelPoolModel.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2373 ...0.10.2023/30_10_BJT_GummelPoolModel.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2385--2386
+
+ []
+
+
+
+[120
+
+]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/BJT_RAD_breakdown.png' not found on input line 2393.
+
+
+3_Transistor_BJT.tex:2393: Package pdftex.def Error: File `Immagini/imm30.10.2023/BJT_RAD_breakdown.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2393 ...ini/imm30.10.2023/BJT_RAD_breakdown.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[121
+
+]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/30_10_BJT_breakdown punch.png' not found on input line 2417.
+
+
+3_Transistor_BJT.tex:2417: Package pdftex.def Error: File `Immagini/imm30.10.2023/30_10_BJT_breakdown punch.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2417 ...0.10.2023/30_10_BJT_breakdown punch.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2423--2426
+
+ []
+
+
+Overfull \hbox (8.87128pt too wide) in paragraph at lines 2459--2460
+ [][]
+ []
+
+
+
+[122
+
+]
+
+[123]
+
+[124]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/caratteristica breakdown del bjt.png' not found on input line 2566.
+
+
+3_Transistor_BJT.tex:2566: Package pdftex.def Error: File `Immagini/imm30.10.2023/caratteristica breakdown del bjt.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2566 ...23/caratteristica breakdown del bjt.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2561--2577
+
+ []
+
+
+
+[125]
+
+[126]
+
+[127]
+
+LaTeX Warning: File `Immagini/imm30.10.2023/30_10_BJT_breakdown comparazionipng.png' not found on input line 2679.
+
+
+3_Transistor_BJT.tex:2679: Package pdftex.def Error: File `Immagini/imm30.10.2023/30_10_BJT_breakdown comparazionipng.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2679 ...30_10_BJT_breakdown comparazionipng.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2683--2686
+
+ []
+
+)
+
+[128]
+\openout2 = `4_Transistor_MOS.aux'.
+
+ (4_Transistor_MOS.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+
+LaTeX Warning: File `ImmaginiMOS/MOS.png' not found on input line 18.
+
+
+4_Transistor_MOS.tex:18: Package pdftex.def Error: File `ImmaginiMOS/MOS.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     }
+          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `ImmaginiMOS/MOS-diagrammaBande.png' not found on input line 22.
+
+
+4_Transistor_MOS.tex:22: Package pdftex.def Error: File `ImmaginiMOS/MOS-diagrammaBande.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 }
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[129
+
+
+
+]
+
+LaTeX Warning: File `ImmaginiMOS/MOS-Vgmin0.png' not found on input line 49.
+
+
+4_Transistor_MOS.tex:49: Package pdftex.def Error: File `ImmaginiMOS/MOS-Vgmin0.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ....55\textwidth]{ImmaginiMOS/MOS-Vgmin0.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[130
+
+]
+
+[131]
+
+LaTeX Warning: File `ImmaginiMOS/MOS-Vgmag0.png' not found on input line 105.
+
+
+4_Transistor_MOS.tex:105: Package pdftex.def Error: File `ImmaginiMOS/MOS-Vgmag0.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...cludegraphics{ImmaginiMOS/MOS-Vgmag0.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (5.5252pt too wide) in paragraph at lines 110--114
+\OT1/cmr/m/n/10 dalla zona vi-cino al met-allo, facendo ab-bas-sare la con-cen-trazione di la-cune all'interfaccia ossido-semiconduttore,
+ []
+
+
+
+[132
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+
+[133]
+
+LaTeX Warning: File `ImmaginiMOS/MOS-PHI.png' not found on input line 229.
+
+
+4_Transistor_MOS.tex:229: Package pdftex.def Error: File `ImmaginiMOS/MOS-PHI.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...\includegraphics{ImmaginiMOS/MOS-PHI.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+
+
+[134]
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
+
+ []
+
+
+LaTeX Warning: File `ImmaginiMOS/MOS-FERMI 1.png' not found on input line 264.
+
+
+4_Transistor_MOS.tex:264: Package pdftex.def Error: File `ImmaginiMOS/MOS-FERMI 1.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 ...ludegraphics{ImmaginiMOS/MOS-FERMI 1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--281
+
+ []
+
+
+
+[135
+
+]
+
+LaTeX Warning: File `ImmaginiMOS/MOS-PHI2.png' not found on input line 323.
+
+
+4_Transistor_MOS.tex:323: Package pdftex.def Error: File `ImmaginiMOS/MOS-PHI2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 ...includegraphics{ImmaginiMOS/MOS-PHI2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--343
+
+ []
+
+
+
+[136]
+
+[137]
+
+[138]
+
+LaTeX Warning: File `ImmaginiMOS/MOS.png' not found on input line 424.
+
+
+4_Transistor_MOS.tex:424: Package pdftex.def Error: File `ImmaginiMOS/MOS.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.424     \includegraphics{ImmaginiMOS/MOS.png}
+                                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[139
+
+]
+
+[140]
+
+[141
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 624--627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--633
+
+ []
+
+
+
+[142]
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
+
+ []
+
+
+
+[143]
+Underfull \hbox (badness 10000) in paragraph at lines 705--709
+
+ []
+
+
+
+[144]
+
+LaTeX Warning: File `Immagini/imm.9.11.2023/funzionamento mosfet.png' not found on input line 732.
+
+
+4_Transistor_MOS.tex:732: Package pdftex.def Error: File `Immagini/imm.9.11.2023/funzionamento mosfet.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.732 ...i/imm.9.11.2023/funzionamento mosfet.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--778
+
+ []
+
+
+
+[145
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 784--790
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--801
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 807--810
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 811--836
+
+ []
+
+
+
+[146]
+
+[147]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+
+[148]
+Overfull \hbox (15.92456pt too wide) detected at line 928
+[]
+ []
+
+
+Overfull \hbox (15.92456pt too wide) detected at line 928
+[]
+ []
+
+
+LaTeX Warning: Reference `Forma del canale al variare di $V_D$' on page 149 undefined on input line 983.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 983--986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--991
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 992--993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1007
+
+ []
+
+
+
+[149]
+
+LaTeX Warning: File `ImmaginiMOS/mos caratteristica.png' not found on input line 1012.
+
+
+4_Transistor_MOS.tex:1012: Package pdftex.def Error: File `ImmaginiMOS/mos caratteristica.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1012 ...dth]{ImmaginiMOS/mos caratteristica.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1029
+
+ []
+
+
+
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1045
+
+ []
+
+
+
+[151]
+
+[152
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1122
+
+ []
+
+
+Overfull \hbox (16.92683pt too wide) in paragraph at lines 1124--1174
+\OT1/cmr/m/n/10 Da qui si capisce come mai lo spes-sore della re-gione svuo-tata $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1174
+
+ []
+
+
+
+[153]
+Missing character: There is no ; in font nullfont!
+
+
+[154]
+Underfull \hbox (badness 10000) in paragraph at lines 1257--1274
+
+ []
+
+
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 1305--1306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1324
+
+ []
+
+
+
+[156]
+
+[157])
+\openout2 = `5_Eterogiunzioni.aux'.
+
+ (5_Eterogiunzioni.tex
+Overfull \hbox (20.74747pt too wide) in paragraph at lines 5--8
+\OT1/cmr/m/n/10 semiconduttore, i quali pren-dono il nome di giun-zione metallo-scemiconduttore e giun-zione isolante-semiconduttore
+ []
+
+
+LaTeX Warning: File `Immagini/imm02.11.2023/HEMT.png' not found on input line 48.
+
+
+5_Eterogiunzioni.tex:48: Package pdftex.def Error: File `Immagini/imm02.11.2023/HEMT.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...egraphics{Immagini/imm02.11.2023/HEMT.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[158
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+
+[159]
+
+LaTeX Warning: File `Immagini/imm02.11.2023/leghe.png' not found on input line 94.
+
+
+5_Eterogiunzioni.tex:94: Package pdftex.def Error: File `Immagini/imm02.11.2023/leghe.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...graphics{Immagini/imm02.11.2023/leghe.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[160]
+Overfull \hbox (15.77519pt too wide) in paragraph at lines 135--137
+\OT1/cmr/m/n/10 con-dut-tore per l'emettitore di-verso da quello uti-liz-zato per im-ple-mentare la base, ot-te-nendo cos^^R^^P un'eterogiunzione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
+
+
+[161
+
+]
+
+[162
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
+
+ []
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 224.
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 224.
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 224.
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm02.11.2023/bandgap of variuos structures.png' not found on input line 236.
+
+
+5_Eterogiunzioni.tex:236: Package pdftex.def Error: File `Immagini/imm02.11.2023/bandgap of variuos structures.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 ...1.2023/bandgap of variuos structures.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm02.11.2023/HBT fabbrication.png' not found on input line 243.
+
+
+5_Eterogiunzioni.tex:243: Package pdftex.def Error: File `Immagini/imm02.11.2023/HBT fabbrication.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 ...agini/imm02.11.2023/HBT fabbrication.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[163]
+
+[164]
+
+LaTeX Warning: File `Immagini/imm02.11.2023/diagramma a bande HBT.png' not found on input line 258.
+
+
+5_Eterogiunzioni.tex:258: Package pdftex.def Error: File `Immagini/imm02.11.2023/diagramma a bande HBT.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 .../imm02.11.2023/diagramma a bande HBT.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[165
+
+]
+
+LaTeX Warning: File `Immagini/imm02.11.2023/eterogiunzione AlGaAs_GaAs.png' not found on input line 324.
+
+
+5_Eterogiunzioni.tex:324: Package pdftex.def Error: File `Immagini/imm02.11.2023/eterogiunzione AlGaAs_GaAs.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 ...2.11.2023/eterogiunzione AlGaAs_GaAs.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+
+
+[166
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+
+
+[167]
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+
+
+[168
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+
+
+[169]
+
+LaTeX Warning: File `Immagini/imm06.11.2023/HBTSiGe_06_11_2023.jpg' not found on input line 589.
+
+
+5_Eterogiunzioni.tex:589: Package pdftex.def Error: File `Immagini/imm06.11.2023/HBTSiGe_06_11_2023.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.589 ...ini/imm06.11.2023/HBTSiGe_06_11_2023.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm06.11.2023/CircEq_06_11_2023.jpg' not found on input line 608.
+
+
+5_Eterogiunzioni.tex:608: Package pdftex.def Error: File `Immagini/imm06.11.2023/CircEq_06_11_2023.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.608 ...gini/imm06.11.2023/CircEq_06_11_2023.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--610
+
+ []
+
+
+
+[170]
+
+[171]
+
+LaTeX Warning: File `Immagini/imm06.11.2023/FrazMolSiGe_06_11_2023.jpg' not found on input line 632.
+
+
+5_Eterogiunzioni.tex:632: Package pdftex.def Error: File `Immagini/imm06.11.2023/FrazMolSiGe_06_11_2023.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.632 ...imm06.11.2023/FrazMolSiGe_06_11_2023.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm06.11.2023/BandeSiGe_06_11_2023.jpg' not found on input line 642.
+
+
+5_Eterogiunzioni.tex:642: Package pdftex.def Error: File `Immagini/imm06.11.2023/BandeSiGe_06_11_2023.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.642 ...i/imm06.11.2023/BandeSiGe_06_11_2023.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 624--649
+$[]$ $[]$
+ []
+
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 17.28pt on input line 665.
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 12.0pt on input line 665.
+
+
+[172
+
+]
+
+[173]
+Overfull \hbox (7.2151pt too wide) in paragraph at lines 777--778
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 783--785
+\OT1/cmr/m/n/10 con quello in-fe-ri-ore dello dello strato in-trin-seco.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--785
+
+ []
+
+
+Overfull \hbox (6.94713pt too wide) in paragraph at lines 714--826
+[]$  $[]$ 
+ []
+
+
+Overfull \hbox (1.26163pt too wide) in paragraph at lines 830--831
+[]\OT1/cmr/m/n/10 l'andamento nella giun-zione Metallo-SC ^^Re quello di una giun-zione schot-tky: gli elet-troni del SC $\OML/cmm/m/it/10 AlGaAs[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--838
+
+ []
+
+
+
+[174
+
+]
+
+[175]
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 14.4pt on input line 884.
+
+Underfull \hbox (badness 10000) in paragraph at lines 911--916
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--959
+
+ []
+
+
+
+[176]
+
+[177]
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1010
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1014
+
+ []
+
+
+
+[178
+
+]
+Overfull \hbox (7.78677pt too wide) in paragraph at lines 1016--1076
+[]$[]$  $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+
+ []
+
+LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1107.
+
+LaTeX Warning: File `Immagini/imm27.11.2023/mobilit√† materiali.png' not found on input line 1151.
+
+
+5_Eterogiunzioni.tex:1151: Package pdftex.def Error: File `Immagini/imm27.11.2023/mobilit√† materiali.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1151 ...i/imm27.11.2023/mobilit√† materiali.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no √ in font cmtt10!
+Missing character: There is no † in font cmtt10!
+
+LaTeX Warning: File `Immagini/imm27.11.2023/speudomorfic materiali.png' not found on input line 1162.
+
+
+5_Eterogiunzioni.tex:1162: Package pdftex.def Error: File `Immagini/imm27.11.2023/speudomorfic materiali.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1162 ...mm27.11.2023/speudomorfic materiali.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[179]
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1198
+
+ []
+
+
+
+[180]
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1240
+
+ []
+
+
+
+[181]
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1280
+
+ []
+
+
+
+[182]
+Overfull \hbox (45.051pt too wide) in paragraph at lines 1322--1323
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1422--1427
+
+ []
+
+
+
+[183
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
+
+ []
+
+
+
+[184]
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1459
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1474--1475
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1482
+
+ []
+
+
+
+[185]
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1495
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1597
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1649
+
+ []
+
+
+
+[186]
+
+[187])
+
+[188
+
+]
+
+[189]
+\openout2 = `6_Scaling.aux'.
+
+ (6_Scaling.tex
+
+LaTeX Warning: File `Immagini/imm20.11.2023/constant field scaling.png' not found on input line 5.
+
+
+6_Scaling.tex:5: Package pdftex.def Error: File `Immagini/imm20.11.2023/constant field scaling.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...i/imm20.11.2023/constant field scaling.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[190
+
+
+
+]
+
+LaTeX Warning: File `Immagini/imm20.11.2023/tabella constant field scaling.png' not found on input line 29.
+
+
+6_Scaling.tex:29: Package pdftex.def Error: File `Immagini/imm20.11.2023/tabella constant field scaling.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 ...1.2023/tabella constant field scaling.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[191
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+
+
+[192
+
+]
+
+[193
+
+]
+
+[194]
+Underfull \hbox (badness 10000) in paragraph at lines 190--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/velocit√†_saturazione.jpg' not found on input line 236.
+
+
+6_Scaling.tex:236: Package pdftex.def Error: File `Immagini/imm20.11.2023/velocit√†_saturazione.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 .../imm20.11.2023/velocit√†_saturazione.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no √ in font cmtt10!
+Missing character: There is no † in font cmtt10!
+
+LaTeX Warning: File `Immagini/imm20.11.2023/scaling generalizzato.png' not found on input line 245.
+
+
+6_Scaling.tex:245: Package pdftex.def Error: File `Immagini/imm20.11.2023/scaling generalizzato.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.245 .../imm20.11.2023/scaling generalizzato.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[195
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+
+[196]
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/Campo_long_channel.jpg' not found on input line 285.
+
+
+6_Scaling.tex:285: Package pdftex.def Error: File `Immagini/imm20.11.2023/Campo_long_channel.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...ini/imm20.11.2023/Campo_long_channel.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/Campo_short_channel.jpg' not found on input line 291.
+
+
+6_Scaling.tex:291: Package pdftex.def Error: File `Immagini/imm20.11.2023/Campo_short_channel.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 ...ni/imm20.11.2023/Campo_short_channel.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[197]
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
+
+ []
+
+
+
+[198]
+
+LaTeX Warning: File `Immagini/imm20.11.2023/DIBL1 equilibrio.png' not found on input line 336.
+
+
+6_Scaling.tex:336: Package pdftex.def Error: File `Immagini/imm20.11.2023/DIBL1 equilibrio.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 ...agini/imm20.11.2023/DIBL1 equilibrio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/DIBL2.png' not found on input line 345.
+
+
+6_Scaling.tex:345: Package pdftex.def Error: File `Immagini/imm20.11.2023/DIBL2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.345 ...raphics{Immagini/imm20.11.2023/DIBL2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--354
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/DIBL_filippo.jpeg' not found on input line 358.
+
+
+6_Scaling.tex:358: Package pdftex.def Error: File `Immagini/imm20.11.2023/DIBL_filippo.jpeg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.358 ...Immagini/imm20.11.2023/DIBL_filippo.jpeg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/draininducedbarrierlowering.png' not found on input line 373.
+
+
+6_Scaling.tex:373: Package pdftex.def Error: File `Immagini/imm20.11.2023/draininducedbarrierlowering.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ....11.2023/draininducedbarrierlowering.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[199]
+Underfull \hbox (badness 10000) in paragraph at lines 383--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/L_limit.jpg' not found on input line 396.
+
+
+6_Scaling.tex:396: Package pdftex.def Error: File `Immagini/imm20.11.2023/L_limit.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.396 ...e=90]{Immagini/imm20.11.2023/L_limit.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[200]
+
+[201]
+
+[202
+
+]
+
+[203]
+
+LaTeX Warning: File `Immagini/imm20.11.2023/logJgsuVa.jpg' not found on input line 543.
+
+
+6_Scaling.tex:543: Package pdftex.def Error: File `Immagini/imm20.11.2023/logJgsuVa.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.543 ...90]{Immagini/imm20.11.2023/logJgsuVa.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[204]
+
+[205]
+Underfull \hbox (badness 10000) in paragraph at lines 581--583
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm20.11.2023/Polisilicio, non flat band.jpg' not found on input line 597.
+
+
+6_Scaling.tex:597: Package pdftex.def Error: File `Immagini/imm20.11.2023/Polisilicio, non flat band.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.597 ...0.11.2023/Polisilicio, non flat band.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--608
+
+ []
+
+
+
+[206
+
+]
+
+LaTeX Warning: File `Immagini/imm20.11.2023/Velocit√†Saturazione.jpg' not found on input line 619.
+
+
+6_Scaling.tex:619: Package pdftex.def Error: File `Immagini/imm20.11.2023/Velocit√†Saturazione.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.619 ...i/imm20.11.2023/Velocit√†Saturazione.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no √ in font cmtt10!
+Missing character: There is no † in font cmtt10!
+
+LaTeX Warning: File `Immagini/imm20.11.2023/Gatedimensioni.jpg' not found on input line 628.
+
+
+6_Scaling.tex:628: Package pdftex.def Error: File `Immagini/imm20.11.2023/Gatedimensioni.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 ...mmagini/imm20.11.2023/Gatedimensioni.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--637
+
+ []
+
+
+
+[207
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 666--668
+
+ []
+
+
+
+[208]
+
+[209]
+
+[210
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 904--911
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--923
+
+ []
+
+
+6_Scaling.tex:954: LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.954     \includegraphics{}
+                            
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[211]
+
+LaTeX Warning: File `ImmaginiMOS/mobilit√†.PNG' not found on input line 991.
+
+
+6_Scaling.tex:991: Package pdftex.def Error: File `ImmaginiMOS/mobilit√†.PNG' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.991 ...0.7\textwidth]{ImmaginiMOS/mobilit√†.PNG}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no √ in font cmtt10!
+Missing character: There is no † in font cmtt10!
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 984--996
+[]$  $[]$
+ []
+
+
+
+[212])
+
+[213]
+\openout2 = `7_Alte_iniezioni.aux'.
+
+ (7_Alte_iniezioni.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no O in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--86
+
+ []
+
+
+
+[214
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
+
+ []
+
+
+
+[215]
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+
+7_Alte_iniezioni.tex:161: LaTeX Error: File `' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161      figura\includegraphics{}
+                                   
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[216]
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+ []
+
+
+
+[217]
+
+[218]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm30.11.2023/modello di trasporto idrodinamico.png' not found on input line 293.
+
+
+7_Alte_iniezioni.tex:293: Package pdftex.def Error: File `Immagini/imm30.11.2023/modello di trasporto idrodinamico.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 ...23/modello di trasporto idrodinamico.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 282--295
+[]$  $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
+
+ []
+
+
+
+[219
+
+]
+
+[220]
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+
+ []
+
+
+
+[221
+
+]
+
+[222]
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+
+ []
+
+
+
+[223
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+
+LaTeX Warning: File `Immagini/imm30.11.2023/grafico mobilit√†.png' not found on input line 530.
+
+
+7_Alte_iniezioni.tex:530: Package pdftex.def Error: File `Immagini/imm30.11.2023/grafico mobilit√†.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.530 ...gini/imm30.11.2023/grafico mobilit√†.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no √ in font cmtt10!
+Missing character: There is no † in font cmtt10!
+
+
+[224]
+
+[225]
+
+[226]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[227]
+
+[228]
+Underfull \hbox (badness 10000) in paragraph at lines 806--818
+
+ []
+
+
+Overfull \hbox (74.24857pt too wide) in paragraph at lines 835--836
+[][] 
+ []
+
+
+Overfull \hbox (73.69302pt too wide) in paragraph at lines 849--850
+[][] 
+ []
+
+
+
+[229
+
+]
+
+LaTeX Warning: Command \L invalid in math mode on input line 869.
+
+
+LaTeX Warning: Command \L invalid in math mode on input line 869.
+
+
+LaTeX Warning: Command \L invalid in math mode on input line 869.
+
+
+LaTeX Warning: Command \L invalid in math mode on input line 869.
+
+
+
+[230])
+
+[231
+
+]
+No file Main_micro&Nano.lof.
+\tf@lof=\write5
+\openout5 = `Main_micro&Nano.lof'.
+
+No file Main_micro&Nano.lot.
+\tf@lot=\write6
+\openout6 = `Main_micro&Nano.lot'.
+
+
+
+[232
+
+
+] (Main_micro&Nano.aux (1_Ripasso.aux) (2_Fisica_dei_semiconduttori.aux) (3_Transistor_BJT.aux) (4_Transistor_MOS.aux) (5_Eterogiunzioni.aux) (6_Scaling.aux) (7_Alte_iniezioni.aux))
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 76655 strings out of 473682
+ 2082334 string characters out of 5719215
+ 2652565 words of memory out of 5000000
+ 98956 multiletter control sequences out of 15000+600000
+ 574878 words of font info for 100 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 102i,25n,117p,1772b,2643s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\vervi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1000.pk> <C:\Users\vervi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/vervi/AppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on Main_micro&Nano.pdf (232 pages, 6177634 bytes).
+PDF statistics:
+ 993 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+

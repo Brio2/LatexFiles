@@ -1,0 +1,29 @@
+\contentsline {section}{\hbox to\@tempdima {\hfil }Knowledge}{i}{}%
+\contentsline {section}{\numberline {1}BJT}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Differential amplifier}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Basic definitions}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Simple differential circuits}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}differential mode}{2}{}%
+\contentsline {section}{\numberline {2}PLL}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Principio di funzionamento}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Simple PLL problem:}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Ripple problem and solution}{5}{}%
+\contentsline {subsection}{\numberline {2.3}PLL blocks}{5}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Phase Detector (PD)}{5}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Mixer PD }{6}{}%
+\contentsline {subsection}{\numberline {2.4}PLL loop operation}{6}{}%
+\contentsline {subsection}{\numberline {2.5}PLL transfer function}{6}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Stability considerations}{7}{}%
+\contentsline {subsection}{\numberline {2.6}Phase margin consideration}{7}{}%
+\contentsline {subsubsection}{\numberline {2.6.1}Come calcolare il margien di fase?}{7}{}%
+\contentsline {subsubsection}{\numberline {2.6.2}margine}{8}{}%
+\contentsline {subsection}{\numberline {2.7}Design example}{8}{}%
+\contentsline {subsection}{\numberline {2.8}Frequency moltiplication}{8}{}%
+\contentsline {subsection}{\numberline {2.9}Type 1 PLL}{8}{}%
+\contentsline {subsection}{\numberline {2.10}Type 2 PLL}{9}{}%
+\contentsline {subsection}{\numberline {2.11}Charge pump}{12}{}%
+\contentsline {subsection}{\numberline {2.12}PFDCP behvioral simulation}{12}{}%
+\contentsline {subsection}{\numberline {2.13}Charge pump PLL}{12}{}%
+\contentsline {subsubsection}{\numberline {2.13.1}Stability considerations}{12}{}%
+\contentsline {subsection}{\numberline {2.14}Open loop bandwidth and phase margin}{12}{}%
+\contentsline {subsection}{\numberline {2.15}high order pll}{12}{}%

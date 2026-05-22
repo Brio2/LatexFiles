@@ -1,0 +1,112 @@
+\documentclass{article} %con article si usa solo section, con report si usa chapter+ section
+
+\usepackage{amsmath}
+\usepackage{inputenc}
+\usepackage{graphicx} % serve per inserire immagini
+\usepackage{float} % controlla la posizone float
+\usepackage{anyfontsize}
+\usepackage[margin=2.54cm,left=3.81cm,includefoot]{geometry}
+\usepackage{siunitx}
+\usepackage[american]{circuitikz}
+\usepackage{mathrsfs}
+\usepackage[scr=esstix,cal=boondox]{mathalfa} 
+\usepackage{circuitikz}
+\usetikzlibrary{bending}
+\usepackage{caption}
+\usepackage{subcaption}
+\usetikzlibrary{bending}
+%\usepackage{physics}
+
+\usepackage{pgfplots}\pgfplotsset{compat=1.13}
+\usetikzlibrary{arrows.meta,positioning,calc}
+%per grafici da ltspice
+% Style to select only points from #1 to #2 (inclusive)
+\pgfplotsset{select coords between index/.style 2 args={
+    x filter/.code={
+        \ifnum\coordindex<#1\def\pgfmathresult{}\fi
+        \ifnum\coordindex>#2\def\pgfmathresult{}\fi
+    }
+}}
+
+\usepackage{xcolor}
+%per i margini:
+\usepackage{geometry}
+\geometry{%
+letterpaper, % a4paper
+left=   25 mm,
+right=  25 mm,
+top=    15 mm,
+bottom= 20 mm,
+}
+
+%Frontespizio---------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} %questo mi toglie le info in testa pagina
+\fancyfoot{}
+\fancyfoot[R]{ \thepage\ }
+%---------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               COMMANDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom command for a TikZ figure with caption, label, and custom TikZ code
+\newcommand{\Figure}[3]{
+  \begin{figure}[hbt!]
+    \centering
+    \begin{tikzpicture}
+      #3 % Custom TikZ code goes here
+    \end{tikzpicture}
+    \caption{#1}
+    \label{#2}
+  \end{figure}
+}
+
+% Custom command for a circuit figure with caption, label, and custom TikZ code
+\newcommand{\Circuit}[3]{
+  \begin{figure}[hbt!]
+    \centering
+    \begin{circuitikz}
+    [lil_R/.style={R, bipoles/length=0.5cm},
+    lil_C/.style={C, bipoles/length=0.5cm}]
+      #3 % Custom TikZ code goes here
+    \end{circuitikz}
+    \caption{#1}
+    \label{#2}
+  \end{figure}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               BEGIN DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\begin{document}
+
+\input{TitlePage}
+
+\pagenumbering{roman}
+
+\section*{Knowledge}
+di cosa tratta
+\addcontentsline{toc}{section}{\numberline{}Knowledge}  %serve per l'indice
+\cleardoublepage
+
+\tableofcontents %inserisce indice di tutti gli argomenti sottostanti%
+\thispagestyle{empty} %rimuove il numero della pagina 
+
+%\listoffigures
+
+\pagenumbering{arabic}
+
+\setcounter{page}{1} %le pagine cominciano ad 1 da qui 
+
+
+%\include{Basi di elettronica}
+\include{BJT}
+%\include{Sistemi digitali}
+%\include{Capitolo-1}
+%\include{Capitolo-2}
+\include{PLL}
+\end{document}

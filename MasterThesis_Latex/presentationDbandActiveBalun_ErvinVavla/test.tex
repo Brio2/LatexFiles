@@ -1,0 +1,552 @@
+% !TEX program = xelatex
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{UniFiDINFO}
+}
+
+\usepackage[italian]{babel}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{graphicx}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{mathrsfs}
+\usepackage{adjustbox}
+
+
+\usepackage{tikz}
+\usepackage[siunitx]{circuitikz}
+% Impostazioni globali circuitikz
+\ctikzset{
+    american voltages,
+    bipoles/thickness=1,
+    resistors/scale=0.7,
+    capacitors/scale=0.7,
+    diodes/scale=0.7,
+    inductors/coils=5
+}
+
+%font per figure captions
+\usepackage{subcaption}
+
+
+\title[Design and Analysis of a D-Band (110-170 GHz) Active Balun]{
+Design and Analysis of a D-Band (110-170 GHz) Active Balun with Low Amplitude and Phase Imbalance in 130nm SiGe BiCMOS Technology}
+
+\setbeamerfont{author}{size=\fontsize{12}{14}\selectfont,series=\bfseries}
+
+
+\author[Ervin Vavla]{Ervin Vavla}
+
+\institute[DINFO]{
+  \textbf{Supervisor}\\
+  Prof.\ Alessandro Cidronali\\[6pt]
+  \textbf{Co-supervisors}\\
+  Prof.\ Giovanni Collodi\\
+  Giovanni Lasagni\\[10pt]
+  Department of Information Engineering\\
+  University of Florence
+}
+
+\date[Florence, 30/04/2026]{Florence, 30/04/2026}
+
+\subject{Argomento}
+\keywords{Parole chiave}
+
+
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>
+%    \frametitle{Sommario}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+
+\begin{document}
+\usetikzlibrary{decorations.pathreplacing}
+%\include{References}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \begin{itemize}
+    \item Introduction
+    \item State of the art
+    \item Technology
+    \item Circuit design
+    \item Layout
+    \item Results
+    \item Comparison with the state of the art
+    \item Conclusions
+  \end{itemize}
+\end{frame}
+
+
+\section{Introduction}
+\subsection{Topic overview}
+
+\begin{frame}
+  \frametitle{Introduction}
+  \framesubtitle{Objective of the work}
+  \begin{center}
+      BALanced - UNbalanced 
+  \end{center}
+\begin{center}
+        \begin{circuitikz}[scale=0.925, transform shape]
+        \draw(0,0) coordinate(in1) to[short,o-]++(1,0)++(0,-2.5)coordinate(in2)++(0,2.75) rectangle++(1.5,-3)node[pos=.5]{BALUN}++(0,0.25) coordinate(out2)++(0,2.5) coordinate(out1);
+        \draw(in2)--++(-0.5,0)node[ground]{};
+        \draw(out1)to[short]++(1.5,0) coordinate(p) to[generic,-*]++(0,-1.25) coordinate(neutral);
+        \draw(out2)to[short]++(1.5,0) coordinate(n) to[generic,-*]++(0,+1.25); 
+        \draw[densely dashed](neutral)--++(-1.5,0);
+        \draw(neutral)++(-0.75,0)--++(0,-0.25)node[tlground]{};
+
+        \draw (in1)node[left]{$\mathrm{V}_{\mathrm{se}}$};
+        \draw (p)node[right]{$\mathrm{V}_{+}$};
+        \draw (n)node[right]{$\mathrm{V}_{-}$};
+    \draw[shift={(in1)}, xshift=-1.65cm-1.25cm,red] plot[smooth, samples=300, domain=0:2] (\x, {0.5*sin(360*\x)});
+    \draw[shift={(p)}, xshift=0.85cm,red] plot[smooth, samples=300, domain=0:2] (\x, {0.5*sin(360*\x)});
+    \draw[shift={(n)}, xshift=0.85cm,red] plot[smooth, samples=300, domain=0:2] (\x, {0.5*sin(360*\x+180)});
+    \end{circuitikz}
+\end{center}
+
+  \begin{itemize}
+    \item Design and analysis of an active balun for D-band applications.
+    \item Main objectives:
+    \begin{itemize}
+      \item low amplitude and phase imbalance from 100 to 200\,GHz;
+      \item good efficiency and high gain.
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{State of the Art}
+  \framesubtitle{Main active balun topologies}
+
+  \begin{figure}
+    \centering
+
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  % ridimensiono l'intero circuitikz alla larghezza desiderata
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+       \draw (0,0) node[npn, xscale=1, anchor=B] (Q1){};
+       \draw (Q1.B) to [short,-o] ++(-0.5,0) node[left]{$V_{in}$};
+       \draw (Q1.E)--++(0,-0.25) to [R]++(0,-1.5)node[tlground]{};
+       \draw (Q1.E) to [short,*-o]++(0.75,0) node[right]{\textbf{-}};
+       \draw (Q1.C) --++ (0,0.25) to [R]++(0,1.5) 
+             to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+       \draw (Q1.C) to [short,*-o]++(0.75,0) node[right]{\textbf{+}};
+    \end{circuitikz}
+  }
+  \caption{Common-Emitter}
+  \label{fig:CommonEmitter}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+    \draw (0,1) node[npn, xscale=1, anchor=B] (Q2){};
+    \draw (Q2.E)--++(0,-1.5) coordinate (e2);
+    %\draw (e2)--++(0,-0.25)
+    %node[npn, xscale=-1, anchor=C] (Qx){};
+    \draw (Q2.B) to [short] ++(-0.5,0) to [C]++(0,-1.25)node[tlground]{};
+    \draw (e2) to[short,*-o]++(-0.75,0)node[left]{$V_{in}$};
+    \draw (e2) --++(1.5,0) node[npn, xscale=1, anchor=B] (Q3){};
+    \draw (Q2.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q2.C) to [short,*-o]++(0.75,0) node[right]{\textbf{-}};
+    \draw (Q3.C)to [short] ++(0,2.2725) to [R]++(0,1.5) 
+          to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q3.C) to [short,*-o]++(0.75,0) node[right]{\textbf{+}};
+
+    \draw (Q3.E) to [R]++(0,-1) node[ground]{};
+
+    %\draw (Qx.B) to [short,-*]++(0,0.775+0.25);
+    %\draw(Qx.E)node[ground]{};
+    \end{circuitikz}
+  }
+  \caption{CB + CE}
+  \label{fig:CBCE}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.32\textwidth}
+  \centering
+  \resizebox{!}{4cm}{
+    \begin{circuitikz}[scale=0.8, transform shape]
+    \draw (0,0.5) node[npn, xscale=1, anchor=B] (Q4){};
+    \draw (Q4.B) to [short,-o] ++(-0.5,0) node[left]{$V_{in}$};
+    \draw (Q4.E)--++(0,-0.35)--++(1,0) coordinate(e4);
+    \draw(e4)--++(1,0) --++(0,+0.35) node[npn, xscale=-1, anchor=E] (Q5){};
+    \draw (Q5.B) to [short] ++(+0.5,0) to [C]++(0,-1.25)node[tlground]{};
+    \draw (e4) to [I,*-]++(0,-2) node[tlground]{};
+    \draw (Q4.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q4.C) to [short,*-o]++(0.65,0) node[above]{\textbf{+}};
+    \draw (Q5.C) to [R]++(0,1.5) to [open]++(-0.35,0) -- node[anchor=south] {Vcc} ++(0.7,0);
+    \draw (Q5.C) to [short,*-o]++(-0.65,0) node[above]{\textbf{-}};
+    \end{circuitikz}
+  }
+  \caption{Differential pair}
+  \label{fig:DifferentialPair}
+\end{subfigure}
+
+%\caption{Comparison of the three most commonly used balun configurations}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Technology}
+  \framesubtitle{SG13G3 SiGe BiCMOS}
+
+  \begin{figure}
+    \centering
+
+    \begin{minipage}[c]{0.59\linewidth}
+      \centering
+      \includegraphics[width=\textwidth]{DesignFigs/FtFmaxSG13G3.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.40\linewidth}
+      \centering
+      \includegraphics[width=\textwidth]{DesignFigs/CrossSectionSchematicSG13G2.png}
+    \end{minipage}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Circuit Design}
+  \framesubtitle{Schematic-level implementation}
+  \centering
+
+  \begin{adjustbox}{max totalsize={\textwidth}{0.82\textheight},center}
+    \begin{circuitikz}[transform shape]
+      \draw (0,0) node[npn, xscale=1, anchor=B] (Q1)
+      {\shortstack{$Q1$ \\ 2}};
+      %metto metà sinistra dell'emettitore
+      \draw (Q1.E)--++(0,-0.35)--++(1.1,0) coordinate(e);
+      %metto metà destra dell'emettitore e Q2
+      \draw(e)--++(1.1,0) --++(0,+0.35) node[npn, xscale=-1, anchor=E] (Q2){\ctikzflipx{\shortstack{$Q2$ \\ 2}}};
+      %disegno current mirror
+      \draw (e) to [short,*-]++(0,-0.25) node[npn, xscale=1, anchor=C] (Q3)
+      {\shortstack{$Q3$ \\ 2}};
+      \draw (Q3.E) --++(0,-0.5) node[npn, xscale=1, anchor=C] (Q4){\shortstack{$Q4$ \\ 2}} ;
+      \draw (Q4.E) --++(0,-0.15) node[tlground]{};
+
+      %inserisco le resistenze bias AC block
+      %biasin a Q1
+      \draw (Q1.B)--++(-0.85,0) coordinate (in1)
+      to [R,l=$\mathrm{R}_1$,*-]++(0,1.5)
+      to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+      %biasing a Q2
+      \draw (Q2.B)--++(0.85,0) coordinate (in2)
+      to [R,l=$\mathrm{R}_2$]++(0,1.5) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+      %biasing current mirror Q3
+      \draw (Q3.B) to [short]++(-0.15,0) coordinate (in3);
+      \draw (in3)--++(-0.25,0) to [R,l_=$\mathrm{R}_3$]++(-2,0) to [short,-o]++(-0.25,0) node[left]{$\mathrm{V}_{\mathrm{B2}}$};
+      \draw (in3) to [C,l_=$C_{1}$,*-]++(0,-1.25)node[tlground]{};
+      %biasing current mirror Q4
+      \draw (Q4.B) to [R,l_=$\mathrm{R}_4$]++(-1.25,0) to [short,-o]++(-0.25,0) node[left]{$\mathrm{V}_{\mathrm{B1}}$};
+      %inserisco input a base Q1
+      \draw (in1) to [C,*-o] ++(-2,0) coordinate(dc1)node[left]{$v_{se}$};
+
+      \draw (dc1) to [open]++(0.475,-0.375) rectangle++(1.05,0.75);
+      %inserisco capacità a base Q2
+      \draw (in2)++(-0.5,0) to [C,l=$C_{2}$,*-]++(0,-1.25)node[ground]{};
+
+      %disegno collettore Q1
+      \draw (Q1.C) --++ (0,1.75) coordinate(c1) to [L]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+
+      \draw (Q2.C) --++ (0,1.25) coordinate(c2)--++(0,0.5) to [L]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+
+      %%%%%%%%%%%%% secondo stadio
+      \draw (8.5,0) node[npn, xscale=1, anchor=B] (Q5)
+      {\shortstack{$Q5$ \\ 2}};
+      %metto metà sinistra dell'emettitore
+      \draw (Q5.E)--++(0,-0.35)--++(1.1,0) coordinate(e2);
+      %metto metà destra dell'emettitore e Q6
+      \draw(e2)--++(1.1,0) --++(0,+0.35) node[npn, xscale=-1, anchor=E] (Q6){\ctikzflipx{\shortstack{$Q6$ \\ 2}}};
+      %disegno current mirror
+      \draw (e2) to [short,*-]++(0,-0.25) node[npn, xscale=1, anchor=C] (Q7)
+      {\shortstack{$Q7$ \\ 2}};
+      \draw (Q7.E) --++(0,-0.5) node[npn, xscale=1, anchor=C] (Q8){\shortstack{$Q8$ \\ 2}} ;
+      \draw (Q8.E) --++(0,-0.15) node[tlground]{};
+
+      %inserisco le resistenze bias AC block
+      %biasin a Q5
+      \draw (Q5.B)--++(-0.85,0) coordinate (2in1)
+      to [R,l=$\mathrm{R}_5$,*-]++(0,1.5)
+      to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+      %biasing a Q6
+      \draw (Q6.B)--++(0.85,0) coordinate (2in2)
+      to [R,l=$\mathrm{R}_6$]++(0,1.5) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+      %biasing current mirror Q7
+      \draw (Q7.B) to [short]++(-0.15,0) coordinate (2in3);
+      \draw (2in3)--++(-0.25,0) to [R,l_=$\mathrm{R}_7$]++(-2,0) to [short,-o]++(-0.25,0) node[left]{$\mathrm{V}_{\mathrm{B2}}$};
+      \draw (2in3) to [C,l_=$C_{1}$,*-]++(0,-1.25)node[tlground]{};
+      %biasing current mirror Q8
+      \draw (Q8.B) to [R,l_=$\mathrm{R}_8$]++(-1.25,0) to [short,-o]++(-0.25,0) node[left]{$\mathrm{V}_{\mathrm{B1}}$};
+      %inserisco input a base Q5
+      \draw (2in1) to [C] ++(-1.6,0) coordinate(2vin1);
+      \draw (2vin1) to [open]++(0.275,-0.375) rectangle++(1.05,0.75);
+      %creo nodo base Q6
+      \draw (2in2) to [open,-*]++(-0.5,0) coordinate(2vin2);
+
+      %disegno collettore Q5
+      \draw (Q5.C) --++ (0,1.75) coordinate(2c1) to [L]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+
+      \draw (Q6.C) --++ (0,1.25) coordinate(2c2)--++(0,0.5) to [L]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+
+      %% collego i due stadi
+      \draw (c1) to [short,*-]++(5,0)--++(0,-2.52) -|(2vin1);
+      \draw (c2) to [short,*-]++(2.5,0)--++(0,-3.4)--++(0.5,0)coordinate (dc2)to [C] ++(1.6,0) --++(5,0)-|(2vin2);
+
+      \draw (dc2) to [open]++(0.275,-0.375) rectangle++(1.05,0.75);
+
+      %riquadri
+      \draw (0.425,2.9)rectangle++(0.75,1.25);
+      \draw (0.425+2.2,2.9)rectangle++(0.75,1.25);
+
+      \draw (0.425+8.5,2.9)rectangle++(0.75,1.25);
+      \draw (0.425+8.5+2.2,2.9)rectangle++(0.75,1.25);
+
+      %%%%%%%%% TERZO STADIO
+      \draw (17.25,1) node[npn, yscale=-1, anchor=B] (Q9)
+      {\reflectbox{\rotatebox{180}{\shortstack{Q9 \\ 6}}}};
+      %inserisco ramo base di Q9
+      \draw (Q9.B) to [short]++(-0.35,0) coordinate (vb9);
+      \draw (vb9) to [R,l_=$\mathrm{R}_9$,*-o]++(-2.2,0) node[left]{$\mathrm{V}_{\mathrm{B}}$};
+
+
+      %inserisco ramo collettore Q9
+      \draw (Q9.C) --++ (0,-0.25) to [short]++(1.5,0)coordinate(9c1)
+      to [L,*-,mirror]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {$\mathrm{V}_{\mathrm{CC}}$} ++(0.7,0);
+      \draw (9c1) --++(0.05,0) to [C,-o]++(2,0) node[right]{$v_\mathrm{out+}$};
+
+      %inserisco ramo emettitore di Q9
+      \draw (Q9.E) --++(0,0) coordinate (9in1);
+      \draw (9in1) --++ (0,0.75) coordinate(9e1) to [L,mirror]++(0,2.3) node[yscale=-1, tlground]{};
+      \draw (9e1) to [C,*-]++(-2,0) coordinate (9Vin);
+
+      %ricreo il circuito mirrored
+      \begin{scope}[shift={(0,-3)}, yscale=-1, transform shape]
+        \draw (17.25,-1) node[npn, yscale=-1, anchor=B] (Q10)
+        {\shortstack{$Q10$ \\ 6}};
+        %inserisco ramo base di Q10
+        \draw (Q10.B) to [short]++(-0.35,0) coordinate (10vb1);
+        \draw (10vb1)to [R, l=\reflectbox{\rotatebox{180}{$\mathrm{R}_{10}$}},*-o ,label distance=-6.5mm]++(-2.2,0) node[left]{\reflectbox{\rotatebox{180}{$\mathrm{V}_{\mathrm{B}}$}}};
+
+        %inserisco ramo collettore Q10
+        \draw (Q10.C) --++ (0,-0.25) to [short]++(1.5,0) coordinate(10c2) to [L,*-,mirror]++(0,2) to [open]++(-0.35,0) --  node[anchor=south] {\reflectbox{\rotatebox{180}{$\mathrm{V}_{\mathrm{CC}}$}}} ++(0.7,0);
+        \draw (10c2) --++(0.05,0)to [C,-o]++(2,0) node[right]{\reflectbox{\rotatebox{180}{$v_\mathrm{out-}$}}};
+
+        %inserisco ramo emettitore Q10
+        \draw (Q10.E) --++(0,0) coordinate (10in1);
+        \draw (10in1) --++ (0,0.75) coordinate(10e2) to [L,mirror]++(0,2.3) node[yscale=-1, tlground]{};
+        \draw (10e2) to [C,*-]++(-2,0) coordinate (10Vin);
+      \end{scope}
+        %collego le basi Q9 e Q10
+      \draw (vb9) to [generic,*-*](10vb1);
+      
+      %collego secondo stadio a terzo stadio
+      \draw (2c1) to [short,*-]++(6,0)-|(9Vin);
+      \draw (2c2) to [short,*-]++(2.25,0)--++(0,-5.54)-|(10Vin);
+
+      %label L1 e L2
+      \draw (9e1)to [open]++(0.75,1.15) node[]{$L1$};
+      \draw (10e2)to [open]++(0.75,-1.15) node[]{$L2$};
+
+      %riquadri
+      \draw (9c1) to [open]++(-0.35,0.35)rectangle++(0.75,1.25);
+      \draw (10c2) to [open]++(-0.35,-0.35)rectangle++(0.75,-1.25);
+
+      \draw (9c1) --++(0.05,0) to [open]++(0.5,-0.425) rectangle++(1,0.85);
+      \draw (10c2) --++(0.05,0) to [open]++(0.5,-0.425) rectangle++(1,0.85);
+
+      \draw (9e1) to [open]++(-0.35,0.5) rectangle ++(0.75,1.25);
+      \draw (10e2) to [open]++(-0.35,-0.5) rectangle ++(0.75,-1.25);
+
+      \draw (9e1) to [open]++(-0.5,-0.425) rectangle ++(-1,0.85);
+      \draw (10e2) to [open]++(-0.5,-0.425) rectangle ++(-1,0.85);
+
+    \end{circuitikz}
+  \end{adjustbox}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Layout}
+  \framesubtitle{Layout overview and intermediate results}
+
+\begin{figure}
+    \centering
+    \begin{minipage}{0.48\linewidth}
+        \includegraphics[width=0.75\linewidth]{DesignFigs/Screenshot 2025-10-13 120118.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\linewidth}
+        \includegraphics[width=\linewidth]{DesignFigs/ComparisonForPresentation_AmplitudeImbalanceComparisonFirstSecondStages.png}
+    \end{minipage}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Layout}
+  \framesubtitle{Final layout implementation}
+
+\begin{figure}
+    \centering
+        \includegraphics[width=0.75\linewidth]{DesignFigs/LayoutCompleteS21.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \framesubtitle{Amplitude and phase imbalances}
+
+  \begin{figure}
+      \centering
+      \includegraphics[width=\linewidth]{DesignFigs/processPlot_EMFinalResults_FinalPlotImbalance.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \framesubtitle{S-parameters}
+
+  \begin{figure}
+    \centering
+    \begin{minipage}{0.48\linewidth}
+      \centering
+      \includegraphics[width=\linewidth]{DesignFigs/processPlot_EMFinalResultsForPresentation_Combined_MaxGain_S21_S31.png}
+    \end{minipage}
+    \hspace{0.00\linewidth}
+    \begin{minipage}{0.48\linewidth}
+      \centering
+      \includegraphics[width=\linewidth]{DesignFigs/processPlot_EMFinalResultsForPresentation_Reflection&Reverse_S_parameters.png}
+    \end{minipage}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Comparison with the State of the Art}
+ 
+
+\begin{table}[h!]
+\centering
+\footnotesize
+\resizebox{0.85\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Reference & [1] & [2] & [3] & This work \\ 
+\hline
+Type & \multicolumn{4}{c|}{Active} \\ 
+\hline
+Technology & SiGe & SiGe & SiGe & SiGe \\ 
+\hline
+Supply (V) & 3 & 4 & 3.3 & 1.8 \\ 
+\hline
+Frequency (GHz) & 237--277 & DC--(>70) & DC--70 & 110--170 \\ 
+\hline
+Amplitude imbalance (dB) & 0.5 & 0.2 & 0.65 & 0.15 \\ 
+\hline
+Phase imbalance (deg) & 5 & 5 & 3.2 & $\pm$ 1.5 \\ 
+\hline
+DC Power (mW) & 59.7 & 144 & 37 & 53 \\ 
+\hline
+Area (mm$^2$) & 0.0168$^{a}$ & 0.42 & 0.42$^{b}$ & 0.347$^{c}$ \\ 
+\hline
+\end{tabular}%
+}\par\vspace{0.1pt}
+{\scriptsize
+$^{a}$ Active core area, \quad
+$^{b}$ Pads included, \quad
+$^{c}$ Pads excluded
+}
+
+%\caption*{State of the Art}
+\label{tab:comparison}
+\end{table}
+\vspace{0.2pt}
+{\tiny\raggedright
+[1] J. Hebeler, A. Ç. Ulusoy and T. Zwick, "Active BALUN with 40 GHz bandwidth at 257 GHz in 130 nm SiGe:C," 2022 IEEE 22nd Topical Meeting on Silicon Monolithic Integrated Circuits in RF Systems (SiRF), Las Vegas, NV, USA, 2022, pp. 9--12,\\ doi: 10.1109/SiRF53094.2022.9720063.\\[2pt]
+\raggedright[2] P. Stärke, V. Rieß, C. Carta and F. Ellinger, "Active Single-Ended to Differential Converter (Balun) for DC up to 70 GHz in 130 nm SiGe," 2019 IEEE BiCMOS and Compound Semiconductor Integrated Circuits and Technology Symposium (BCICTS), Nashville, TN, USA, 2019, pp. 1--4,\\ doi: 10.1109/BCICTS45179.2019.8972713.\\[2pt]
+\raggedright[3] A. Franzese, M. H. Eissa, T. Mausolf, D. Kissinger, R. Negra and A. Malignaggi, "Ultra Broadband Low-Power 70 GHz Active Balun in 130-nm SiGe BiCMOS," 2020 IEEE BiCMOS and Compound Semiconductor Integrated Circuits and Technology Symposium (BCICTS), Monterey, CA, USA, 2020, pp. 1--4, doi: 10.1109/BCICTS48439.2020.9392960.
+\par}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  \framesubtitle{Final remarks}
+
+  \begin{itemize}
+    \item The proposed balun shows good performance in the 110--170\,GHz band.
+    \item The amplitude and phase imbalances remain limited over the frequency range of interest.
+    \item Possible future developments include full post-layout verification and experimental validation.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  %{\Large Thank you for your attention}
+
+  \vspace{0.5cm}
+  \begin{center}
+    {\Large My thanks to:\\}
+
+  \end{center}
+
+  \vfill
+
+\begin{figure}
+    \centering
+    \begin{minipage}{0.3\linewidth}
+      \centering
+      \includegraphics[width=0.8\linewidth]{figs/UniFI_logo.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.35\linewidth}
+    \centering
+    {
+    \textbf{}
+    Alessandro Cidronali (UniFi)\\
+    Giovanni Collodi (UniFi)\\
+    Giovanni Lasagni (UniFi)\\[0.4em]
+    \textbf{}\\
+    Corrado Carta (IHP)\\
+    Batuhan Sutbas (IHP)\\
+    Aniello Franzese (IHP)\\
+    Volkan Erturk (IHP)\\
+    Daniele Ursini (IHP)
+    }
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\linewidth}
+      \centering
+      \includegraphics[width=0.7\linewidth]{figs/IHP_logo2.jpg}
+    \end{minipage}
+\end{figure}
+
+\vfill
+
+\begin{center}
+    {\Large Thank you for your attention}
+\end{center}
+\end{frame}
+
+\end{document}
+
+

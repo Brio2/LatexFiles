@@ -1,0 +1,270 @@
+\documentclass{article}
+
+\usepackage{cancel}
+
+\usepackage{tikz} % per inserire immagini e creare figure
+\usetikzlibrary{tikzmark, fit, shapes.arrows, shapes.multipart, shapes.misc, positioning, calc, decorations.pathmorphing, patterns, arrows.meta}
+
+\usepackage{graphicx}
+
+\usepackage{adjustbox}
+\usepackage{caption} % Automatically loaded by subcaption
+\usepackage{subcaption} % For subfigures/subtables
+\usepackage{bigints} % For larger integrals
+\usepackage{wrapfig}
+\usepackage[american voltages, american currents]{circuitikz} % per creare circuiti
+\usepackage{amsmath, amssymb} % For mathematical formulas
+\usepackage{mathtools} % Extends amsmath
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+% Optional: remove mathalfa and empheq if not required
+\usepackage[scr=esstix,cal=boondox]{mathalfa} 
+\usepackage[overload]{empheq}
+
+\usepackage{pgfplots} %per figure matematiche
+\usetikzlibrary{3d, calc}
+\pgfplotsset{width=10cm,compat=1.9}
+
+\usepackage{color}%per testi colorati
+
+%dimensioni compenenti circuitali
+\ctikzset{bipoles/length=1cm}
+%\ctikzset{bipoles/resistor/height=.2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Package per diagrammi di chimica
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{modiagram}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% sezione box colorati
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%definisco dei colori per i box:
+\usepackage[most]{tcolorbox}
+\definecolor{orange}{RGB}{255,192,76}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{newgreen}{rgb}{0.20,0.61,0.33}
+\colorlet{Hcolour}{orange!75!red} %holescolour
+\colorlet{Ecolour}{cyan} %electrons colour
+
+\newcommand*{\fakebreak}{\par\vspace{\textheight minus \textheight}\pagebreak} %new page for tcolorbox
+%definisco i vari box
+\newtcolorbox{citbox}[1][Non Mutually Exclusive Events]{
+enhanced,title=#1,
+attach boxed title to top,
+colframe=newgreen,
+colback=newgreen!10,
+colbacktitle=newgreen,
+breakable}
+
+\newtcolorbox{exbox}[1][Non Mutually Exclusive Events]{
+enhanced,title=#1,
+attach boxed title to top,
+colframe=orange!70!purple,
+colback=orange!10,
+colbacktitle=orange!70!purple,
+breakable}
+  
+\newtcolorbox{psbox}[1][Non Mutually Exclusive Events]{
+enhanced,title=#1,
+attach boxed title to top,
+colframe=cyan!80!black,
+colback=cyan!10,
+colbacktitle=cyan!80!black,
+breakable}
+
+\newtcolorbox{ripasso}[1][Non Mutually Exclusive Events]{
+enhanced,title=#1,
+attach boxed title to top,
+coltitle=black,
+colframe=white!40!black,
+colback=white,
+colbacktitle=white,
+breakable}
+
+\newtcolorbox{riepilogo}[1][Non Mutually Exclusive Events]{
+    enhanced,
+    title=#1,
+    attach boxed title to top,
+    colframe=orange!70!purple,
+    colback=orange!10,
+    colbacktitle=orange!70!purple,
+    breakable
+}
+
+\newtcolorbox{ricevimento}[1][Non Mutually Exclusive Events]{
+enhanced,title=#1,
+attach boxed title to top,
+colframe=pink!70!purple,
+colback=pink!10,
+colbacktitle=pink!70!purple,
+breakable}
+
+\newtcolorbox{pgGhione}[1][\tiny lib.Ghione.pg:]{
+enhanced,title=#1,
+attach boxed title to top,
+colframe=pink!70!purple,
+colback=pink!10,
+colbacktitle=pink!70!purple,
+breakable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Per margini e impaginazione
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{%
+letterpaper, % a4paper
+left=   25 mm,
+right=  25 mm,
+top=    15 mm,
+bottom= 25 mm,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% comando "tratto" per cancellare da equazione
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%funzione cancel(x) con colore 
+\newcommand\Ccancel[2][black]{
+    \let\OldcancelColor\CancelColor
+    \renewcommand\CancelColor{\color{#1}}
+    \cancel{#2}
+    \renewcommand\CancelColor{\OldcancelColor}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Prima pagina
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{nanoelettronica}
+\author{ervin}
+\date{October 2023}
+
+
+\usepackage{setspace}
+%preamble
+\usepackage[nottoc]{tocbibind}
+
+%\setcounter{tocdepth}{1} % Show sections
+%\setcounter{tocdepth}{2} % + subsections
+%\setcounter{tocdepth}{3} % + subsubsections
+%\setcounter{tocdepth}{4} % + paragraphs
+\setcounter{tocdepth}{5} % + subparagraphs
+
+\begin{document}
+
+\maketitle
+
+%content
+\doublespacing
+\tableofcontents
+\singlespacing
+\newpage
+
+\include{1_Ripasso}
+\include{2_Fisica_dei_semiconduttori}
+\include{3_Transistor_BJT}
+\include{4_Transistor_MOS}
+\include{5_Eterogiunzioni}
+\include{6_Scaling}
+\include{7_Alte_iniezioni}
+
+
+%% MICROSISTEMI HF
+
+%\include{Chapter 5}  % matching
+%\include{Chapter 6}  % matching
+%\include{Chapter 7}  % matching
+
+\begin{appendix}
+    \listoffigures
+    \listoftables
+\end{appendix}
+
+
+
+
+\begin{comment}
+
+\vspace{1cm}
+
+\begin{tikzpicture}
+        
+        \draw[fill={rgb:black,6;white,5}] (0,0)--(5,0)--(5,2)--(0,2)--(0,0);
+        \draw[fill={rgb:black,4;white,7}] (0,2)--(5,2)--(4,3)--(-1,3)--(0,2);
+        \draw[pattern=north east lines, pattern color=black] (0,0)--(0,2)--(-1,3)--(-1,1)--(0,0);       
+        \draw[dashed] (-1,1)--(4,1);
+        \draw[dashed] (4,1)--(4,3);
+        \draw[dashed] (4,1)--(5,0);
+
+        %disegno asse
+        \draw [thick,|->](0,-1)node[anchor=north]{$0$}--++(6,0) node[anchor=west]{$x$};
+        
+    \end{tikzpicture}
+    
+\vspace{1cm}
+
+\begin{tikzpicture}
+    %disegno mezzo 1
+    \node at (2,2) [anchor=south]{P};
+    \draw (0,1.5) --++ (4,0);
+    \draw (0,-1.5) --++ (4,0);
+    \draw[dashed, red](0,-0.75)node[anchor=east]{$E_{F1}$} --++ (4,0); %Ef1
+    %disegno mezzo 2
+    \node at (9,2) [anchor=south]{N};
+    \draw (7,1.5) --++ (4,0);
+    \draw (7,-1.5) --++ (4,0);
+    \draw[dashed, red](7,+0.75) --++ (4,0)node[anchor=west]{$E_{F2}$}; %Ef2
+    
+    \foreach \pos in {0.5,1,1.5,2,2.5,3,3.5} {
+    \node at (0+\pos,-1.8) { \tikz\draw [thick,red]
+      circle (0.16cm) (-0.08,0)--(0.08,0) (0,0.08)--(0,-0.08) ;} ;}
+
+    \foreach \pos in {0.5,1,1.5,2,2.5,3,3.5} {
+    \node at (7+\pos,+1.8) { \tikz\draw [thick,blue]
+      circle (0.16cm) (-0.08,0)--(0.08,0) ;} ;}
+      
+\end{tikzpicture}
+
+\begin{figure}[hbt!]
+    \centering
+    \begin{circuitikz}
+        \draw[dashed,black](0,0)--++(0,1)(6,0)--++(0,1);
+        \draw (0,1) rectangle ++ (6,2);
+        \node at (0,0.5)[left]{GaAs};
+        \node at (0,2)[left]{AlGaAs};
+        \node at (6,0.5)[right,white]{GaAs};
+        \node at (6,2)[right,white]{AlGaAs};
+        %metalizzazioni
+        \draw[pattern = north east lines, pattern color = black] (2,3) rectangle ++(2,0.25);
+        \draw(+3,3.25)to[short,-*]++(0,0.2) node[right]{G};
+
+        %source
+        \draw[pattern = north east lines, pattern color = black] (0,0) rectangle ++(0.15,3);
+        \draw(0.15/2,3)to[short,-*]++(0,0.2) node[right]{S};
+        %Drain
+        \draw[pattern = north east lines, pattern color = black] (6,0.35) rectangle ++(-0.15,2.65);
+        \draw(6-0.15/2,3)to[short,-*]++(0,0.2) node[right]{D};
+        %massa
+        \draw[pattern = north east lines, pattern color = black] (0,0) rectangle ++(6,-0.15);
+        \draw (3,-0.15) to (3,-0.2) node[ground]{};
+        %disegno lacune Me-SC
+        \draw[densely dotted](0,3)rectangle++(6,-0.75);
+        \foreach \pos in {0.75,1.5,2.25,...,5.5} {
+        \node at (\pos,2.75) { \tikz\draw [thick,red, scale=0.75]
+        circle (0.16cm) (-0.08,0)--(0.08,0) (0,0.08)--(0,-0.08) ;} ;}
+        %disegno elettroni
+        \foreach \pos in {1.5,2,...,4} {
+         \node at (\pos+0.25,2) { \tikz\draw [thick,fill=Ecolour]
+        circle (0.13cm) (-0.08,0)--(0.08,0) ;};}
+        %disegno lacune SC1-SC2
+        \draw[densely dotted](0,1)rectangle++(6,+0.75);
+        \foreach \pos in {0.75,1.5,2.25,...,5.5} {
+        \node at (\pos,1.25) { \tikz\draw [thick,red, scale=0.75]
+        circle (0.16cm) (-0.08,0)--(0.08,0) (0,0.08)--(0,-0.08) ;} ;}
+
+       \draw[latex-,cyan](1,0.9)--++(4,0)node[below]{$I_{DS}$};
+    \end{circuitikz}
+    \caption{Struttura di un HEMT}
+    \label{fig:Struttura di un HEMT}
+\end{figure}
+\end{comment}
+
+\end{document}

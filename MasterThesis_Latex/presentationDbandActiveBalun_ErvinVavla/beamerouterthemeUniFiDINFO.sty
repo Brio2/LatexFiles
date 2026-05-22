@@ -1,0 +1,122 @@
+% Copyright 2013 by University of Florence, Italy
+%
+% Presentation theme designed by communication office
+% LaTeX Beamer theme written by Francesco Poli
+%
+% This file includes the outer theme
+
+\mode<presentation>
+
+\setbeamertemplate{headline}
+{%
+  \leavevmode
+  \begin{beamercolorbox}[wd=0.077\paperwidth,ht=0.096\paperheight]%
+  {structure}%
+    \includegraphics[width=0.050\paperwidth,viewport=92 1393 175 1607]%
+    {figs/unifi_logo_lightgray}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.923\paperwidth,ht=0.096\paperheight,left]%
+  {title in head/foot}%
+    \pgfdeclareimage[height=0.096\paperheight]{unifilogo}{figs/unifi_logo_exptext_blue}%
+    \pgfuseimage{unifilogo}%
+    \pgfdeclareimage[height=0.096\paperheight]{dinfologo}{figs/dinfo_logo_sep_blue}%
+    \pgfuseimage{dinfologo}%
+    \begin{beamercolorbox}[wd=0.012\paperwidth,ht=0.096\paperheight]%
+    {}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.627\paperwidth,ht=0.096\paperheight,right]%
+    {}%
+      \begin{beamercolorbox}[wd=0.627\paperwidth,ht=0.048\paperheight,
+                             sep=0.016\paperheight,right]%
+      {}%
+        \usebeamerfont{title in head/foot}\insertshorttitle[respectlinebreaks]
+      \end{beamercolorbox}
+      \begin{beamercolorbox}[wd=0.627\paperwidth,ht=0.048\paperheight,
+                             sep=0.016\paperheight,right]%
+      {}%
+        \usebeamerfont{date in head/foot}\insertshortdate[respectlinebreaks]
+      \end{beamercolorbox}%
+    \end{beamercolorbox}%
+  \end{beamercolorbox}%
+}
+
+\setbeamertemplate{footline}
+{%
+  \leavevmode
+  \begin{beamercolorbox}[wd=0.848\paperwidth,ht=0.070\paperheight]%
+  {structure}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.085\paperwidth,ht=0.070\paperheight,center]%
+  {page number in head/foot}%
+    \usebeamerfont{page number in head/foot}{\insertframenumber}\,/\,{\inserttotalframenumber}
+
+    \vspace{0.035\paperheight}
+  \end{beamercolorbox}%
+}
+
+\setbeamertemplate{frametitle}
+{
+  \begin{beamercolorbox}[wd=0.818\paperwidth,left]%
+  {}%
+    \vspace{0.025\paperheight}
+
+    \protect\insertframetitle\\[0.005\paperheight]
+    \usebeamerfont{framesubtitle}%
+    {\color{UniFitextblue}\protect\insertframesubtitle}
+  \end{beamercolorbox}
+}
+\setbeamersize{text margin left=0.100\paperwidth,%
+               text margin right=0.080\paperwidth}
+
+\setbeamercovered{transparent}
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamertemplate{title page}
+{%
+  \begin{beamercolorbox}[wd=1.0\paperwidth,ht=0.113\paperheight,left]%
+  {title in head/foot}%
+    \begin{beamercolorbox}[wd=0.0215\paperwidth,ht=0.113\paperheight]%
+    {}%
+    \end{beamercolorbox}%
+    \pgfdeclareimage[height=0.113\paperheight]{unifititlelogo}{figs/unifi_logo_exptext_blue}%
+    \pgfuseimage{unifititlelogo}%
+    \pgfdeclareimage[height=0.113\paperheight]{dinfotitlelogo}{figs/dinfo_logo_sep_blue}%
+    \pgfuseimage{dinfotitlelogo}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=1.0\paperwidth,ht=0.020\paperheight,left]%
+  {structure}%
+    \includegraphics[width=0.476\paperwidth,viewport=83 473 446 479]%
+    {figs/unifi_logo_lightgray}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=0.847\paperwidth,ht=0.258\paperheight,right]%
+  {title}%
+    \usebeamerfont{title}\inserttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.847\paperwidth,ht=0.050\paperheight,right]%
+  {subtitle}%
+    \usebeamerfont{subtitle}\insertsubtitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.847\paperwidth,ht=0.10\paperheight,dp=0.01\paperheight,right]{author}
+  \usebeamerfont{author}\insertauthor
+\end{beamercolorbox}
+\begin{beamercolorbox}[wd=0.847\paperwidth,ht=0.27\paperheight,dp=0.01\paperheight,right]{author}
+  \usebeamerfont{inst}\insertinstitute
+\end{beamercolorbox}
+
+  \vskip0pt plus 1filll
+
+  \leavevmode
+  \begin{beamercolorbox}[wd=0.531\paperwidth,ht=0.059\paperheight,right]%
+  {}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=0.317\paperwidth,ht=0.059\paperheight,center]%
+  {date}%
+    \usebeamerfont{date}\insertdate
+
+    \vspace{0.016\paperheight}
+  \end{beamercolorbox}%
+}
+
+\mode
+<all>

@@ -1,0 +1,914 @@
+\section{30.11.2023}
+\subsection{Tensione di soglia per un pHEMT}
+Per un pHEMT la tensioen di soglia sarà quel valore oltr eil quale il canale si spegne (invece di accendersi) ovvero $n_s \approx 0$.\\
+Abbiamo analizzato il P-HEMT ovvero una struttura che un canale di InGaAs poichè ha enegery gap minore di $E_g(GaAs)<E_g(AlGaAs)$  e inoltre ha una mobilità per bassi campi elettrici tale per cui $\mu^{InGaAs}>\mu^{GaAs} > \mu^{AlGaAs}$.\\
+
+un grafico non in scala di quanto visto è:
+\begin{figure}[hbt!]
+    \centering
+    \begin{circuitikz}
+        %inserisco massa
+        \draw[pattern=north east lines](0,0) rectangle++(6,-0.25);
+        %inserisco massa
+        \draw (3,-0.25) to (3,-0.3) node[ground]{};
+        %GaAs-i
+        \draw (0,0) rectangle ++(6,1.5) node[pos=0.5]{GaAs-i};
+        %InGaAs-i
+        \draw (0,1.5) rectangle ++(6,1) node[pos=0.5]{InGaAs-i};
+        %AlGaAs-i
+        \draw (0,2.5) rectangle ++(6,1) node[pos=0.5]{AlGaAs-i};
+        %AlGaAs-n
+        \draw (0,3.5) rectangle ++(6,1.5) node[pos=0.5]{AlGaAs-n};
+        %inserisco metallizzazioni
+        \draw[pattern=north east lines](0,5) rectangle ++(1.5,0.75);
+        \draw[pattern=north east lines](4.5,5) rectangle ++(1.5,0.75);
+        %disegno gate
+        \draw[pattern=north east lines](2.5,5)--++(0,0.5)--++(-0.5,0)--++(0,0.5)--++(2,0)--++(0,-0.5)--++(-0.5,0)--++(0,-0.5)--cycle{};
+        %inserisco drogaggio e label
+        \draw[pattern= north west lines	, pattern color =red!30!white](0,5)--++(1.5,0) to [in=30, out=270](0,1) -- cycle{};
+        \draw[fill=red!10!white](6,5)--++(-1.5,0) to [in=150, out=270](6,1) -- cycle{};
+        %label n+
+        \node at(0.5,4.5)[red]{$n^+$};
+
+        \draw[|-latex](7,5)--++(0,-2)node[below]{x};
+        \draw[white,|-latex](-1,5)--++(0,-2)node[below]{x};
+    \end{circuitikz}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+//%
+La struttura messa in questo modo ci permette di ottenere un diagramma a bande:
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        GRAFICO
+    \end{tikzpicture}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+Per loro natura, dentro la buca ci saranno un certo numero di livelli energetici discreti.
+E la pendenza è  molto importante perchè determinerà il campo elettrico legato alla carica mobile che entra all'interno del canale.
+chiamo Ec(0-) il campo elettrico a sinistra della discontinuità ed Ec(0+) il campo elettrico a destra della discontinuità.\\
+
+Avremo a che fare con un campo elettrico superficiale $\mathcal{E}_s$ (che è quella del canale) all'interfaccia tra space e channel . Tale campo che definisce la quantità di carica Q che stà dentro.\\
+Per Gauss posso scrivere:
+\begin{equation}
+    \mathcal{E}_s=\dfrac{q}{\epsilon_s} n_s
+\end{equation}
+dove $n_s=n_{2DEG} \ \alpha \ E_F-E_c(0^+)$.\\
+$E_c(0^+)$ determina, in qualche misura, la quantità di carica che stà dentro al canale. Quindi $n_s$ dipende dai livelli energetici e dalla probabilità che essi siano occupati.\\
+
+A me non interessa l'espressione numerica ma piuttosto cercare un l'interpretazione di tipo qualitativa poichè quella quantitativa l'ho già analizzata in precedenza.\\
+
+scrivo una formula empirica:
+\begin{equation}
+    n_s \ \alpha \ E_F -E_s(0^+) \approx a \cdot n_s
+\end{equation}
+Dove tipicamente $a \approx{10^{-17}[eV\cdot m^2]}$.\\
+
+Il mio scopo ora è determinare la corrente e, per per fare questo, mi serve come prima cosa la tensione di soglia. Tuttavia è importante ricordare che in questo transistor la tensione di soglia non corrisponde alla tensione a cui si forma il canale, bensì alla tensione in cui si spenge. Questo fenomeno si osserva nel grafico della concentrazione di portatori nel canale:
+\begin{figure}[hbt!]
+    \centering
+    \begin{tikzpicture}
+        %asse x
+        \draw[-latex](-3,0)--(2,0)node[below]{$V_G$};
+        %asse y
+        \draw[-latex](0,0)--(0,2)node[right]{$n_s$};
+        %grafico soglia
+        \draw(-2,0)--++(0.2,0) to [out=5, in=180](0.25,1.5)--++(0.75,0)node[right]{$n_{ss}$};
+        \node at (-2,0) [below]{$-V_{th}$};
+    \end{tikzpicture}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+dove $n_{ss}$ è la massima carica che si riesce a formare nel canale, ovvero la carica di saturazione.\\
+
+\begin{exbox}[perchè a Vth si spegne il canale?]
+    la risposta si osserva nel diagramma a bande mostrato sopra.\\
+    Applicare una tensione $V_G=<0$ significa applicare un'energia potenziale pari a $-qV_G= -q(-V_{G})$ e quindi si provoca una traslazione verso l'alto delle bande, riducendo il numero di livelli energetici sotto il livello di fermi.\\
+    Il limite si ha per $V_G=-V_{th}\ t.c \-qV_G= + q V_{th}$ in corrispondenza del quale $E_C(0^+)=E_F$. non essendoci più livelli disponibili, non ci sono cariche e quindi il canale si spegne. 
+\end{exbox} 
+
+\paragraph{comincio a scrivere le relazione}\mbox{}\\
+Parto considerando la condizione a contorno nella sezione $x=-d$ che si vede del diagramma a bande:
+\begin{equation}
+    E_c(-d)=qV_{bi}-qV_G+E_F
+\end{equation}
+\paragraph{Questa è la condizone al contorno. }\mbox{}\\
+Poi scrivo il potenziale all'interno della giunzione usando Poisson, tenendo conto della presenza di carica immagazzinata, del campo elettrico e della regione svuotata che si ha nel supply layer.
+\begin{ripasso}
+    L'equazione si poisson che o sempre visto è:
+    \begin{equation}
+        -\frac{{d^2\phi}}{{dx^2}} = -\frac{\rho}{\varepsilon}
+    \end{equation}
+   Dove $rho$ è la densità di carica volumetrica totale.
+   Dove $rho$ è la densità di carica volumetrica totale.
+   Le varie cariche in gioco che $rho$ include al suo interno sono: 
+   Cariche dovute a ioni fissi, cariche dovute e portatori liberi, carica superficiale, carica spazioale introdotta esternamente da campi elettrici.\\
+
+   Nel mio caso è utile considerare separatamente la parte dei portatori di carica (elettroni e lacune) e la parte dei droganti ionizzati, quindi separo $rho$ in due componenti:
+    \begin{equation}
+        -\frac{{d^2\phi}}{{dx^2}} = \frac{{q}}{{\varepsilon_s}}(N_D - n) + \frac{{q}}{{\varepsilon_r}}(n - p)
+    \end{equation}
+    Dove:
+    \begin{itemize}
+      \item $\frac{q}{{\varepsilon_s}}(N_D - n)$ rappresenta la densità di carica associata alla regione drogata $N_D$ meno la densità di elettroni $n$ nella regione $p$. Questa parte tiene conto della differenza di carica dovuta agli atomi droganti ionizzati e agli elettroni liberi presenti nella regione $p$.
+      
+      \item $\frac{q}{{\varepsilon_r}}(n - p)$ rappresenta la densità di carica associata alla regione drogata meno la densità di lacune $p$ nella regione $n$. Questa parte tiene conto della differenza di carica dovuta agli elettroni liberi presenti nella regione $n$ e agli atomi droganti ionizzati che accettano elettroni (se la regione è drogata tipo $p$) o alle lacune presenti nella regione $n$ (se la regione è drogata tipo $n$).
+    \end{itemize}
+\end{ripasso}
+Quindi:
+\begin{equation}
+    qV_{bi}-qV_G+E_F=\dfrac{q^2\ N_D}{2\ \epsilon_s}(d-d_s)^2 - q\mathcal{E}_s\ d + E_c(0^+)+\Delta E_c
+\end{equation}
+Dove $\Delta E_c = E_c(0^-)-E_c(0^+)$ è la discontinuità di banda, inoltre:
+\begin{enumerate}
+    \item $\dfrac{q^2\ N_D}{2\ \epsilon_s}(d-d_s)^2$ è la carica distribuita nella zona tra $d$ e $d_s$. questa è due volte l'integrazione della carica costante nel supply layer (perchè voglio ottenere il potenziale).
+    
+    \item $q\mathcal{E}_s\ d$ è legato alla presenza del campo elettrico alla sezione del canale a distanza d rispetto alla condizione al contorno;
+
+    \item $E_c(0^+)+\Delta E_c$ rappresenta una discontinuità. inoltre $\Delta E_c(0^-)-E_c(0^+)$.
+\end{enumerate}
+
+Adesso risolvo questo nei termini di $\mathcal{E}_s$, ottenendo:
+\begin{equation}
+    \mathcal{E}_s=q \dfrac{N_D}{2\ d \ \varepsilon_s}(d-d_s)^2-\dfrac{V_{bi}}{d}+\dfrac{V_G}{d}+\dfrac{E_c(0^+)-E_F+\Delta E_c}{q \ d}
+\end{equation}
+
+siccome sto considerando $V_G$ alla particolare tensione ($=V_{th}$), devo tenere presente che $n_s=0$ e quindi, di conseguenza, $\mathcal{E}=0$  nel 2DEG ovvero $E_c(0^+)=E_F$.\\
+
+Allora l'equazione si riformula coe segue:
+%
+\begin{equation}
+    0 = q \dfrac{N_D}{2\ d \ \epsilon_s}(d-d_s)^2-\dfrac{V_{bi}}{d}+\dfrac{V_{th}}{d}+\dfrac{0+\Delta E_c}{q \ d}
+\end{equation}
+%
+Ora risolvo per estrarre $V_{th}$:
+%
+\begin{equation}
+    V_{th}=-q\dfrac{N_D}{2\ \varepsilon}(d-d_s)^2+V_{bi}-\dfrac{\Delta E_c}{q}
+\end{equation}
+%
+A questo punto posso trovare la legge di controllo di carica del canale mettendo insieme l'espressione di $V_{th}$ dentro quella di $\mathcal{E}_s$:
+\begin{equation}
+    \dfrac{1}{\varepsilon}\left( d+\dfrac{\varepsilon \cdot a}{q}\right)\ qn_s = (V_G - V_{th})
+\end{equation}
+l'espressione $\dfrac{\varepsilon \cdot a}{q}$ ha la dimensione di una lunghezza ed è sommato allo spessore "d" pertanto posso definirlo come una sorta di spessore che chiamo $\Delta d$ che indica lo scostamento della distribuzione degli elettroni rispetto allo 0 nei livelli energetici.\\
+A cosa serve lo spessore d?\\
+\begin{figure}[hbt!]
+    \centering
+     figura\includegraphics{}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+Se io sommo la quantità di carica dentro il canale andrò a trovare una distribuzione con andamento mostrato in figura,
+quindi si ha che, rispetto all'interfaccia space-canale, esisterà un $\Delta d$ che definisce dove il centro della carica del canale sarà distribuito.\\
+Quindi la legge del controllo di carica ($Q_s =q \cdot n_s$) sarà:
+%
+\begin{equation}
+    Q_s = \dfrac{\varepsilon}{d+\Delta d} (V_G - V_{th})
+\end{equation}
+%
+L'espressione del controllo di carica è molto semplice tuttavia l'andamento che fornisce non è realistica infatti la differenza si vede:\\
+\begin{figure}
+    \centering
+    grafico Qs
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+è quindi necessario correggerla:
+
+\begin{equation}
+    Q_s = \dfrac{\varepsilon}{d+\Delta d} (V_G - V_{th}) \leq q\ n_{ss} \approx \sqrt{\dfrac{\Delta E_c}{q} \cdot \dfrac{2\ N_D\ \varepsilon_s}{q}}
+\end{equation}
+In generale posso dire che la carica $Q_{ss}=qn_{ss}$ dipende dalla discontinuità e da quanto è grande il drogaggio.\\
+($Q_s$ quando il canale =0V)
+Da notare che nss è direttamente proporzionale alla discontinuità in banda di conduzione $\Delta E_c$ e dal drogaggio. \\
+La saturazione del canale si otterrà per una determinata tensione di gate:
+\begin{equation}
+    V_{Gsat}\approx V_{th} + \dfrac{dq}{\varepsilon}\cdot n_{ss}
+\end{equation}
+ Nel caso di pinch OFF $Q_s=n_{2DEG}$.
+ \begin{equation}
+     n_{2DEG}=\dfrac{\varepsilon}{d+\nabla d}(V_G-V_{th})
+ \end{equation}
+ con $V_{th}(0)=B_{bi}-\frac{\nabla E_c}{q}-\frac{qN_D \ d_{sl}^2}{2\varepsilon_s}$.\\
+ 
+Ora c'è da scrivere l'altra parte della ricetta, ovvero l'espressione della corrente (cioè il trasporto di carica) assumento che le cariche vadano a $v_{sat}$ perchè i campi elettrici sono molto alti.
+in particolare:
+\begin{equation}
+    \mathcal{E}_{th}=\dfrac{v_{sat}}{\mu_{n_{0}}}
+\end{equation}
+E' importante ricordare che quest'equazione non è così semplice (lineare) nel caso generale però in prima approssimazione posso accettare che, alla velocità di saturazione, esista un legame lineare tra campo elettrico la mobilità.\\
+Dato (per ipotesi) che tutte le cariche in conduzione si muovano a velocità saturata, posso scrivere:
+\begin{equation}
+    I_D=W \cdot v_{sat} \cdot q \cdot n_s
+\end{equation}
+Dove $W$ è lo spessore del canale e 
+dove $q\ n_s$ l'ho tirata fuori da $Q_s$.\\
+in termini di potenziali avremo:
+\begin{equation}
+    I_D=W \cdot v_{sat} + \dfrac{\varepsilon}{d+\Delta d} \left[ V_G - V_{DSsat} - V_{th}\right]
+\end{equation}
+con $V_{DSsat} - Vcanale \neq 0$.\\
+siccome al corrente I deve essere uguale lungo tutte le sezioni del canale, sia nelle zone a basso campo elettrico che in quelle ad alto campo elettrico, allora posso permettermi di equagliare l' equazione della corrente in saturazione (laddove c'è alto campo) a quello della corrente non in saturazione (laddove c'è basso campo elettrico):
+\begin{equation}
+    W \cdot v_{sat} + \dfrac{\varepsilon}{d+\Delta d} \left[ V_G - V_{DSsat} - V_{th}\right] = \dfrac{W\ \mu_{n_0}}{L_G}\dfrac{\varepsilon}{d+\Delta d} \left[ (V_G -V_{th}) \cdot V_{DSsat}-\dfrac{1}{2}V_{DSsat}^2\right]
+\end{equation}
+l'espressione della corrente I non in saturazione (laddove c'è basso campo) è la parte del canale ohmico, quando VDSsat raggiunge il massimo, il valore di ID rimane costante anche per VDS>VDSsat.\\
+Questo mi permette di calcolarela tensione di saturazione $V_{DSsat}$:
+\begin{equation}
+    V_{DSsat}=(V_G-V_{th}+L_G\cdot \mathcal{E}_s)-\sqrt{(V_G-V_{th})^2+(L_G \cdot \mathcal{E}_s)^2}
+\end{equation}
+mentre la corrente vale:
+\begin{equation}
+    I_{Dsat}=W v_{sat}\dfrac{\mathcal{E}}{d+\Delta d} \left[ \sqrt{(V_G-V_{th})^2+(L_G \cdot \mathcal{E}_s)^2} - L_G\mathcal{E}_s\right]
+\end{equation}
+Ma sapendo che $\dfrac{dI_{Dsat}}{dV_G}=g_m$, allora:
+\begin{equation}
+    \dfrac{dI_{Dsat}}{dV_G}=g_m=\dfrac{W\ \mu_{n_0}}{L_G}\dfrac{\mathcal{E}}
+    {d+\Delta d} \dfrac{V_G-V_{th}}{\sqrt{\left( \dfrac{V_G-V_{th}}{L_G \mathcal{E}_s}\right)^2+1}}
+\end{equation}
+Per $L_G$ molto corti si avrà che
+\begin{equation}
+    \left. g_m\right|_{L_G \rightarrow 0}= W\cdot v_{sat} \dfrac{\mathcal{E}}
+    {d+\Delta d}
+\end{equation}
+L'accumulo di carica è determinato non per inversione della popolazione ma lo strozzamento dei livelli energetici discreti sopra e sotto il canale.\\
+Questo è una IDsat che veste sotto condizioni molto restrittive, non ci devono essere fenimeni del second'ordine nel canale non succede niente di anomalo.\\
+Queste valutazioni non funzionano più bene per dispositivi molto corti e molto veloci, per cui non vale più
+%
+\begin{equation}
+    I_D=W \cdot v_{sat}\cdot q \cdot n_s
+\end{equation}
+%
+il seguito nel prossimo capitolo.
+
+\cleardoublepage
+%
+\section{Trasporto di carica}
+%
+Quando ho studiato il MOSFET, alla fine della fiera sono riuscito ad arrivare alla seguente equazione:
+%
+\begin{equation}
+    I_D=W \cdot v_{sat}\cdot q\ n_{s}
+\end{equation}
+%
+Questo è il risultato di una grossa approssimazione: In presenza di elevato campo elettrico la velocità di tutti gli elettroni aumenta fino al valore di saturazione ma vigeva ancora la relazione lineare con il campo elettrico ($\mathcal{E}=\dfrac{v_{sat}}{\mu_{n0}}$) ovviamente, nel caso reale,  questo non è più vero cioè la relazione che lega i due non è più proporzionale  tramite una relazione lineare.\\
+Le condizioni per cui si verificano discrepanze delle ipotesi semplificative si verificano per:
+%
+\begin{itemize}
+    \item Dimensioni molto ridotte del dispositivo: tipicamente $\nabla y \approx 10nm$
+    \item  Tempi di commutazione estremamente veloci: tipicamente $\nabla t \approx 10^-{12}s$
+\end{itemize}
+%
+Si cerca allora di creare un nuovo modello di trasporto di carica. Arriverò alla fine sapendo che mobilità, adesso, non dipenderà più solo dal campo elettrico ma anche dall'energia media degli elttroni ($mu(\overline{E}_n)$).
+%
+\subsubsection{Modello di trasporto di ordine superiore}
+Quando il transistor diventa troppo piccolo e/o troppo veloce Il modello di trasporto di deriva e diffusione non è più valido perchè mobilità, velocità ed energia degli elettroni non sono più direttamente legati tra loro come in precedenza ma entreranno in gioco i tempi di rilassamento. Bisogna quindi cercare un nuovo modello che spieghi il funzioanmento di queste strutture.\\
+La mobilitàdipenderà dall'energia media degli elettroni ma siccome mobilità e velocità sono legate fra loro, allora si giunge alla conclusione che la velocità sarà funzione dell'energia media:
+%
+\begin{align*}
+    \mu&=\mu(\overline{E}_n)\\
+    v&=f(\overline{E}_n)
+\end{align*}
+Il campo elettrico $\mathcal{E}$ sarà legato all' $\overline{E}_n$ tramite la costante di tempo $\tau_E$ mentre la velocità v sarà legata all' $\overline{E}_n$ tramite la costante di tempo $\tau_P$.
+%
+\begin{citbox}[cosa vedrò in questi capitoli]
+siccome $\tau_E \gg \tau_E$, succede che nel momento in cui arriva una sollecitazione (che può essere un campo elettrico che varia o semplicemente degli elettroni che entrano in una zona con forte variazioen di campo elettrico) l'energia non assume instantaneamente il valore di regime ma, a causa della costante di tempo grande, impiegherà del tempo, adeguandosi con lentezza al nuovo valore del campo elettrico.\\
+
+Al contrario la quantità di moto, e quindi la velocità, reagisce più velocemente. Quindi ci sono delle sezioni in cui la mobilità è molto alta in quanto E non è ancor a regime e le particelle risendono di un calmpo elettrico che le fa sballare.
+Con il passare del tempo l'energia aumenta, la mobilità diminuisce e quindi la velocità scende ad un valore più basso.\\
+%
+\noindent\begin{minipage}[]{0.6\textwidth}
+    la velocità sarà costante dentro il gate e siccome ci sono forti variazioni del campo elettrico, gli elettroni subiscono una forte accellerazione e quindi le cariche viaggiano con una mobilità che in realtà non dovrebbero avere.\\
+osserviamo i picchi di velocità in corrsipondenza dei ogni variazione (fine e inizio gate) dando luogo al fatto che le correnti trovate prima non sono propriamente lineare.
+Questo si chiama overshoot della corrente (o velocità).
+%
+\end{minipage}
+\hfill%
+\begin{minipage}[]{0.4\textwidth}\raggedleft
+    \includegraphics[width=0.75\textwidth]{Immagini/imm30.11.2023/modello di trasporto idrodinamico.png}
+\end{minipage}
+\end{citbox}
+%
+\begin{ricevimento}
+   modello del trasporto idrodinamico:\\
+La teoria del trasporto idrodinamico si basa sulla similitudine tra il flusso di cariche in un semiconduttore e il flusso di un fluido, considerando il trasporto come un fenomeno di trasporto di cariche simile al trasporto di particelle in un fluido.\\
+\end{ricevimento}
+
+Si arriverà a considerare un sistema di 4 equazioni: l'equazione della densità di corrente $J=qnv_d$, le due equazioni di bilanciamento e poi bisogna sempre ricordare che l'equazione di poisson, che lega campo elettrico e carica, deve sempre essere vera. Il sistema così costruito è:
+%
+\begin{equation}
+    \begin{cases}
+        J=qnv_d\\
+         \dfrac{dE_n}{dt}=-\dfrac{\overline{E}_n - \overline{E}_0}{\tau_{En}}+ \dfrac{\mathcal{E} J_n}{n}\\
+         \dfrac{dP}{dt}=-q\mathcal{E}-\dfrac{p}{\tau_p}\\
+         \nabla \mathcal{E}(x)=\dfrac{\rho}{\varepsilon}[N_D^+-n(x)]
+    \end{cases}
+\end{equation}
+%
+Prima di continuare è opportuno richiamare una sezione contenente concetti teorici non trattati ma che è obbligatorio sapere prima di procedere 
+%
+\subsection{Meccanismi che ristabiliscono l'equilibrio termodinamico}
+Siccome esiste una condizione di equilibrio allora posso pensare all'esistenza di meccanismi in grado di ristabilire l'equilibrio quando questo viene turbato.\\
+Tra i vari meccanismi (facenti parte anche scambio di energia durante la generazione e ricombinazione) quelli che più mi interessano sono gli scambi di energia e quantità di moto tra il gas di elettroni (e lacune) con il reticolo cristallino.
+Questi scambi avvengono tramite gli urti.
+%
+\begin{exbox}
+    L'interazione tra elettroni,lacune e reticolo cristallino è già contenuto dentro la massa efficace ma questo non considera il caso di reticolo non ideale.
+\end{exbox}
+%
+In assenza di variazioni esterne, si raggiunge l'equilibrio di energia e quantità di moto  attraverso delle leggi così descritte:
+%
+\begin{equation}
+    \dfrac{dp_n}{dt}=-\dfrac{p_n}{\tau_{pn}}
+\end{equation}
+%
+\begin{equation}
+    \dfrac{d\overline{E}_n}{dt}=-\dfrac{\overline{E}_n-\overline{E}_0}{\tau_{En}}
+\end{equation}
+%
+Dove $\overline{E}_0$ è l'energia media del reticolo (pari a $\frac{3}{2}k_BT$) mentre $p_n$ e $\overline{E}_n$ sono la quantità di moto e l'energia emdia degli elettroni:
+%
+\begin{equation*}
+    \overline{E}_n=\dfrac{1}{N_n}\sum_1^{N_n}E_{ni}
+\end{equation*}
+%
+\begin{equation*}
+    p_n=\dfrac{1}{N_n}\sum_1^{N_n}p_{ni}
+\end{equation*}
+%
+\cleardoublepage
+\subsubsection{Bilanciamento della quantità di moto}
+tale equazione si ottiene partendo dalla solita relazione della quantità di moto:
+%
+\begin{equation}
+    \dfrac{dP}{dt}=-q\mathcal{E}-\dfrac{p}{\tau_p}
+\end{equation}
+%
+ Nel caso stazionario so che la variazione della quantità di moto è nulla ($\frac{dP}{dt}=0$), unendo questo con l'equazione $p=m_n^* \cdot v$, ottengo l'equazione di bilanciamento della quantità di moto che servirà dopo:
+ %
+\begin{equation}
+     v=\dfrac{\tau_p \cdot q \cdot \mathcal{E}}{m_n^*}=\mu \mathcal{E}
+\end{equation}
+%
+Ora invece devo guadare quella che si chiama l'equazione di bilanciamento dell'energia.
+%
+\subsubsection{Bilanciamento dell'energia}
+%
+\begin{ripasso}
+    prima di proseguire:\\
+    gli elettroni in un materiale conduttore come un metallo hanno un'energia media associata alla temperatura. Ho visto nei primi capitoli che nei solidi, gli elettroni sono descritti dal modello di banda e dalla distribuzione di Fermi-Dirac.\\
+    L'energia media degli elettroni in un materiale conduttore è legata alla temperatura del materiale. A temperature più elevate, gli elettroni tendono ad avere un'energia media più elevata. La distribuzione di Fermi-Dirac descrive la probabilità che uno stato energetico sia occupato dagli elettroni. La temperatura influenza questa distribuzione e quindi l'energia media degli elettroni.\\
+\end{ripasso}
+%
+In assenza di variazioni esterne, si raggiunge l'equilibrio di energia attraverso la legge:
+%
+\begin{equation*}
+    \dfrac{d\overline{E}_n}{dt}=-\dfrac{\overline{E}_n-\overline{E}_0}{\tau_{En}}
+\end{equation*}
+%
+Se ora considero un semicodnuttore su cui agisce una sorgente sterna (ovvero un campo elettrico) e nel quale scorre una corrente di conduzione $J_n$; la potenza totale ceduta al gas di elettroni per unità di volume, e poi al reticolo attraverso gli scambi energetici elettroni-reticolo, è quella associata all’effetto Joule, cioè $\mathcal{E}\cdot J_n$. Pertanto la potenza media ceduta per elettrone sarà $\dfrac{\mathcal{E}\cdot J_n}{n}$. Sì ha quindi: 
+%
+\begin{equation}
+    \dfrac{d\overline{E}_n}{dt}=-\dfrac{\overline{E}_n - \overline{E}_0}{\tau_{En}}+ \dfrac{\mathcal{E} J_n}{n}
+\end{equation}
+%
+L'equazione esprime il fatto che l'energia media degli elettroni evolve nel tempo in risposta a due influenze principali: un processo di rilassamento rappresentato dal primo termine sulla destra (con $\tau_{En}$), e un termine forzante rappresentato dal secondo termine, influenzato dalla densità di corrente e dalla densità di portatori di carica, i quali dipendono dal calore che fa aumetare l'energia media.\\
+La costante di rilassamento $\tau_{En}$ indica quanto velocemente l'energia degli elettroni si "rilassa" verso l'energia di equilibrio.
+riformulo:
+%
+\begin{equation}
+    \dfrac{\mathcal{E}J}{n}=  \dfrac{\mathcal{E} q n v}{n}=\dfrac{q^2\ \tau_p \ \mathcal{E}^2}{m_n^*}
+\end{equation}
+%
+quindi:
+%
+\begin{equation}
+    \dfrac{d\overline{E}_n}{dt} = -\dfrac{\overline{E}_n - \overline{E}_0}{\tau_{En}} + \dfrac{q^2\ \tau_{Pn}}{m_n^*}\ \mathcal{E}^2
+\end{equation}
+%
+dove:
+%
+\begin{enumerate}
+    \item $\overline{E}_n$ rappresenta l'energia media degli elettroni;
+    \item $\tau_{En}$ è il tempo di rilassamento dell'energia degli elettroni;
+    \item $\tau_{Pn}$ è il tempo di rilassamento della quantità di moto degli elettroni;
+    \item $\overline{E}_0= \dfrac{3}{2}k_BT_0$ è l'energia media del reticolo per bassi campi elettrici. Il valore $T_0 = 290K$
+\end{enumerate}
+%
+\begin{exbox}[ATTENZIONE]
+    non confondere l'energia media degli elettroni ($\overline{E}_n$) con l'energia media in equilibrio
+\end{exbox}
+%
+In condizioni stazionarie (di equilibrio), la variazione dell'energia media è nulla ($\dfrac{dE_n}{dt} = 0$). Da qui ottengo l'equazione dell'energia media degli elettroni:
+\begin{equation}
+    \overline{E}_n= \overline{E}_0+\dfrac{q^2\ \ \tau_{En}\ \tau_{Pn}}{m_n^*}\ \mathcal{E}^2
+\end{equation}
+%
+Si può definire una temperatura \textbf{$T_n$ detta temperatura di reticolo} che rappresenta la temperatura che dovrebbe avere il materiale per avere la stessa energia:
+%
+\begin{ricevimento}
+    cos'è T0 e Tn? ho due definizioni contrastanti.\\
+    Tn è la temperatura degli elettroni che successivamente trasferisce al reticolo?
+    T0 è la temperatura del reticolo all'equilibrio?
+\end{ricevimento}
+%
+\begin{equation}
+    \overline{E}_n=\dfrac{3}{2}k_BT_n
+\end{equation}
+%
+\begin{exbox}[osservazione dall'equazioe sopra]
+   Questo modello mi dice che gli elettroni hanno un'energia, e quindi una temepratura, legata al campo elettrico. se il campo elettrico aumentasse, è come se aumentassi la temperatura fisica del semiconduttore. questo ha anche implicazioni sul rumore termico.
+\end{exbox}
+%
+Questo modello va considerato quando la grande variazione di $\mathcal{E}$ avviene in un dx di $1\mu s$ e in un dt di $1 ps$.\\
+Le costanti di cariazione temperale $\tau_{pn}$ e $\tau_{en}$ dipendono dal valore di energia $E_n$, ovvero da $T_n$ e dal valore $E_0$ secondo alcuni modelli empirici:
+%
+\cleardoublepage
+%
+\section{modelli per i tempi di rilassamento}
+chiamo tempo di rilassamento dell' energia $\tau_{En}$ e tempo di rilassamento della quantità di moto $\tau_{pn}$, due costanti di tempo che indicano la rapidità con cui una popolazione di portatori cede energia o quantità di moto al reticolo cristallino.Tempi di rilassamento brevi corrispondono ad una rapida perdita di energia e quantità di moto; tempi di rilassamento lunghi implicano che la perdita è lenta. 
+\\
+se approssimiamo l'energia media dei portatori considerando solo la componente termica, posso introdurre la temperatura degli elettroni ($T_n$) legata all'energia media come:
+%
+\begin{align}
+    \overline{E}_n &=\dfrac{3}{2}k_BT_n 
+\end{align}
+%
+Un’analisi dettagliata dei meccanismi di urto permette di ottenere espressioni approssimate per i tempi di rilassamento dovuti ai singoli meccanismi. 
+
+\begin{itemize}
+    \item  $\tau_{pn}$ dipende dalle interazioni con fononi acustici ($\tau^{AC}$), i fononi ottici ($\tau^{OC}$) e le impurità, compreso il drogaggio, ($\tau^{IM}$):
+\begin{equation}
+    \tau_{pn}^{AC}=\tau_{pn}^{AC}(T_0)\dfrac{300}{T_0}\sqrt{\dfrac{300}{T_n}}
+\end{equation}
+\begin{equation}
+    \tau_{pn}^{OP}=\tau_{pn}^{OP}(T_0)\left(\dfrac{300}{T_0}\right)^k\sqrt{\dfrac{300}{T_n}}
+\end{equation}
+Dove $1<k<2$ in base al tipo di semiconduttore.
+\begin{equation}
+    \tau_{pn}^{IM}=\tau_{pn}^{IM}(T_0)\sqrt{\dfrac{T_n}{300}}
+\end{equation}
+I primi due diminuiscono se l'energia $E_n$ aument(perchè $T_n$ è direttamente proporzionale ad $E_n$) a, il contrario vale per il terzo.\\
+$\tau_{pn}$ si trova con la formula:
+\begin{equation}
+    \dfrac{1}{\tau_{pn}}=\dfrac{1}{\tau_{pn}^{AC}}+\dfrac{1}{\tau_{pn}^{OP}}+\dfrac{1}{\tau_{pn}^{IM}}
+\end{equation}
+Da cui capisco che il termine $\tau$ che prevale suigli altri sarà quello più piccolo tra tutti, quindi $\tau_{pn}^{AC}$ e $\tau_{pn}^{OP}$ per alte temeprature e invece $\tau_{pn}^{IM}$ per basse temperature.\\
+
+ \item $\tau_{En}$, dipende prevalentemente dalle interazioni con fononi ottici, legato al fenomeno di Plank:
+ \begin{equation}
+     \tau_{En} \approx \tau_{En}^{OP}=\tau_{En}^{OP}(T_0)\sqrt{\dfrac{T_n}{T_0}}
+ \end{equation}
+ \end{itemize}
+ %
+ \begin{exbox}[QUINDI]
+In generale, i portatori cedono energia e quantità di moto attraverso vari meccanismi di interazione come urti con impurità neutre e ionizzate, urti con fononi ottici e acustici. L'efficacia di tali meccanismi dipende principalmente dall'energia media dei portatori: 
+\begin{enumerate}
+    \item L'interazione con fononi acustici e ottici è più efficace con portatori ad alta energia, quindi il tempo di rilassamento dell'energia e quantità di moto per questi urti diminuisce con l'energia media dei portatori. 
+    
+    \item Per gli urti con impurità ionizzate e neutre, essi sono praticamente elastici, causando una scarsa cessione di energia. La perdita di quantità di moto è più elevata per portatori a bassa energia. Quindi, il tempo di rilassamento della quantità di moto per interazioni con impurità diminuisce con l'energia media della distribuzione.
+\end{enumerate}
+I tempi di rilassamento legati agli urti con fononi dipendono anche dalla temperatura del reticolo ($T_0$), poiché la densità di fononi cresce con la temperatura. Quindi, i tempi di rilassamento diminuiscono al crescere della temperatura del reticolo.
+
+Se sono nel caso di alta energia potrò dire che
+\begin{equation}
+    \overline{E}_n=\overline{E}_0 +\mathcal{E}^2 \dfrac{q^2 \tau_{En}^{OP} \tau_{Pn}^{OP}}{m_n^*}
+\end{equation}
+\end{exbox}
+
+Se il gate è molto corto ed il tempo di commutazione è molto breve allora, in condizioni di alto campo elettrico (che si ha in corrispondenza dei limiti di gate), allora l'energia media dell'elettrone può essere scritto come:
+\begin{equation}
+    \overline{E}_n=\overline{E}_0 +\mathcal{E}^2 \dfrac{q^2 \tau_{En}^{OP} \tau_{Pn}^{OP}}{m_n^*}
+\end{equation}
+Data l'equazione della mobilità:
+ \begin{equation}
+     \mu(T_0,T_n)=\dfrac{q \tau_{pn}(T_0,T_n)}{m_n^*}
+ \end{equation}
+è possibile riscriverlo come modello in funzione dell'energia.\\
+%
+
+\section{4.12.2023}
+Nel caso 2DEG, le energie ($\frac{m}{2}k_BT$, con m=2 perchè appunto 2deg) saranno:
+\begin{align*}
+    \overline{E}_0=k_BT_0\\
+    \overline{E}_0=k_BT_n    
+\end{align*}
+Con $\tau_{Pn} $ e $\tau_{En}$ dipendenti dell'energia media.
+\begin{align*}
+     \tau_{Pn} = \tau_{Pn}(\overline{E}_n)
+     \tau_{En} = \tau_{En}(\overline{E}_n)
+\end{align*}
+Da questi due ho che:
+\begin{equation}
+    \mu_n=\dfrac{q\ \tau_{Pn}}{m^*}=q\dfrac{\tau_{Pn}(\overline{E}_n)}{m^*}
+\end{equation}
+quindi posso pensare che i fenomeni che influenzano i valori delle costanti di tempo possano, a loro volta, influenzare anche la mobilità. da qui esprimo la mobilità come funzione dell'energia media dei portatori.
+
+
+Parto considerando il caso di campo elettrico basso. In questa situazione posso trascurare gli urti che fanno variare la temperatura, arrivando a dire che la temperatura degli elettroni è uguale a quella del reticolo $T_0=T_n$.\\
+ponendo $k=2$, si trova che la mobilità vale:
+\vspace{2mm} \\ %mm vertical space
+%
+\noindent\begin{minipage}{0.5\textwidth}
+    \begin{equation}
+        \mu_n^{AC}=\mu_n^{AC}(T_0)\left( \dfrac{300}{T_0}\right)^{3/2}
+    \end{equation}
+    \begin{equation}
+        \mu_n^{OP}=\mu_n^{OP}(T_0)\left( \dfrac{300}{T_0}\right)^{5/2}
+    \end{equation}
+    \begin{equation}
+        \mu_n^{IN}=\mu_n^{IN}(T_0)\sqrt{\dfrac{T_0}{300}}
+    \end{equation}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}\raggedleft
+    \includegraphics[width=0.7\textwidth]{Immagini/imm30.11.2023/grafico mobilità.png}
+\end{minipage}\\
+%
+\vspace{2mm} \\%mm vertical space
+%
+Da notare come, nel grafico, a $T_0$ corrisponde una mobilità complessiva pari a quella dovuta alle impurita mentre per $T_0$ elevate si avrà una mobilità complessiva pari a quello ottico e acustico. \\
+%
+Quindi posso scrivere:
+%
+\begin{equation}
+    \overline{E}_n=\overline{E}_0+q\tau_{En}(\overline{E}_n)\mu_n(\overline{E}_n)\mathcal{E}^2
+\end{equation}
+%
+Dove la mobilità totale è:
+%
+\begin{equation}
+    \dfrac{1}{\mu_n}=\dfrac{1}{\mu_n^{AC}}+\dfrac{1}{\mu_n^{OP}}+\dfrac{1}{\mu_n^{IM}}
+\end{equation}
+%
+Se ora considero il caso di alte energie (cioè alte temperature), si può trascurare il contributo su $\mu_n$ dovuto alle impurità in quanto presente solo per basse energie (cioè basse temperature).\\
+Si avrà una $\mu_n$ nella forma:
+%
+\begin{equation}
+    \mu_n=\mu_{n0}\sqrt{\dfrac{\overline{E}_n}{\overline{E}_0}}
+\end{equation}
+%
+\begin{exbox}
+    In questo modello osservo che la mobilità finale è il risultato della mobilità per bassi campi elettrici ed il rapporto tra le energie.
+\end{exbox}
+%
+\begin{ricevimento}
+    capire come ho ottenuto questo
+\end{ricevimento}
+%
+Analogamente:
+%
+\begin{equation}
+    \tau_{En}=\tau_{En0}\sqrt{\dfrac{\overline{E}_n}{\overline{E}_0}}
+\end{equation}
+%
+con $\tau_{E0}=\tau_{En}^{OP}(T_0)$\\
+unendo quanto visto sopra osservo che la dipendenza della mobilità e del tempo di rilassamento dall'energia tendono a cancellarsi a vicenda, ottenendo \textbf{il modello di rilassamento}:
+%
+\begin{equation}
+    E_n=E_0+q\ \tau_{E0}\ \mu_{n0}\ \mathcal{E}^2
+\end{equation}
+%
+Questo ci permette di ragionare in maniera analitica.
+%
+\begin{ricevimento}
+    qui c'era una considerazione che non ho scritto "mi è sfuggita"
+\end{ricevimento}
+%
+Dalla precedente equazione è possibile ricavare la velocità di trascinamento degli elettroni. partendo da $v_n = \mu_n \mathcal{E}$ allora:
+%
+\begin{equation}
+    v=\mu_{n0} \mathcal{E}\sqrt{\dfrac{\overline{E}_0}{\overline{E}_0+q\tau_{E0}\mu_{n0}\mathcal{E}^2}}
+\end{equation}
+%
+Da questa espressione si nota che per piccoli campi elettrici la velocitè dei portatori è direttamente proporzionale al campo elettrico attraverso il coefficiente di mobilità di basso campo $\mu_{n0}$ e si trova l'espressione $v=\mu_{n0}\mathcal{E}$. Mentre se $\mathcal{E}$ tende ad infinito allora si trova l'espressione della $v_{sat}$:
+%
+\begin{equation}
+    v_{sat}=\sqrt{\dfrac{E_0\mu_{n0}}{q\tau_{E0}}}
+\end{equation}
+con $v_{sat}$ tipicamente dell'ordine di $10^{-7}$ 
+%
+
+\subsection{Saturazione di velocità}
+per campi elettrici molto alti ($\rightarrow \infty)$ il valore di $\overline{E}_0$ (al denominatore della formula di $v_n$) si trascura e  si nota che la velocità degli elettroni non ha più andamento lineare in funzione del campo elettrico, fino a tendere ad un valore costante. ottengo:
+%
+\begin{equation}
+     v_{n,sat}=\sqrt{\dfrac{\mu_{n0} \overline{E}_0}{q\ \tau_{En0}}}
+\end{equation}
+%
+può essere anche espresso come 
+%
+\begin{equation}
+     v_{n,sat}= \sqrt{\dfrac{\tau_{Pn0}\overline{E}_0}{m^*\ \tau_{E0}}}
+\end{equation}
+%
+il modello contiene implicitamente che v satura...
+dove $\tau_{Pn0}$ È il valore di basso campo del tempo di rilassamento della quantità di moto degli elettroni. Si noti che il risultato ottenuto stato ricavato attraverso l’ipotesi di ùn ben preciso andamento dei tempi di rilassamento in funzione dell’energia media dei portatori. Si può anche ragionare in ‘modo inverso: la dipendenza sperimentale della velocità dal campo suggerisce che in tutti i semiconduttori la velocità satura; deve pertanto esistere un meccanismo di compensazione attraverso il quale i portatori cedono al reticolo esattamente tutta l’energia in più ottenuta dal campo elettrico.  
+%
+\subsection{Overshoot della velocità nel tempo}
+In condizioni generali la mobilità dei portatori non dipende dal campo elettrico locale e istantaneo, ma dall'energia media della ditribuzione. in presenza di brusche variazioni nello spazio e nel tempo del campo elettrico, l'energia media dei portatori non si adegua localmente e istantaneamente al campo, ma lo fa con un ritardo spaziale e temporale.\\
+-----------------------//
+L' elettrone, quando entra nel canale al di sotto del gate subisce un overshoot, perchè nei momenti in cui si hanno delle brusche variazioni di campo elettrico nel tempo, queste corrispondono ad analoghe variazioni di energia, le quali seguono espressioni come quelle associate a modelli di rilassamento.
+Questo implica che l'energia E a regime sarà assunto dopo un certo tempo. se l'energia non è ancora cresciuta lo è il campo elettrico e quindi esiste una velocità istantanea delle cariche (inerzia elettroni trascurabile) allora la velocità di elettroni viene descritta dalla mobilità.
+
+Per t=0, l'energia media è ancora pari ad E0 di conseguenza mun=mun0 e quindi:
+\begin{equation}
+    v_n=\mu_{n0}\cdot \mathcal{E}
+\end{equation}
+OVERSHOOT della velocità:
+$\begin{cases}
+    TEMPO\\
+    SPAZIO
+\end{cases}$\\
+un elettrone quando entra dentro il canale di gate, ha overshoot della velocità.
+perchè accade?
+forti variazioni di campo elettrico provocano forti variazioni di energia media a regime..
+\subsubsection{Overshoot di velocità nel tempo: assenza di variazioni spaziali}
+Ipotizziamo che gli elettroni siano sottoposti ad una variazione brusca del campo elettrico come ad esempio a funzione gradino:
+%
+\begin{equation}
+    \mathcal{E}(t)=\mathcal{u}(t) \cdot \mathcal{E}
+\end{equation}
+%
+In assenza di variazioni spaziali, l'energia media si ottiene attraverso l'equazione di equilibrio.
+%
+\begin{align}
+     \dfrac{d\overline{E}_n}{dt}&=-\dfrac{(\overline{E}_n-\overline{E}_0)}{\tau_{En}}+q\ \mu_n(\overline{E}_n) \cdot \mathcal{E}^2 
+\end{align}
+Lo riscrivo come:
+\begin{align}
+      \tau_{En}\dfrac{d\overline{E}_n}{dt}&=-(\overline{E}_n-\overline{E}_0)+q\ \mu_{n0}\tau_{E0} \cdot \mathcal{E}^2
+\end{align}
+%
+approssimando l'andamento della mobilità ed il tempo di rilassamento in funzione dell'energia e ipotizzando che $\tau_{En}(\overline{E}_n) \approx \tau_{E0}$, ottengo è una EDO che si può calcolabile in maniera ragionevole (considerando la condizione iniziale $\overline{E}_n(0) =\overline{E}_0$ .\\
+trovo che, per $t>0$:
+%
+\begin{equation}
+    \overline{E}_n (t) = \overline{E}_{0} + q \ \tau_{E0}\ \mu_{n0} \cdot \mathcal{E}^2 \left( 1-e^{-\dfrac{t}{\tau_{E0}}}\right)
+\end{equation}
+%
+Quest'equazione mi sta dicendo che l'energia non cambia instantaneamente ma con andamento esponenziale.
+Si può trovare la velocità media degli elettroni sostituendo $\overline{E}_n$ in $v(t)$ e vedo che è nulla per $t<0$, mentre per $t>0$ vale:
+%
+\begin{equation}
+     v_n(t)=\mu_{n0} \sqrt{\dfrac{\overline{E}_0}{\overline{E}_n}}\cdot \mathcal{E}
+\end{equation}
+%
+sistituendo i parametri ottengo:
+%
+\begin{equation}
+    v_n(t)=\mu_{n0}\ \mathcal{E}\sqrt{\dfrac{1}{1+\dfrac{q\ \mu_{n0}\ \tau_{En} \mathcal{E}^2}{\overline{E}_0}\left( 1-e^{-\dfrac{t}{\tau_{E0}}}\right)}}
+\end{equation}
+%
+Quindi in $t=0$ l'andamento della velocità ha una discontinuità con andamento crescente.
+Inoltre, se prendo questa formula e ne calcolo il valore per $t \rightarrow \inf$ vedrò che il valore della velocità tende in maniera sintotica con il valore stazionario a regime:
+%
+\begin{equation}
+    v_n(t)=\left.\mu_{n0}\ \mathcal{E}\sqrt{\dfrac{1}{1+\dfrac{q\ \mu_{n0}T_{En}}{\overline{E}_0}\left( 1-e^{-\dfrac{t}{\tau_{E0}}}\right)}}\right|_{t \rightarrow \inf}=
+\end{equation}
+%
+
+Nella realtà, la velocità media dei portatori non può essere discontinua. Noi abbiamo ottenuto questa soluzione perchè abbiamo considerato l'ipotesi in cui l'equazione della quantità di motosia a regime ma questo non può essere vero negli istanti iniziali !\\
+Considero un materiale con tempi di rilassamento di energia e quantità di moto diversi ($\tau_E > \tau_P$), allora negli istanti iniziali si può ritenere l'energia costante e pari al valore iniziale.
+L'equazione di trasporto della quantità di moto sarà:
+%
+\begin{equation}
+    \dfrac{dv_n}{dt} \approx -\dfrac{q}{m^*}\mathcal{E}(t)-\dfrac{v_n}{\tau_{P0}}
+\end{equation}
+%
+Questo si può risolvere ponendo la condizione iniziale $v_n(0)=0$ ed il campo ha sempre funzione a gradino.
+La soluzione per $t>0$ è:
+%
+\begin{equation}
+    v_n(t)=-\dfrac{q\ \tau_{P0}}{m^*}\mathcal{E}_0 \left( 1-e^{-\dfrac{t}{\tau_{P0}}}\right)
+\end{equation}
+%
+Per t lunghi rispetto $\tau_{Pn0}$ (ma piccoli rispetto a $\tau_{En0}$) la velocità media torna al valore associato all'energia media iniziale $\overline{E}_0$:
+
+\begin{ricevimento}
+    c'è un pezo che non riesco a decifrare
+\end{ricevimento}
+%
+\begin{equation}
+    v_n=\mu_{n0}\mathcal{E}\sqrt{\dfrac{1}{1+\dfrac{q \mu_n \tau_n}{\overline{E}_0}(1-e^(t/\tau_{P0}))}} \left( 1-e^{-\dfrac{t}{\tau_{P0}}}\right)
+\end{equation}
+%
+\begin{equation}
+    v_n=-\mu_{n0}\mathcal{E}_0
+\end{equation}
+%
+%
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{.5\linewidth}
+        \begin{circuitikz}
+            %disegno asse x
+            \draw[-latex](-1,0)--(6,0)node[right]{t};
+            %disegno asse y
+            \draw[-latex](0,0)--(0,3)node[right]{$\mathcal{E}$};
+            %disegno grafico
+            \draw[thick, red](-1,0)--++(1,0)--++(0,2)--++(4,0);
+        \end{circuitikz}
+        \caption{Caption}
+        \label{fig:enter-label}
+    \end{subfigure}
+    \begin{subfigure}{.5\linewidth}
+        \begin{circuitikz}
+            %disegno asse x
+            \draw[-latex](-1,0)--(6,0)node[right]{t};
+            %disegno asse y
+            \draw[-latex](0,0)--(0,3)node[right]{$\mathcal{E}$};
+            %disegno grafico
+            \draw[thick](-1,0)--++(1,0)to [out=40, in=180](4,2)--++(1,0);
+        \end{circuitikz}
+        \caption{Caption}
+        \label{fig:enter-label}
+    \end{subfigure}
+    \begin{subfigure}{.5\linewidth}
+        \begin{circuitikz}
+            %disegno asse x
+            \draw[-latex](-1,0)--(6,0)node[right]{t};
+            %disegno asse y
+            \draw[-latex](0,0)--(0,3)node[right]{$\mathcal{E}$};
+            %disegno grafico
+            \draw[thick](-1,0)--++(1,0)--++(0,2) to [out=330, in=180](5,1)--++(1,0);
+            %disegno grafico 2
+            \draw[thick](-1,0)--++(1,0)--++(0,0.2) to [out=80, in=160,distance=1.15cm](1,1.524);
+        \end{circuitikz}
+        \caption{Caption}
+        \label{fig:enter-label}
+    \end{subfigure}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+%
+E' da tenere in considerazione che in tutto questo tempo ho considerato solo una sezione del dispositivo ma, a ben pensarci, quando utilizzo $\dfrac{d}{dt}$ faccio riferimento alla derivata totale:
+%
+\begin{align}
+    \tikzmarknode{n1}{\frac{d}{dt}} &= \tikzmarknode{n2}{\frac{d}{dt}} + \tikzmarknode{n3}{\frac{dx}{dt} \cdot \frac{d}{dx}} \\
+\end{align}
+%
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[blue,thick,->] (n1) to[open]++(0.025,-0.45)to [in=90,out=245] + (225:2cm) node[anchor=north,text = black,align=center] {derivata\\ totale};
+
+    \draw[blue,thick,->] (n2) to[open]++(0.025,-0.45)to [in=90,out=270] ++ (0,-2.4) node[anchor=north,text = black,align=center] {parziale \\nel tempo};
+    
+    \draw[blue,thick,->] (n3) to[open]++(0.025,-0.45)to [in=90,out=270] ++ (0,-1.5) node[anchor=north,text = black,align=center] {parziale \\nello spazio };
+    
+    \draw[red,thick,->] (n3) to[open]++(-0.325,-0.45)to [in=180,out=270] ++ (2,-1) node[anchor=west,text = black,align=center] {velocità di deriva \\ che subiscono gli elettroni };
+\end{tikzpicture}
+%
+\cleardoublepage
+%
+\subsubsection{Overshoot di velocità nello spazio: assenza di variazioni temporali}
+il ragionamento è simile al caso precedente, solo che questa volta si parla della posizione.
+Come nel caso precedente assumo che il campo elettrico subisca una brusca variazione del tipo
+%
+\begin{equation}
+    \mathcal{E}(x)=u(x)\mathcal{E}
+\end{equation}
+%
+espando l'operatore di derivata totale ,ottenendo:
+%
+\begin{equation}
+    \dfrac{d}{dt} = \dfrac{\partial}{\partial t} = \dfrac{\partial x}{\partial t} \cdot \dfrac{\partial}{\partial x} = 0 + v_n \dfrac{\partial}{\partial x}
+\end{equation}
+%
+dove $\dfrac{\partial}{\partial t} =0 $ perchè sono in condizioni stazionaria nel tempo e $\dfrac{\partial x}{\partial t} =v_n$.\\
+da qui si ottiene che la derivata totale rispetto al tempo dell’energia media degli elettroni vale:
+%
+\begin{equation}
+    \dfrac{d \overline{E}_n}{dt}=v_n \dfrac{d \overline{E}_n}{dx}
+\end{equation}
+%
+Ora rifaccio gli stessi svolgimenti del caso precedente e vedo che ho 3 equazioni, anche se in realtà sono 4 se si conta Poisson.
+\begin{enumerate}
+    \item \begin{equation}
+            J=q\ n\ v =q\ n\ \mu_n(\overline{E}_n)\mathcal{E}
+          \end{equation}
+    %
+    \item \begin{equation}
+            \dfrac{dE_n}{dx}=-\dfrac{(\overline{E}_n-\overline{E}_0)}{\tau_{En}}+q\ \mu_n \cdot \mathcal{E}^2 
+          \end{equation}
+    %
+    \item \begin{equation}
+            \dfrac{dv_n}{dx} \approx -\dfrac{q}{m^*v_n}\mathcal{E}(t)-\dfrac{1}{\tau_{P0}}
+          \end{equation}
+\end{enumerate}
+Alla fine si ottiene che 
+\begin{equation}
+    v_n=\mu_{n}\mathcal{E}=\mu_{n0}\sqrt{\dfrac{\overline{E}_0}{\overline{E}_n}}=\mu_{n0}\mathcal{E}\sqrt{\dfrac{\overline{E}_0}{\overline{E}_0+q \mu_{n0} \tau_{E0} \mathcal{E}^2(1-e^{-x/L_{En}})}} 
+\end{equation}
+la velocità media subisce un overshoot spaziale, ossia passa da un
+valore nullo ad un valore più-elevato di quello raggiunto in condizioni stazionarie
+nel punto di applicazione del campo elettrico. Per x molto maggiore di Lgn la
+velocità media tende al valore stazionario. Gli effetti dinamici del trasporto non
+stazionario hanno dunque luogo anche in regime tempo-invariante, purché le scale
+spaziali considerate siano piccole rispetto alla lunghezza di diffusione dell’energia.
+Sì noti che la soluzione trovata non è completamente fisica, in quanto la velocità media non può essere completamente nulla in zx < 0, perché in tale caso sarebbe
+violata la continuità della densità di corrente. \\
+Un’analisi quantitativa conduce a risultati simili a quelli ottenuti nel dominio del
+tempo.\\
+----------------------------------------------------\\
+
+Sì noti che la soluzione trovata non è completamente fisica, in quanto la velocità media non può essere completamente nulla in$ x < 0$, perché in tale caso sarebbe violata la continuità della densità di corrente. \\
+Anche in questo caso, il brusco salto di velocità che avviene, secondo il modello di trasporto dell’energia, in x = 0, è in realtà una conseguenza del fatto che si è trascurata l’analisi della dinamica (nello spazio) della quantità di moto media. \\Un’analisi quantitativa conduce a risultati simili a quelli ottenuti nel dominio del tempo; un esempio di andamento della soluzione è mostrato nella Figura seguente. Il campo elettrico è elevato e circa costante nella regione intrinseca, basso nei contatti più drogati. La velocità media dei portatori tende a essere bassa nelle regioni drogate e ad avere un brusco aumento all’inizio della regione di alto campo, per poi adeguarsi al valore stazionario. L’aumento non è brusco, ma graduale, secondo la dinamica imposta dall’equazione di trasporto della quantità di moto.  
+------------------------------------\\
+La corrente che scorre nel canale NOn è dipendente da x, cioè vn e campo elettrico variano ma J rimane costante, perciò le variazioni saranno compensate da n.
+In particolare se J=nqvn allora $n\cdot vn=K$ (per la legge di continuità di J).\\
+é possibile calcolare n con poisson trovando la dipendenza tra campo elettrico e carica
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{.5\linewidth}
+        \begin{circuitikz}
+            %disegno asse x
+            \draw[-latex](-1,0)--(9.5,0)node[right]{c};
+            %disegno asse y
+            \draw[-latex](0,0)--(0,3)node[right]{$\mathcal{E}$};
+            %disegno grafico
+            \draw[thick](0,0)--++(2,0)--++(0,2)--++(5,0)--++(0,-2)--++(2,0);
+        \end{circuitikz}
+        \caption{Caption}
+        \label{fig:enter-label}
+    \end{subfigure}
+    \begin{subfigure}{.5\linewidth}
+        \begin{circuitikz}
+            %disegno asse x
+            \draw[-latex](-1,0)--(9.5,0)node[right]{t};
+            %disegno asse y
+            \draw[-latex](0,0)--(0,3)node[right]{$v_n$};
+            %disegno grafico rosso
+            \draw[thick,red](2,0) to [out=0, in=210,distance=0.75 cm](3,3)to [out=-50, in=180,distance=0.75 cm](3.75,1.5)--++(0.25,0);
+            %disegno grafico viola
+            \draw[thick,violet](4,1.5)--++(1.5,0) to [out=0, in=190,distance=0.75 cm](7,2.35)to [out=0, in=180,distance=0.75 cm](9,0);
+        \end{circuitikz}
+        \caption{Caption}
+        \label{fig:enter-label}
+    \end{subfigure}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+\begin{equation}
+    v_n \dfrac{\partial E_n}{\partial x}=-q\mathcal{E}^2 \mu_n -\dfrac{E_n-E_0}{\tau_{En}}
+\end{equation}
+\begin{equation}
+    \dfrac{\partial E_n}{\partial x}= \dfrac{-q\mathcal{E}^2 \mu_n}{v_n} -\dfrac{E_n-E_0}{\tau_{En}v_n}
+\end{equation}
+\begin{equation}
+    \dfrac{\partial E_n}{\partial x}=-q\mathcal{E} -\dfrac{E_n-E_0}{\tau_{En}v_n}
+\end{equation}
+Introduco $L_{En}=\tau_{En}\mu_n\mathcal{E}= \tau_{En}v_n$ detta lunghezza di diffusione dell'energia. Quindi devo risolvere:
+\begin{equation}
+     \dfrac{\partial E_n}{\partial x}=-q\mathcal{E} -\dfrac{E_n-E_0}{\L_{En}}
+\end{equation}
+Considerando le precedenti osservazioni posso concludere che
+\begin{equation}
+    E_n=E_0+q\tau_{E0}\mu_{n0}\mathcal{E}^2\left( 1-e^{-\frac{x}{L_{En}}}\right)
+\end{equation}
+Dove $\tau_{E0}\mu_{n0}=\tau_{En}(\overline{E}_n)\mu_{n}(\overline{E}_n)=$
+La terza equazione prende in considerazione la legge di bilanciamento della quantità di moto. Nel caso precedente completova il modello della velocità nel tempo, analogamente lo farà anche nello spazio:
+
+
+\cleardoublepage
+\section{Rumore}
+le formule qui descritte sono ottenute più o meno sperimentalmente.\\
+Voglio capire da dove vengono fuori e come influiscono i dispositivi:
+\begin{enumerate}
+    \item Rumore termico è la conseguenza dell'agitazione termica degli elettroni all'interno del reticolo cristallino.
+    La densità di rumore per un elemento resistivo è costante in frequenza e visto che si tratta di un processo aleatorio deve essere trattato per mezzo dei valori quadratici medi:
+    \begin{equation}
+        \rho_n= k_B T
+    \end{equation}
+
+    \begin{citbox}[cit Chenming]
+    Questo rumore è distribuito su varie frequenze. Se inserissi un filtro con larghezza di banda $\Delta f$ e misurassi la tensione di rumore rms, otterrei:
+    \begin{equation}
+        \overline{v_n^2}=S_{V_n}\Delta f=4\ k_B\ T\ R\ \Delta f
+    \end{equation}
+    Questo rumore è proporzionale alla $\Delta f$ \textbf{ ma è indipendente da f, pertando si dice che è rumore bianco}.
+    \end{citbox}
+    
+    \item Rumore shottky: Questi tipo di rumore aumenta con I ed ha una densità spettrale di rumore in corrente pari a:
+    \[S_i(f)=2qI\]
+    E' dovuto al fatto che il numero di elettroni che possono superare una barriera di potenziale dipende dall'energia e dalla statistica.
+    
+    \item Rumore flicker: è un tipo di rumore alto e bassa frequenza dovuto principalmente al meccanismo di cattura e rilascio degli elettroni dalle trappole presenti nell'ossido. Questo ha una densità spettrale di potenza:
+    \[P_n=\dfrac{kI^{\beta}}{f^{\alpha}} \text{con} \alpha=1 \div 3\]
+
+    \item Rumore diffusivo:
+    si ha per altri campo elettrici gli elettroni si spostano a $v_{sat}$ e non vale più il rumore termico nella forma superiore.
+    \[v_{nD}^2 = \gamma \dfrac{D\ I_{DS}}{v_{sat}^3}\Delta f\]
+    con D=costante di diffusione
+    
+    \item Rumore G+R:
+    si ha causa di meccanismo di generazione e ricombinazione dovuta alle trappole nella regione svuotata
+    
+\end{enumerate}
+
+
