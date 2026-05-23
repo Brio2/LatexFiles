@@ -73,7 +73,7 @@
 }
 
 \newcommand{\resumePOR}[3]{
-\vspace{0.5mm}\item
+\vspace{0.5mm}\item \hspace{1mm}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
     \end{tabular*}
@@ -81,7 +81,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-\vspace{0.5mm}\item
+\vspace{0.5mm}\item \hspace{1mm}
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#4}} \\
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
@@ -90,9 +90,9 @@
 }
 
 \newcommand{\resumeProject}[4]{
-\vspace{0.5mm}\item
+\vspace{0.5mm}\item \hspace{1mm}
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \textbf{\parbox{0.8\linewidth}{ #1}} & \textit{\footnotesize{#3}} \\
         \footnotesize{\textit{#2}} & \footnotesize{#4}
     \end{tabular*}
     \vspace{-2.4mm}
@@ -190,14 +190,14 @@
 \section{\textbf{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Your Institute Name}{CGPA/Percentage: xxx}
-      {Your Degree and Course name}{Year}
+      {University of Florence}{110/110}
+      {Master's Degree in Electronics for radiofrequency applications}{09/2022-04/2026}
     \resumeSubheading
-      {Your College Name}{CGPA/Percentage: xxx}
-      {Board of Intermediate Education, State}{Year}
+      {University of Florence}{}
+      {Bachelor Degree in Electronics and Telecommunications}{09/2017-02/2022}
     \resumeSubheading
-      {Your School name}{CGPA/Percentage: xxx}
-      {Board of Secondary Education, State}{Year}
+      {I.I.S Leonardo Da Vinci}{}
+      {Electronics}{2013-2017}
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 %
@@ -205,61 +205,44 @@
 
 
 %-----------EXPERIENCE-----------------
-\section{\textbf{Experience}}
+\section{\textbf{Professional Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Company Name}{City}
-      {Your Role}{Event dates}
-      \vspace{-2.0mm}
+      {IHP Microelectronics}{Frankfurt (Oder), Germany}
+      {RF Circuit Designer -- Trainee}{05/2025--10/2025}
+      \vspace{-1.0mm}
       \resumeItemListStart
-    \item {Work description line 1}
-    \item {Work description line 2}
-    \resumeItemListEnd
-    
-    \vspace{-3.0mm}
-    
-    \resumeSubheading
-      {Company Name}{City}
-      {Your Role}{Event dates}
-      \vspace{-2.0mm}
-      \resumeItemListStart
-    \item {Work description line 1}
-    \item {Work description line 2}
-    \resumeItemListEnd
-      
+        \item {Designed a D-Band (110--170 GHz) active balun in 130 nm SiGe BiCMOS technology.}
+        \item {Researched the state of the art of active baluns and designed circuit topologies for D-band operation.}
+        \item {Simulated and optimized amplitude balance, phase balance, gain, and power consumption.}
+        \item {Prepared and optimized the integrated layout for tape-out submission.}
+        \item {Prepared the measurement plan and analyzed S-parameters from .CSV files using MATLAB.}
+        \vspace{2.0mm}
+        \item {\textbf{Tools used}: Cadence Virtuoso, ADS, MATLAB, LaTeX, PowerPoint.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-8.5mm}
 
-
-
 %-----------PROJECTS-----------------
-\section{\textbf{Personal Projects}}
+\section{\textbf{Academic Projects}}
 \resumeSubHeadingListStart
 
     \resumeProject
-      {Project Name} %Project Name
-      {Project description(Your input in the project)} %Project Name, Location Name
-      {Event dates} %Event Dates
-
+      {VHDL for Real-Time Reconfiguration of the Operating Frequency of a PLL in an FPGA}
+      {Design and simulation of a VHDL-based digital control system for FPGA applications.}
+      {02/2022}
+      {Florence, Italy}
+      \vspace{-1.0mm}
       \resumeItemListStart
-        \item {Tools \& technologies used: xxx,xxx}
-        \item {More description on the project(The output you achieved by working on the project)}
-    \resumeItemListEnd
-    \vspace{-2mm}
+        \item {Designed VHDL modules for real-time control of the PLL operating frequency.}
+        \item {Simulated and verified the design using ModelSim.}
+        \item {Implemented and tested the project using Intel Quartus on an FPGA development board.}
+        \vspace{2.0mm}
+        \item {\textbf{Tools used}: Intel Quartus, ModelSim, PowerPoint.}
+      \resumeItemListEnd
+      \vspace{-2mm}
     
-    \resumeProject
-      {Project Name} %Project Name
-      {Project description(Your input in the project)} %Project Name, Location Name
-      {Event dates} %Event Dates
-
-      \resumeItemListStart
-        \item {Tools \& technologies used: xxx,xxx}
-        \item {More description on the project(The output you achieved by working on the project)}
-    \resumeItemListEnd
-    \vspace{-2mm}
-    
-      
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
 
@@ -267,20 +250,31 @@
 %-----------Technical skills-----------------
 \section{\textbf{Technical Skills and Interests}}
  \begin{itemize}[leftmargin=0.05in, label={}]
+  \vspace{1mm}
     \small{\item{
-     \textbf{Languages}{: } \\
-     \textbf{Developer Tools}{: } \\
-     \textbf{Frameworks}{: } \\
-     \textbf{Cloud/Databases}{: } \\
-     \textbf{Soft Skills}{: } \\
-     \textbf{Coursework}{: } \\
-     \textbf{Areas of Interest}{: } \\
+     \textbf{Programming Languages}{: MATLAB, C} \\[1.5pt]
+     \textbf{EDA and Simulation Tools}{: ADS, Cadence Virtuoso, LTspice} \\[1.5pt]
+     \textbf{Technical Skills}{: Analog Circuit Design, RF/mm-Wave Circuit Design, S-Parameter Analysis, IC Layout} \\[1.5pt]
+     \textbf{Documentation Tools}{: LaTeX, PowerPoint} \\[1.5pt]
+     \textbf{Areas of Interest}{: Analog Circuit Design, RF/mm-Wave Circuit Design, Integrated Circuits (IC), RFIC Design} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------LANGUAGE-----------------
+\section{\textbf{Languages}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+  \vspace{1mm}
+\small{\item{
+     \textbf{Italian}{: Fluent} \\[1.5pt]
+     \textbf{English}{: Excellent reading, good written and spoken communication} \\[1.5pt]
+     \textbf{Albanian}{: Basic spoken communication}
     }}
  \end{itemize}
  \vspace{-16pt}
 
 
-
+\begin{comment}
 %-----------Positions of Responsibility-----------------
 \section{\textbf{Positions of Responsibility}}
 \vspace{-0.4mm}
@@ -293,11 +287,10 @@
     {Position tenure} %Tenure Period
 \resumeSubHeadingListEnd
 \vspace{-5mm}
+\end{comment}
 
-
-
-
-%-----------Achievements-----------------
+\begin{comment}
+  %-----------Achievements-----------------
 \section{\textbf{Achievements}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
@@ -310,8 +303,6 @@
     {Event dates} %Event Year
 \resumeSubHeadingListEnd
 \vspace{-5mm}
-
-
-
 %-------------------------------------------
+\end{comment}
 \end{document}
