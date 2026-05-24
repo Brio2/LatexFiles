@@ -1,0 +1,10 @@
+\section{LNA}
+Seguendo la formula di Friis, il rumore totale di un sistema è dominato dal primo stadio. Esso deve avere infatti bassa cifra di rumore poichè si somma alla cifra di rumore del sistema e deve anche avere un guadagno sufficiente in modo da abbassare le cifre di rumore degli stadi successivi. Per questo motivo, è fondamentale progettare un amplificatore a basso rumore (LNA) come primo stadio di un ricevitore RF.\\
+Tipicamente è il primo stadio di un ricevitore RF, al massimo il secondo se si inserisce un filtro tra esso e l'antenna; oppure è il terzo stadio se si considera un lungo cavo coassiale tra antenna e scheda. L'importante è che sia uno dei primissimi stadi.\\
+Cose importanti da sapere su LNA:
+\begin{itemize}
+\item è Necessario adattare l'LNA all'antenna, oppure L'LNA al filtro collegato all'antenna, a 50 ohm. L'adattamento deve essere fatto senza usare componenti resistivi. In generale si preferisce una topologia che ha una resistenza di ingresso il più vicina possibile a 50 ohm, in modo da non dover inserire componenti passivi per l'adattamento, i quali introdurrebbero rumore oltre a quelle intrinseche del transistor e quelle necessarie per ottenere guadagno.\\
+\item In un normale ricevitore la linearità non è un problema dell'LNA perchè il segnale in ingresso è molto debole, tipicamente meno di -80dBm. Tuttavia nei ricetrasmettitori, la potenza trasmessa all'antenna può entrare nella sezione ricevente tramite leakage (es 30dBm) e rischiare di saturare l'LNA, quindi in questo caso è importante progettare un LNA con una buona linearità e con P1dB molto più alto del picco massimo possibile all'ingresso.\\
+\item Il guadagno deve essere più possibile piatto sulla banda di interesse, in modo da non distorcere il segnale.Tipicamente si cerca di avere un 1dB gain sulla banda di interesse. Il 3dB gain...
+
+\end{itemize}

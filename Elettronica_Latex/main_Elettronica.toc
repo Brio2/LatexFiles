@@ -1,0 +1,28 @@
+\contentsline {section}{\hbox to\@tempdima {\hfil }Knowledge}{i}{}%
+\contentsline {section}{\numberline {1}Noise}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Representation of Noise in Circuit}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Input-Referred Noise}{2}{}%
+\contentsline {section}{\numberline {2}LNA}{3}{}%
+\contentsline {section}{\numberline {3}PLL}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Principio di funzionamento}{4}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Simple PLL problem:}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Ripple problem and solution}{6}{}%
+\contentsline {subsection}{\numberline {3.3}PLL blocks}{6}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Phase Detector (PD)}{6}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Mixer PD }{7}{}%
+\contentsline {subsection}{\numberline {3.4}PLL loop operation}{7}{}%
+\contentsline {subsection}{\numberline {3.5}PLL transfer function}{7}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Stability considerations}{8}{}%
+\contentsline {subsection}{\numberline {3.6}Phase margin consideration}{8}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}Come calcolare il margien di fase?}{8}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}margine}{9}{}%
+\contentsline {subsection}{\numberline {3.7}Design example}{9}{}%
+\contentsline {subsection}{\numberline {3.8}Frequency moltiplication}{9}{}%
+\contentsline {subsection}{\numberline {3.9}Type 1 PLL}{9}{}%
+\contentsline {subsection}{\numberline {3.10}Type 2 PLL}{10}{}%
+\contentsline {subsection}{\numberline {3.11}Charge pump}{13}{}%
+\contentsline {subsection}{\numberline {3.12}PFDCP behvioral simulation}{13}{}%
+\contentsline {subsection}{\numberline {3.13}Charge pump PLL}{13}{}%
+\contentsline {subsubsection}{\numberline {3.13.1}Stability considerations}{13}{}%
+\contentsline {subsection}{\numberline {3.14}Open loop bandwidth and phase margin}{13}{}%
+\contentsline {subsection}{\numberline {3.15}high order pll}{13}{}%

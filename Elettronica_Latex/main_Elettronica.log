@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.22)  24 MAY 2026 11:39
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.22)  25 MAY 2026 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/vervi/Documents/GitHub/Elettronica_Latex/main_Hobby
-(c:/Users/vervi/Documents/GitHub/Elettronica_Latex/main_Hobby.tex
+**c:/Users/vervi/Documents/GitHub/Elettronica_Latex/main_Elettronica
+(c:/Users/vervi/Documents/GitHub/Elettronica_Latex/main_Elettronica.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
 (c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -548,7 +548,7 @@ File: l3backend-xetex.def 2026-02-18 L3 backend support: XeTeX
 \g__graphics_track_int=\count352
 \g__pdfannot_backend_int=\count353
 \g__pdfannot_backend_link_int=\count354
-) (./main_Hobby.aux (./BJT.aux) (./PLL.aux
+) (./main_Elettronica.aux (./Noise.aux) (./LNA.aux) (./PLL.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -586,7 +586,7 @@ LaTeX Warning: Label `' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 ))
-\openout1 = `main_Hobby.aux'.
+\openout1 = `main_Elettronica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
@@ -656,16 +656,53 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 37.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-]) [1] (./main_Hobby.toc)
+]) [1] (./main_Elettronica.toc)
 \tf@toc=\write4
-\openout4 = `main_Hobby.toc'.
+\openout4 = `main_Elettronica.toc'.
 
  [1
 
 ]
-\openout2 = `BJT.aux'.
+\openout2 = `Noise.aux'.
 
- (./BJT.tex) [2
+ (./Noise.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+) [2
+
+]
+\openout2 = `LNA.aux'.
+
+ (./LNA.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+) [3
+
+
 
 ]
 \openout2 = `PLL.aux'.
@@ -685,15 +722,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--28
 
  []
 
-[3
+[4
 
 
 
-] [4] [5]
+] [5] [6]
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 236.
 
-[6] [7] [8]
+[7] [8] [9]
 Overfull \hbox (17.86766pt too wide) in paragraph at lines 520--531
 []\TU/lmr/m/n/10 Una soluzione basica sarebbe aumentare la frequenza di taglio del LPF in modo da permettere l’agganciamento.
  []
@@ -708,7 +745,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 520--531
 
  []
 
-[9] [10] [11]) [12] [13] (./main_Hobby.aux (./BJT.aux) (./PLL.aux))
+[10] [11] [12]) [13] [14] (./main_Elettronica.aux (./Noise.aux) (./LNA.aux) (./PLL.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
@@ -719,12 +756,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 49687 strings out of 467983
- 1376934 string characters out of 5432890
- 2141769 words of memory out of 5000000
- 78065 multiletter control sequences out of 15000+600000
+ 49712 strings out of 467983
+ 1377533 string characters out of 5432890
+ 2143209 words of memory out of 5000000
+ 78083 multiletter control sequences out of 15000+600000
  634143 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,15n,118p,798b,1007s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,118p,804b,1007s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main_Hobby.pdf (15 pages).
+Output written on main_Elettronica.pdf (16 pages).

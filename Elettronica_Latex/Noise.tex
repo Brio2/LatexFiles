@@ -1,0 +1,19 @@
+\section{Noise}
+Noise is a random process. Since the instantaneous noise amplitude is
+not known, we resort to “statistical” models, i.e., some properties that
+can be predicted.\\
+Average Power\\
+...
+\subsection{Representation of Noise in Circuit}
+\subsubsection{Input-Referred Noise}
+Tipicamente le misure vengono fatte solo all'uscita di un circuito. Per questo è difficile trarre conclusioni dirette sul rumore, o anche confrontare il rumore in uscita di due reti dato che esso dipende anche dal guadagno dei blocchi: 
+Una rete può avere un basso rumore ma alto guadagno, risultando in un rumore di uscita molto maggiore di quello reale. Il concetto vale anche viceversa, alto rumore introdotto dalla rete può essere misurato come fosse basso se la rete ha guadagno ridotto oppure se attenua.
+un modo per risolvere questo problema è quello di riferire il rumore all'ingresso(Input-Referred Noise), ovvero calcolare quale sarebbe il rumore in ingresso che, se applicato ad un circuito ideale senza rumore, genererebbe lo stesso rumore in uscita del circuito reale.\\
+
+FIGURE\\
+
+Se l'impedenza di sorgente è alta rispetto all'impedenza di ingresso del circuito, allora entrambi devono essere considerati. In generale, abbiamo bisogno sia di una sorgente di tensione che di una sorgente di corrente all'ingresso per modellare il rumore del circuito.\\
+
+La sorgente equivalente di tensione di rumore in serie all'ingresso rappresenta la densità spettrale di tensione di rumore ($\overline{v_{in}^2}$) riferita all'ingresso. Essa si ottiene calcolando la densità spettrale di rumore in uscita ($\overline{v_{out}^2}$) con l'ingresso cortocircuitato e dividendola per il guadagno di tensione del circuito che opera in condizione normale.
+La corrente è la stessa cosa ma l'ingresso è lasciato aperto.\\
+
