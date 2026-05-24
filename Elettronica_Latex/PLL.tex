@@ -1,8 +1,9 @@
 \section{PLL}
 test
 \subsection{Principio di funzionamento}
+Fà in modo che la frequenza di uscita sia uguale alla frequenza di ingresso e questo funziona quando la differenza di fase tra uscita ed ingresso è costante.
 
-\Figure{}{}{
+\TikzFigure{
     \draw[-latex] (0,0) node[left]{$\phi_{in}$} 
                         -- ++(1,0) coordinate(a);
     \draw [fill=lightgray] (a) ++(0,0.5)rectangle ++(2,-1) 
@@ -10,10 +11,10 @@ test
     \draw[-latex] (b) -- ++(1,0) node[right]{$\phi_{out}$} 
     ;
 }
-
-Fà in modo che la frequenza di uscita sia uguale alla frequenza di ingresso e questo funziona quando la differenza di fase tra uscita ed ingresso è costante.
-
-il PLL è un sistema di controllo che genera un sistema di controllo la cui fase di uscita è legata alla fase di ingresso.
+{}%Caption
+{}%Label
+%
+il PLL è un sistema di controllo la cui fase di uscita è legata alla fase di ingresso,in particolare
 La fase di uscita segue la fase di ingresso.
 In generale l'obiettivo del PLL è fare in modo che $F_{out}=F_{in}$.
 Questo si ottiene quando la fase di uscita è agganciata alla fase ingresso, ovvero quando 
@@ -26,7 +27,7 @@ DISEGNO GRAFICO XOR\\
 \\
 
 
-\Figure{}{}{
+\TikzFigure{
     \draw[-latex] (0,0)-- ++(1,0) coordinate(a);
     \draw (a) ++(0,0.25)rectangle ++(2,-1)
         node [pos=.5, align=center]{PD} ++ (0,0.5) coordinate (b);
@@ -46,12 +47,15 @@ DISEGNO GRAFICO XOR\\
 
     \node[circle,fill=black,inner sep=0pt,minimum size=3pt,label={below:\textcolor{red}{$v_c(t)$}}] (a) at (3.75,-0.25) {};
 }
+{}%Caption
+{}%Label
+%
 I blocchi principale del PLL sono molto noti ma in questo momento voglio studiare un passo alla volta. 
 Nella figura REF si osserva la forma più semplice, sebbene errata perchè incompleta, forma di PLL. 
 Da qui si osserva che il PLL sfrutta un feedback negativo. La frequenza di uscita torna in ingresso e la fase di uscita viene comparata con quelal di ingresso, generando
-degli impulsi. il VCO quindi riceve gli impulsi e modifica la sua frequenza di uscita secondo una relazione lineare.
+degli impulsi. quindi il VCO riceve gli impulsi e modifica la sua frequenza di uscita secondo una relazione lineare.
 
-\Figure{}{}{
+\TikzFigure{
     %disegno asse x
     \draw[-latex,line width=0.75pt](0,0) node[below]{$0$}--(5,0)node[below]{$v_c(t)$};
     %disegno asse y
@@ -59,15 +63,18 @@ degli impulsi. il VCO quindi riceve gli impulsi e modifica la sua frequenza di u
     %disegno grafico
     \draw[blue] (0,0.5)--(4.5,2.25);
 }
+{}%Caption
+{}%Label
+%
 Prima di continuare devo ripassare la modulazione FM.
-Quello che mi interessa ora, a discapito della correttezza del PLL è lo studio preliminare del VCO.
+Quello che mi interessa ora, a discapito della correttezza del PLL, è lo studio preliminare del VCO.
 Se la tensione di controllo del VCO è affetto da ripple succederà che,  insieme alla componente fondamentale si 
 genereranno bande laterali. cioè il ripple modula la vco e genera nuovi contributi in frequenza.
 
 REMINDER FM MODULATION\\
 Immaginiamo che VCO applichi una modulazione FM e che la sua uscita sia il risultato di una modulazione con un segnale
 di ingresso supposto a bassa frequenza (o anche alta).
-\Figure{}{}{
+\TikzFigure{
     \draw[line width = 1pt](0,0)node[left]{$x_{BB}(t)$} --++(1.5,0)
     % Place a circle labeled VCO at the midpoint of the line
         node[circle, fill=lightgray, minimum size=1.5cm, label=center:{VCO}] {}
@@ -76,6 +83,9 @@ di ingresso supposto a bassa frequenza (o anche alta).
     % Draw the outer perimeter circle
         \draw [line width = 0.75pt] (1.5,0) circle[radius=0.75cm];
 }
+{}%Caption
+{}%Label
+%
 La tensione di uscita si esprime in generale come:
 \begin{equation}
     v_{out}=\sin{\left(\omega_c t +K_{vco}\int x_{BB}(t)\right)}
@@ -89,7 +99,7 @@ nel nostro caso, per esempio
 Il termine $\omega_c +K_{vco} v_1$ è la frequenza di uscita $\omega_{out}$ ed è utile notare come essa
 sia direttamente proporzionale alla tensione di ingresso $V_1$ secondo una relazione lineare.
 
-\Figure{}{}{
+\TikzFigure{
     %disegno asse x
     \draw[-latex,line width=0.75pt](0,0) node[below]{$0$}--(5,0)node[below]{$v_c(t)$};
     %disegno asse y
@@ -103,9 +113,11 @@ sia direttamente proporzionale alla tensione di ingresso $V_1$ secondo una relaz
     \node[circle, draw=black, fill=white,inner sep=2.5pt,minimum size=4pt] at (3.75,1.95){};
      
 }
+{}%Caption
+{}%Label
+%
 
-
-\Figure{}{}{
+\TikzFigure{
     \draw[-latex] (0,0)-- ++(1,0) coordinate(a);
     %draw PD
     \draw (a) ++(0,0.25)rectangle ++(2,-1)
@@ -135,6 +147,9 @@ sia direttamente proporzionale alla tensione di ingresso $V_1$ secondo una relaz
         }
     \end{scope}
 }
+{}%Caption
+{}%Label
+%
 \subsubsection{Simple PLL problem:}
 Quindi ritornando al caso originale. 
 Io sò che
@@ -172,7 +187,7 @@ quindi se la differenze di fase è costante allora tutto è agganciato ma se la 
 lavorare ed a aggiustare la frequenza. 
 ma si genera ripple in ingresso di vco. si creano sideband e questo non ci piace eprchè vogliamo solo una win all'ingresso di vco cioè oscillatore perfetto. dobbiamo quindi trovare uan soluzione per convertire questo impuso inuna dc. si userà un sistema di filtraggio
 
-\Figure{}{}{ 
+\TikzFigure{ 
     %disegno asse x
     \draw(0,0)--(5,0);
     %disegno frequenza fondamentale
@@ -181,7 +196,9 @@ ma si genera ripple in ingresso di vco. si creano sideband e questo non ci piace
     \draw[-latex,line width=1pt,red](2.5+1.5,0)node[below]{$\omega_{in}+\omega_1$}--++(0,1.5);
     \draw[-latex,line width=1pt,red](2.5-1.5,0)node[below]{$\omega_{in}-\omega_1$}--++(0,1.5);
 }
-
+{}%Caption
+{}%Label
+%
 \subsection{Ripple problem and solution}
 \subsection{PLL blocks}
 \subsubsection{Phase Detector (PD)}
@@ -190,7 +207,7 @@ l'uscita dello xor ci permette di osservare lo sfasamento tra i due segnali di i
 
 E' importante ricordare che un segnale impulsivo così dato è a tutti gli effetti un segnale ripple che crea probemi al blocco VCO. Della risposta impulsiva ci interessa il suo valore medio ottenuto tramite l'operazione di filtraggio e mostrato in figura.
 
-\Figure{}{}{
+\TikzFigure{
     %disegno asse x
     \draw[-latex](-0.5,0)--++(8,0)node[below]{$\Delta \phi$};
     %disegno asse y
@@ -240,7 +257,7 @@ allo stesso modo dello XOr, la differenza di fase mi darà un certo valore in us
 Il mixer non è molto popolare se comparato allo xor
 
 
-\Figure{}{}{
+\TikzFigure{
     %disegno asse x
     \draw[-latex](-2,0)--++(8,0)node[below]{$\Delta \phi$};
     %disegno asse y
@@ -254,7 +271,9 @@ Il mixer non è molto popolare se comparato allo xor
     \draw[densely dashed](1.57,0)node[above]{$90^{\circ}$}--++(0,0);
     \draw[densely dashed](1.57+1.57,0)node[above]{$180^{\circ}$}--++(0,-1.25);
 }
-
+{}%Caption
+{}%Label
+%
 
 \subsection{PLL loop operation}
 \subsection{PLL transfer function}
@@ -378,7 +397,7 @@ GRAFICI
 \subsection{Type 1 PLL}
 
 
-\Figure{}{}{
+\TikzFigure{
     \draw[-latex] (0,0)-- ++(1,0) coordinate(a);
     %draw PD
     \draw (a) ++(0,0.25)rectangle ++(1.5,-1)
@@ -397,6 +416,9 @@ GRAFICI
     \draw (f) ++(0,0.5)rectangle ++(-2,-1)node [pos=.5, align=center]{$\dfrac{1}{N}$} ++ (0,0.5) coordinate (g);
     \draw[-latex] (g) --++ (-2.75,0) --++ (0,0.75+0.75) --++ (0.5,0) ;
 }
+{}%Caption
+{}%Label
+%
 E' il circuito base che si studia. 
 Facile da studiare ma in generale non preferito.
 
@@ -419,7 +441,7 @@ Il range di aquisizione basso è principalmente causato dalla semplicità del ph
 
 \subsection{Type 2 PLL}
 
-\Figure{}{}{
+\TikzFigure{
     \draw[-latex] (0,0)-- ++(1,0) coordinate(a);
     %draw PFD
     \draw (a) ++(0,0.25)rectangle ++(1.5,-1)
@@ -442,7 +464,9 @@ Il range di aquisizione basso è principalmente causato dalla semplicità del ph
     \draw (h) ++(0,0.5)rectangle ++(-2,-1)node [pos=.5, align=center]{$\dfrac{1}{N}$} ++ (0,0.5) coordinate (i);
     \draw[-latex] (i) --++ (-2.75-1.25,0) --++ (0,0.75+0.75) --++ (0.5,0) ;
 }
-
+{}%Caption
+{}%Label
+%
 Il type 2 risolve il problema del limitato range di acquisizione oltre a sistemare gli svantaggi del 1à tipo.
 Il range di aquisizione elevato è ottenuto aggiungendo  al classico PD-XOR il frequenzy detector, un blocco che permette di variare il range di acquisizione a seconda delle necessità.
 

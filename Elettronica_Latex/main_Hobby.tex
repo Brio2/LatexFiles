@@ -51,14 +51,14 @@ bottom= 20 mm,
 %               COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom command for a TikZ figure with caption, label, and custom TikZ code
-\newcommand{\Figure}[3]{
+\newcommand{\TikzFigure}[3]{
   \begin{figure}[hbt!]
     \centering
     \begin{tikzpicture}
-      #3 % Custom TikZ code goes here
+      #1 % Custom TikZ code goes here
     \end{tikzpicture}
-    \caption{#1}
-    \label{#2}
+    \caption{#2}
+    \label{#3}
   \end{figure}
 }
 
